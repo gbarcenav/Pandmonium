@@ -126,11 +126,11 @@ Construido con:
 
 Este proyecto fue desarrollado e implementado por:
 
- -  **Mercedes Dávila Vázquez**  [Github](https://github.com/MercedesDavila/Pandmonium) 
+ - **Mercedes Dávila Vázquez**  [Github](https://github.com/MercedesDavila/Pandmonium) 
  - **Gabriela Bárcena Villanueva**[Github](https://github.com/gbarcenav/Pandmonium)
- -  **Berenice Ramos** [Github](https://github.com/Bere333/Pandmonium)
- - **Ivon** [Github](https://github.com/BLANK-TECH/Pandmonium)
- -  **Tania Juarez** [Github](https://github.com/TaniaEJuarez/Pandmonium)
+ - **Berenice Ramos** [Github](https://github.com/Bere333/Pandmonium)
+ - **Ivon Garduño Crespo** [Github](https://github.com/BLANK-TECH/Pandmonium)
+ - **Tania Juarez** [Github](https://github.com/TaniaEJuarez/Pandmonium)
 
 ## Checklist:ballot_box_with_check:
 
