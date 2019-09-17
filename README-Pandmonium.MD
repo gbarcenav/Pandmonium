@@ -109,20 +109,25 @@ Herramientas utilizadas para el desarrollo de este proyecto:
 
 -   JavaScript.
 -   React.
+-   Firebase.
+-   Firestore.
 -   CSS.
 
 Construido con:
  -   Visual Studio Code, editor de código fuente.
  
  ## Otros recursos.:file_folder:
- - List item
+ - [Create React APP](https://create-react-app.dev/docs/getting-started).
+ - [Firebase](hhttps://firebase.google.com/).
+ - [Firestore](https://firebase.google.com/docs/firestore?hl=es-419)
+ - [Cloud functions - Firebase Docs](https://firebase.google.com/docs/functions/?hl=es-419)
 
 ## Autores. :pencil2:
 
 Este proyecto fue desarrollado e implementado por:
 
  -  **Mercedes Dávila Vázquez**  [Github](https://github.com/MercedesDavila/Pandmonium) 
- - **Gabriela Bárcena Villanueva**[Github](https://github.com/gbarcenav/Pandmonium) 
+ - **Gabriela Bárcena Villanueva**[Github](https://github.com/gbarcenav/Pandmonium)
  -  **Berenice Ramos** [Github](https://github.com/Bere333/Pandmonium)
  - **Ivon** [Github](https://github.com/BLANK-TECH/Pandmonium)
  -  **Tania Juarez** [Github](https://github.com/TaniaEJuarez/Pandmonium)
