@@ -56,10 +56,10 @@ Lo acordado que debe ocurrir para decir que la historia está terminada.
  
 Para más detalles sobre el prototipo se adjunta el link en [Marvel] del proyecto (https://marvelapp.com/cdg1d4a/screen/61098993).
 
-![Proto1]()
-![Proto2]()
-![Proto3]()
-![Proto4]()
+![Proto1](https://github.com/MercedesDavila/Pandmonium/blob/branch-Mercedes/img/proto_1.JPG?raw=true)
+![Proto2](https://github.com/MercedesDavila/Pandmonium/blob/branch-Mercedes/img/proto_2.JPG?raw=true)
+![Proto3](https://github.com/MercedesDavila/Pandmonium/blob/branch-Mercedes/img/proto_3.JPG?raw=true)
+![Proto4](https://github.com/MercedesDavila/Pandmonium/blob/branch-Mercedes/img/proto_4.JPG?raw=true)
 
 ## Plan de Acción.:bookmark_tabs:
 Para este proyecto se siguio el siguiente plan de acción:
@@ -79,14 +79,15 @@ Para este proyecto se siguio el siguiente plan de acción:
 
 Nuestro tablero kanban nos ayudara a definir las tareas que se tienen que realizar y cual es el avance en cada una de ellas,  se actualizara conforme el proyecto avance, este es el primer sprint del proyecto: 
 
-![Tablero Kanban](img.jpg) 
+![Tablero Kanban 2](https://github.com/MercedesDavila/Pandmonium/blob/branch-Mercedes/img/Tablero_Proyecto.jpg?raw=true)
 
+![Tablero Kanban](https://github.com/MercedesDavila/Pandmonium/blob/branch-Mercedes/img/historias.png?raw=true) 
 
 
  ### Diseño de la Aplicación.
  
  - [ ] Entender el prototipo elaborado por las compañeras de UX.
- - [ ] Entender el flujo del proyecto.
+  - [ ] Entender el flujo del proyecto.
  - [ ] Crear las historias de usuario que respondan a las necesidades encontradas y soluciones propuestas.
 
  ### Primeros Pasos.
