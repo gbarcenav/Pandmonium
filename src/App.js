@@ -9,8 +9,8 @@ function App() {
           <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} />
     
           <div id="page-wrap">
-          <span aria-label="emoji" role="img"> Cool Restaurant 🍔🍕</span>
-            <h2>Check out our offerings in the sidebar!</h2>
+         <h1> Cool Restaurant</h1><span aria-label="emoji" role="img"> 🍔🍕</span>
+            <h2>Check out our offerings in the sidebar!</h2> 
           </div>
         </div>
       );

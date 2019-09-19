@@ -15,10 +15,11 @@ code {
 html,
 body {
   margin: 0;
+  font-family: 'Playfair Display', serif;
 }
 
 #App {
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
 
   /* Give app full page to work with */
   height: 100vh;
@@ -38,13 +39,15 @@ body {
   /* Our sidebar item styling */
   text-decoration: none;
   margin-bottom: 10px;
-  color: #d1d1d1;
+  color: #39BF4D;
   transition: color 0.2s;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 /* Change color on hover */
 .bm-item:hover {
-  color: white;
+  color: #39BF4D;
 }
 
 /* The rest copied directly from react-burger-menu docs */
@@ -76,19 +79,15 @@ body {
 
 /* General sidebar styles */
 .bm-menu {
-  background: #373a47;
+  background: #e2e4eb;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }
 
-/* Morph shape necessary with bubble or elastic */
-.bm-morph-shape {
-  fill: #373a47;
-}
 
 /* Wrapper for item list */
 .bm-item-list {
-  color: #b8b7ad;
+  color: #030303;
 }
 
 /* Styling of overlay */
