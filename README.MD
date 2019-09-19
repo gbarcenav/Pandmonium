@@ -87,7 +87,7 @@ Nuestro tablero kanban nos ayudara a definir las tareas que se tienen que realiz
  ### Diseño de la Aplicación.
  
  - [ ] Entender el prototipo elaborado por las compañeras de UX.
-  - [ ] Entender el flujo del proyecto.
+ - [ ] Entender el flujo del proyecto.
  - [ ] Crear las historias de usuario que respondan a las necesidades encontradas y soluciones propuestas.
 
  ### Primeros Pasos.
