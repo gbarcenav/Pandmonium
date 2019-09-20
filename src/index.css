@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+@media only screen and (max-width: 768px) {
+  
+  .imagenes-menu{
+    height: 30vh;
+    width: 3rem;
+    border-color: black;
+    align-items: center;
+    display: flex;
+    margin-top: 5rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem; 
+  }
+  .burger{
+    height: 15vh;
+    margin-left: 0.9rem;
+  }
+}
+

@@ -1,13 +1,16 @@
-import React from 'react';
+//Se importa React
+import React from "react";
+// Se importa archivo de estilos
+import "./App.css";
 
-// import Input from 'input.js';
+import Login from "./components/pages/login";
+import Places from "./components/pages/places";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-       
-      </header>
+      <Login />
+      <Places />
     </div>
   );
 }
