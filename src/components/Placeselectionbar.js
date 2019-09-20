@@ -4,4 +4,5 @@ class PlaceSelection extends Component {
     return <h2>{this.props.place}</h2>;
   }
 }
+
 export default PlaceSelection;

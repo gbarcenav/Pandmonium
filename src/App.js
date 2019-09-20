@@ -1,23 +1,18 @@
-import React, { Component }  from "react";
-import  './App.css';
-import './index.css';
-import Inicio from './components/inicio';
-import PantallaOrden from './components/orden';
-import Input from './components/input'
-import Bars from "./components/bars";
-import Tables from "./components/tables";
-import PlaceSelection from "./components/Placeselectionbar";
+//Se importa React
+import React from "react";
+// Se importa archivo de estilos
+import "./App.css";
 
+import Login from "./components/pages/login";
+import Places from "./components/pages/places";
 
-class App extends Component {
-    render() {
-        return (
-            <div className="App">
- 
-            </div>
-            
-        );
-    }
+function App() {
+  return (
+    <div className="App">
+      <Login />
+      <Places />
+    </div>
+  );
 }
 
 export default App;
