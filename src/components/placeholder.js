@@ -3,6 +3,6 @@ import React from 'react';
 
 function Placeholder(props) {
     return <input placeholder={"Ingresa tu codigo"}></input>;
-  }
+}
 
-  export default Placeholder;
+export default Placeholder;
