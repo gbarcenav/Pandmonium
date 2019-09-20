@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import logo from "../ux_resources/Logo2017-02.png";
 import Input from "../input";
 import BtnGreen from "../btn_green";
+import {Link} from "react-router-dom";
 
 class Login extends Component {
   render() {
@@ -20,7 +21,10 @@ class Login extends Component {
           <form className="input-btn-form">
             <Input placeholder="INGRESA TU CÓDIGO" classCSS="input-login" />
             <br></br>
-            <BtnGreen btntext="ENTRAR" to="/places" />
+            <Link to="/Places">
+              <BtnGreen btntext="ENTRAR" />
+            </Link>
+            
           </form>
         </div>
       </div>
