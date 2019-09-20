@@ -1,21 +1,19 @@
-import React from 'react';
+import React, {Component} from 'react';
 import logo from '../Logo.png';
 import Input from './input'
 
-class Inicio extends React.Component{
+class Inicio extends Component{
   state = {
     show:true
   }
+
     render(){
       if(this.state.show){
         return (
           <div>
             <img src={logo} className="App-logo" alt="logo" />
-            <Input />
-            <Input />
-            
-
-  
+            <Input placeholder="escribe tu nombre"/>
+          
           </div>
         )
       }
