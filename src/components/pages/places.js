@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import PlaceSelection from "../Placeselectionbar";
 import Input from "../input";
 import BtnGreen from "../btn_green";
-
 import Bars from "../Bars";
 import Tables from "../Tables";
+import Navbar from "../navbar";
 
 class Places extends Component {
   render() {
