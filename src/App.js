@@ -1,8 +1,9 @@
+
 import React, {Component} from 'react';
 import './App.css';
-import Inicio from './components/inicio';
-import PantallaOrden from './components/orden';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Login from "./components/pages/login";
+import Places from "./components/pages/places";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 class App extends Component{
   
@@ -18,6 +19,7 @@ class App extends Component{
       </Router>
     )
   }
+
 }
 
 export default App;
