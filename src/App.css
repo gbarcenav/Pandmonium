@@ -125,21 +125,21 @@ p {
 .navbar {
   width: 100%;
   height: auto;
-  /* background: #39bf4d; */
+  background: #39bf4d;
   padding: 20px;
+  text-align: center;
 }
 
 .menu-ham {
   width: 100px;
-  margin-left: 8vw;
+  left: 5vw;
   margin-top: 22px;
   position: absolute;
 }
 
 .logo-nav {
   width: 250px;
-  margin-left: auto;
-  margin-right: auto;
+  position: relative;
 }
 
 /* Estilos barras y mesas */
