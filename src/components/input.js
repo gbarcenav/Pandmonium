@@ -6,7 +6,7 @@ class Input extends React.Component{
     render(){
       return (
           
-         <Placeholder placeholder='Ingresa tu código'/>
+         <Placeholder/>
           
         
       )

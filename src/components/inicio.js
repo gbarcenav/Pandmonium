@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../Logo.png';
-import Input from './input'
+//import Input from './input'
 
 class Inicio extends React.Component{
   state = {
@@ -11,8 +11,8 @@ class Inicio extends React.Component{
         return (
           <div>
             <img src={logo} className="App-logo" alt="logo" />
-            <Input />
-            <Input />
+            {/* <Input />
+            <Input /> */}
             
 
   

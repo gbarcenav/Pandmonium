@@ -1,10 +1,8 @@
 import React from 'react';
-import Input from './input';
-
-
+//import Input from './input';
 
 function Placeholder(props) {
-    return <input placeholder={}></input>;
+    return <input placeholder={"Ingresa tu codigo"}></input>;
   }
 
   export default Placeholder;
