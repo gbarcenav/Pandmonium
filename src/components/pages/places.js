@@ -10,6 +10,7 @@ class Places extends Component {
   render() {
     return (
       <div className="places-screen">
+        <Navbar />
         <div className="tables-bars">
           <div className="bar">
             <Bars number="1" />

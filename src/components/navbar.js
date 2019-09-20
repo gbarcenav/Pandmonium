@@ -1,11 +1,13 @@
 import React, { Component } from "react";
+import Menu from "../components/ux_resources/menu-button.png";
+import Logo from "../components/ux_resources/Logo2017-02.png";
 
 class Navbar extends Component {
   render() {
     return (
       <nav className="navbar">
-        <img src={menu} className="menu-ham"></img>
-        <img src={logo} className="logo-nav"></img>
+        <img src={Menu} className="menu-ham" alt="menú"></img>
+        <img src={Logo} className="logo-nav" alt="logotipo Pandemonium"></img>
       </nav>
     );
   }
