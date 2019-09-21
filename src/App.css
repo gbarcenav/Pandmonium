@@ -234,3 +234,51 @@ p {
   font-size: 30px;
   font-weight: 700;
 }
+
+@media only screen and (max-width: 768px) { 
+  .navbar {
+    width: 100%;
+    height: 10vh;
+    
+    
+    text-align: center;
+    display: flex;
+    justify-items: center;
+
+    
+    flex-direction: row;
+  }
+
+.logo-nav {
+  height: 7vh;
+  width: 7rem;
+ 
+  margin-left: 15rem;
+
+}
+.menu-ham {
+  height: 5vh;
+  display:flex;
+  width: 3rem;
+  margin-top: 0.3rem;
+}
+.imagenes-menu{
+  height: 10vh;
+  width: 30rem;
+  /* background-color: green; */
+  border-color: black;
+  align-items: center;
+  display: flex;
+  margin-top: 1.5rem;
+  margin-left: 6rem;
+  margin-right: 2.5rem; 
+  flex-wrap: wrap;
+  
+}
+.food{
+  height: 7vh;
+  margin-left: 2rem;
+  margin-top: 0.6rem;
+
+}
+}
