@@ -11,21 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-@media only screen and (max-width: 768px) {
+/* Vista de tablet */
+@media only screen and (max-width: 768px) {  
+  /* Estilos: página de pedidos */
   
   .imagenes-menu{
-    height: 30vh;
-    width: 3rem;
+    height: 28vh;
+    width: 34rem;
+    /* background-color: green; */
     border-color: black;
     align-items: center;
     display: flex;
     margin-top: 5rem;
     margin-left: 2.5rem;
     margin-right: 2.5rem; 
+    flex-wrap: wrap;
+    
   }
-  .burger{
-    height: 15vh;
-    margin-left: 0.9rem;
+  .food{
+    height: 10vh;
+    margin-left: 3rem;
+    
   }
 }
 
