@@ -6,7 +6,11 @@ import Bars from "../bars";
 import Tables from "../tables";
 import Navbar from "../navbar";
 
+
+
 class Places extends Component {
+  
+
   render() {
     return (
       <div className="places-screen">
@@ -51,6 +55,7 @@ class Places extends Component {
           <BtnGreen btntext="ABRIR MESA" />
         </form>
       </div>
+
     );
   }
 }
