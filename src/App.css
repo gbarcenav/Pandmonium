@@ -235,34 +235,29 @@ p {
   font-weight: 700;
 }
 
-@media only screen and (max-width: 768px) { 
-  .navbar {
+@media only screen and (max-width: 768px) { /*No borrar*/
+  .navbar {/*No borrar*/
     width: 100%;
     height: 10vh;
-    
-    
     text-align: center;
     display: flex;
     justify-items: center;
-
-    
     flex-direction: row;
   }
 
-.logo-nav {
+.logo-nav {/*No borrar*/
   height: 7vh;
   width: 7rem;
- 
   margin-left: 15rem;
 
 }
-.menu-ham {
+.menu-ham {/*No borrar*/
   height: 5vh;
   display:flex;
   width: 3rem;
   margin-top: 0.3rem;
 }
-.imagenes-menu{
+.imagenes-menu{/*No borrar*/
   height: 10vh;
   width: 30rem;
   /* background-color: green; */
@@ -275,10 +270,34 @@ p {
   flex-wrap: wrap;
   
 }
-.food{
+.food{/*No borrar*/
   height: 7vh;
   margin-left: 2rem;
   margin-top: 0.6rem;
 
+}
+.tag-food{
+  width: 15rem;
+  height: 3.5vh;
+  background-color: white;
+  border-radius: 5px;
+  border-color: #CDCDCD;
+  border-style: solid;
+  margin-top: 0.5rem;
+}
+.All-menu{
+  display: flex;
+  flex-flow: column wrap;
+  width: 40rem;
+  height: 80vh;
+  
+  
+}
+.menu-draws{
+  height: 25vh;
+}
+.tag-ham{
+  height: 15vh;
+  margin-left: 3rem;
 }
 }
