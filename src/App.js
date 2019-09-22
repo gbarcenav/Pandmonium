@@ -1,8 +1,12 @@
 import React, { Component } from "react";
+
 import "./App.css";
+
 import Login from "./components/pages/login";
 import Places from "./components/pages/places";
 import DetailPlace from "./components/pages/detail_place";
+import AccountList from "./components/pages/account_list";
+
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 class App extends Component {
@@ -13,6 +17,7 @@ class App extends Component {
           <Route exact path="/" component={Login} />
           <Route path="/Places" component={Places} />
           <Route path="/DetailPlace" component={DetailPlace} />
+          <Route path="/AccountList" component={AccountList} />
           {/* Aqui llamo a la pantalla de inicio: <Inicio/> */}
           {/* Aqui llamo a la pantalla de orden: <PantallaOrden /> */}
         </Switch>
