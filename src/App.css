@@ -121,6 +121,7 @@ p {
 /* ESTILOS DE PANTALLAS PLACES */
 .places-screen {
   height: 100vh;
+  text-align: center;
 }
 
 .navbar {
