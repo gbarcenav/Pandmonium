@@ -313,9 +313,25 @@ p{/*No borrar*/
   margin-left: 1rem;
  
 }
-.menu-buy{
+.menu-buy{/*No borrar*/
   display: flex;
   flex-wrap: wrap;
-  margin-top: -18rem;
+  margin-top: -19rem;
+}
+.input-buy{/*No borrar*/
+  width: 2rem;
+  height: 2.7vh;
+  border-radius: 5px;
+  border-color: #CDCDCD;
+  border-style: solid;
+  margin-top: 0.5rem;
+  margin-left: 3rem;
+  color: #0d0d0d;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.input-foodbuy{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 }

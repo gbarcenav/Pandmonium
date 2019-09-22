@@ -22,7 +22,7 @@ class Menu extends Component {
               </div>
               <div>
 
-              <Foodbuy></Foodbuy>
+              <Foodbuy/>
               </div>
               </div>
 
