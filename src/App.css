@@ -191,12 +191,14 @@ p {
   height: auto;
   background: #39bf4dad;
   margin-top: 100px;
-  padding: 10px;
-}
-
-.rectangle-tabar-selection h2 {
-  padding-top: 10px;
-  padding-left: 30px;
+  padding: 16px 40px;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 20px;
+  border: transparent;
+  outline: 0px;
+  text-align: left;
 }
 
 /* Sección de registro de lugar y numero de personas */
@@ -250,6 +252,14 @@ p {
   height: auto;
   background: #39bf4dad;
   padding: 10px;
+  padding: 16px 40px;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 20px;
+  border: transparent;
+  outline: 0px;
+  text-align: left;
 }
 
 .people-number-detail {
@@ -343,4 +353,20 @@ td img {
 
 .total label {
   margin-right: 20px;
+}
+
+/* SECCIÓN LISTA DE CUENTAS */
+.rectangle-account {
+  width: 100%;
+  height: auto;
+  background: #39bf4dad;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 16px;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 20px;
+  border: transparent;
+  outline: 0px;
 }
