@@ -241,7 +241,7 @@ p {
   font-weight: 700;
 }
 
-@media only screen and (max-width: 768px) { /*No borrar*/
+/* @media (min-width: 768px) { No borrar */
   .navbar {/*No borrar*/
     width: 100%;
     height: 10vh;
@@ -280,8 +280,10 @@ p {
   height: 4.8vh;
   margin-left: 3rem;
   margin-top: 0.6rem;
-
-
+  transition: background-color .5s;
+}
+.food:hover{
+  background-color: #39bf4d;
 }
 .tag-food{/*No borrar*/
   width: 11rem;
@@ -384,9 +386,12 @@ p{/*No borrar*/
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+.menu{
+  width: 768px;
+  height: 1024px;
 }
-
+/* } */
+/* ----------------------------------------------------------------------------------- */
 .people-name-number label {
   margin-right: 20px;
   font-size: 30px;
@@ -517,3 +522,5 @@ td img {
   border: transparent;
   outline: 0px;
 }
+
+
