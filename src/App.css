@@ -8,6 +8,7 @@
 body {
   font-family: "Playfair Display", serif;
   color: #0d0d0d;
+  background-color: white;
 }
 
 h1 {
@@ -125,20 +126,19 @@ p {
 .navbar {
   width: 100%;
   height: auto;
-  background: #39bf4d;
   padding: 20px;
   text-align: center;
 }
 
 .menu-ham {
-  width: 100px;
+  width: 65px;
   left: 5vw;
   margin-top: 22px;
   position: absolute;
 }
 
 .logo-nav {
-  width: 250px;
+  width: 200px;
   position: relative;
 }
 
@@ -187,9 +187,10 @@ p {
 
 .rectangle-tabar-selection {
   width: 100%;
-  height: 5vh;
+  height: auto;
   background: #39bf4dad;
   margin-top: 100px;
+  padding: 10px;
 }
 
 .rectangle-tabar-selection h2 {
@@ -223,8 +224,9 @@ p {
   font-weight: 700;
 }
 
-.people-number {
-  width: 20vw;
+/* Input Spiner */
+.input-spiner {
+  width: 10vw;
   height: 50px;
   border: solid gray 8px;
   border-radius: 20px;
@@ -233,4 +235,111 @@ p {
   text-align: center;
   font-size: 30px;
   font-weight: 700;
+}
+
+.people-name-number label {
+  margin-right: 20px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/* ESTILOS PANTALLA DE DETALLE */
+.rectangle-tabar-detail {
+  width: 100%;
+  height: auto;
+  background: #39bf4dad;
+  padding: 10px;
+}
+
+.people-number-detail {
+  width: 100%;
+  height: auto;
+  text-align: end;
+  padding-right: 80px;
+  padding-top: 30px;
+}
+
+/* Tabla de detalle de consumo de comensal */
+
+.people-number-detail label {
+  margin-right: 20px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.table-detail-guest {
+  width: 90vw;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  color: gray;
+}
+
+th,
+td {
+  border: rgb(182, 181, 181) solid 6px;
+  padding: 10px;
+}
+
+td img {
+  width: 30px;
+}
+
+.options_detail {
+  position: relative;
+  margin-right: -75px;
+  margin-left: 20px;
+}
+
+.cost {
+  text-align: right;
+}
+
+.comment {
+  text-align: center;
+}
+
+/* Sección de total */
+.total {
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: gray;
+  padding: 30px;
+  text-align: center;
+}
+
+.total button {
+  width: 280px;
+  margin-top: 0px;
+}
+
+.total-input {
+  width: 200px;
+  height: 70px;
+  border: solid gray 8px;
+  border-radius: 20px;
+  margin-right: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: gray;
+  padding: 30px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.total label {
+  margin-right: 20px;
 }
