@@ -1,11 +1,9 @@
 import React, { Component } from "react";
-import PlaceSelection from "../Placeselectionbar";
-import Input from "../input";
-import BtnGreen from "../btn_green";
+import Navbar from "../navbar";
+import GreenRectangle from "../green_rectangle";
+import FormNameNumber from "../number_name_form";
 import Bars from "../bars";
 import Tables from "../tables";
-import Navbar from "../navbar";
-
 
 
 class Places extends Component {
@@ -57,18 +55,10 @@ class Places extends Component {
           </div>
         </div>
 
-        <div className="rectangle-tabar-selection">
-          {/* Debería de cambiar texto según la selección */}
-          <PlaceSelection place={this.state.number} />
-        </div>
-        <form className="people-name-number">
-          <p>Personas</p>
-          <Input classCSS="people-number" typeInput="number" />
-          <br></br>
-          <p>Nombre del cliente</p>
-          <Input classCSS="input-name" typeInput="text" />
-          <BtnGreen btntext="ABRIR MESA" />
-        </form>
+          <GreenRectangle classCSS="rectangle-tabar-selection" place={this.state.number} />
+          <FormNameNumber classCSS="people-name-number" />
+
+    
       </div>
 
     )

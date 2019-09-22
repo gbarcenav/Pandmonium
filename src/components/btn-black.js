@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 
-class BtnGreen extends Component {
+
+class BtnBlack extends Component {
   render() {
     return (
-      <button type="button" className="btn-green">
+      <button type="button" className="btn-black">
         {this.props.btntext}
       </button>
     );
   }
 }
 
-export default BtnGreen;
+export default BtnBlack;
