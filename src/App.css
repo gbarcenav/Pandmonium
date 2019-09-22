@@ -277,7 +277,7 @@ p {
   margin-top: 0.6rem;
 
 }
-.tag-food{
+.tag-food{/*No borrar*/
   width: 15rem;
   height: 3.5vh;
   background-color: white;
@@ -291,11 +291,11 @@ p {
   margin:0.5rem 0.5rem 0.5rem 0.5rem;
   
 }
-p{
+p{/*No borrar*/
   font-size: 1.3rem;
   margin:0rem 0.2rem 0.5rem 2.8rem;
 }
-.All-menu{
+.All-menu{/*No borrar*/
   display: flex;
   flex-flow: column wrap;
   width: 40rem;
@@ -303,10 +303,10 @@ p{
   
   
 }
-.menu-draws{
+.menu-draws{/*No borrar*/
   height: 25vh;
 }
-.tag-ham{
+.tag-ham{/*No borrar*/
   height: 15vh;
   margin-left: 3rem;
 }
