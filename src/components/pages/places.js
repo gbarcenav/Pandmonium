@@ -9,42 +9,57 @@ import Navbar from "../navbar";
 
 
 class Places extends Component {
+  state = {
+    number: null
+  }
   
-
+  changeTitle = (title,background) =>{
+    if(background == null){
+      this.setState({
+        number: title
+      }) 
+    }else{
+      this.setState({
+        number: null
+      }) 
+      }
+    }   
+  
+  
   render() {
     return (
       <div className="places-screen">
         <Navbar />
         <div className="tables-bars">
           <div className="bar">
-            <Bars number="1" />
-            <Bars number="2" />
-            <Bars number="3" />
+            <Bars number="1" changeTitle={this.changeTitle}/>
+            <Bars number="2" changeTitle={this.changeTitle}/>
+            <Bars number="3" changeTitle={this.changeTitle}/>
           </div>
 
           <div className="tables">
-            <Tables number="MESA 1" />
-            <Tables number="MESA 2" />
-            <Tables number="MESA 3" />
+            <Tables number="MESA 1" changeTitle={this.changeTitle}/>
+            <Tables number="MESA 2" changeTitle={this.changeTitle}/>
+            <Tables number="MESA 3" changeTitle={this.changeTitle}/>
           </div>
 
           <div className="bar">
-            <Bars number="4" />
-            <Bars number="5" />
-            <Bars number="6" />
-            <Bars number="7" />
-            <Bars number="8" />
+            <Bars number="4" changeTitle={this.changeTitle}/>
+            <Bars number="5" changeTitle={this.changeTitle}/>
+            <Bars number="6" changeTitle={this.changeTitle}/>
+            <Bars number="7" changeTitle={this.changeTitle}/>
+            <Bars number="8" changeTitle={this.changeTitle}/>
           </div>
 
           <div className="tables">
-            <Tables number="MESA 4" />
-            <Tables number="MESA 5" />
+            <Tables number="MESA 4" changeTitle={this.changeTitle}/>
+            <Tables number="MESA 5" changeTitle={this.changeTitle}/>
           </div>
         </div>
 
         <div className="rectangle-tabar-selection">
           {/* Debería de cambiar texto según la selección */}
-          <PlaceSelection place="MESA 2" />
+          <PlaceSelection place={this.state.number} />
         </div>
         <form className="people-name-number">
           <p>Personas</p>
@@ -56,7 +71,7 @@ class Places extends Component {
         </form>
       </div>
 
-    );
+    )
   }
 }
 
