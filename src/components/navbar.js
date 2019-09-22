@@ -7,7 +7,7 @@ class Navbar extends Component {
     return (
       <nav className="navbar">
         <img src={Menu} className="menu-ham" alt="menú"></img>
-        <img src={Logo} className="logo-nav" alt="logotipo Pandemonium"></img>
+        <img src={Logo} className="logo-nav" alt="logotipo"></img>
       </nav>
     );
   }
