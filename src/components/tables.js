@@ -4,7 +4,7 @@ class Tables extends Component {
   state = {
     background: null
   }
-
+  
   changeColor = () =>{
     if(this.state.background == null){
       this.setState({
@@ -15,10 +15,10 @@ class Tables extends Component {
       this.setState({
         background: null,
       })
-
+      
     }   
   }
-
+  
   handleChange= (e) => {
     const title = this.props.number;
     // console.log(title);
@@ -29,7 +29,7 @@ class Tables extends Component {
     return <button className="table-btn"
     onClick={this.handleChange} 
     style={{backgroundColor: this.state.background}}
-        >{this.props.number}</button>  
+    >{this.props.number}</button>
   }
 }
 
