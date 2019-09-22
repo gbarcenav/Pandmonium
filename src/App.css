@@ -249,7 +249,7 @@ p {
 .logo-nav {/*No borrar*/
   height: 7vh;
   width: 7rem;
-  margin-left: 15rem;
+  margin-left: 10rem;
 
 }
 .menu-ham {/*No borrar*/
@@ -265,26 +265,27 @@ p {
   border-color: black;
   align-items: center;
   display: flex;
-  margin-top: 1.5rem;
-  margin-left: 6rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
   margin-right: 2.5rem; 
   flex-wrap: wrap;
   
 }
 .food{/*No borrar*/
-  height: 7vh;
-  margin-left: 2rem;
+  height: 4.8vh;
+  margin-left: 3rem;
   margin-top: 0.6rem;
+
 
 }
 .tag-food{/*No borrar*/
-  width: 15rem;
-  height: 3.5vh;
+  width: 11rem;
+  height: 2.7vh;
   background-color: white;
   border-radius: 5px;
   border-color: #CDCDCD;
   border-style: solid;
-  margin-top: 0.5rem;
+  margin-top: 2rem;
   color: #0d0d0d;
   font-family: Arial, Helvetica, sans-serif;
   align-items: center;
@@ -292,22 +293,29 @@ p {
   
 }
 p{/*No borrar*/
-  font-size: 1.3rem;
+  font-size: 0.9rem;
   margin:0rem 0.2rem 0.5rem 2.8rem;
 }
 .All-menu{/*No borrar*/
   display: flex;
-  flex-flow: column wrap;
+  flex-wrap: wrap;
+  justify-items: center;
   width: 40rem;
   height: 80vh;
   
   
 }
 .menu-draws{/*No borrar*/
-  height: 25vh;
+  height: 10vh;
 }
 .tag-ham{/*No borrar*/
   height: 15vh;
-  margin-left: 3rem;
+  margin-left: 1rem;
+ 
+}
+.menu-buy{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -18rem;
 }
 }

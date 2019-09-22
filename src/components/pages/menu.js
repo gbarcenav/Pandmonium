@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Menuimages from '../menuimages.js';
 import Navbar from '../navbar';
 import TagFood from '../tagfood'
+import Foodbuy from '../foodbuy.js'
 
 
 class Menu extends Component {
@@ -13,10 +14,16 @@ class Menu extends Component {
               <div className="menu-draws">
               <Menuimages/>
               </div>
+              <div className="menu-buy">
+
               <div className="tag-ham">
               <TagFood/>
-              
 
+              </div>
+              <div>
+
+              <Foodbuy></Foodbuy>
+              </div>
               </div>
 
           </div>
