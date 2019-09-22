@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
-import Bars from "../components/Bars";
-import Tables from "../components/Tables";
+import Bars from "../components/bars";
+import Tables from "../components/tables";
 
 class PlacesContainer extends Component {
   render() {
