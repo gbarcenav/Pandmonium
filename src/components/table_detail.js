@@ -14,7 +14,12 @@ class TableDetail extends Component {
           </tr>
         </thead>
         <tbody>
-          <AddRow />
+          <AddRow
+            conceptText="MALICIA"
+            costQuantity="$65.00"
+            commentText="Sin verdura"
+          />
+          <AddRow conceptText="DELIRIUM" costQuantity="$50.00" commentText="" />
         </tbody>
       </table>
     );
