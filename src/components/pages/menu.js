@@ -15,11 +15,7 @@ class Menu extends Component {
               </div>
               <div className="tag-ham">
               <TagFood/>
-              <TagFood/>
-              <TagFood/>
-              <TagFood/>
-              <TagFood/>
-              <TagFood/>
+              
 
               </div>
 

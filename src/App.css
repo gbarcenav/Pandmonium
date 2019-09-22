@@ -23,6 +23,7 @@ h2 {
 
 p {
   font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* FONDO Y ESTILOS DE PANTALLA LOGIN */
@@ -284,6 +285,15 @@ p {
   border-color: #CDCDCD;
   border-style: solid;
   margin-top: 0.5rem;
+  color: #0d0d0d;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+  margin:0.5rem 0.5rem 0.5rem 0.5rem;
+  
+}
+p{
+  font-size: 1.3rem;
+  margin:0rem 0.2rem 0.5rem 2.8rem;
 }
 .All-menu{
   display: flex;
