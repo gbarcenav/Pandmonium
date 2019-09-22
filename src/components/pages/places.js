@@ -14,7 +14,7 @@ class Places extends Component {
 
         <PlacesContainer />
 
-        <GreenRectangle classCSS="rectangle-tabar-selection" />
+        <GreenRectangle classCSS="rectangle-tabar-selection" place="MESA 2" />
 
         <FormNameNumber classCSS="people-name-number" />
 
