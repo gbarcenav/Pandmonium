@@ -16,7 +16,6 @@ class DetailPlace extends Component {
         <FormNameNumber classCSS="people-number-detail" />
 
         <AccountPerGuest />
-
         <AccountPerGuest />
       </div>
     );
