@@ -50,7 +50,7 @@ Yo como mesero debe de seleccionar la mesa o lugar de barra donde se encuentra e
 
 ##### Definición de terminado:
 
-- 
+- El mesero puede modificar la mesa o el lugar de barra donde el comensal/les se encuentran, puede ingresar el nombre del comensal al cual quedara registrada la cuenta y podra ingresar el número de comesales por orden de alimentos.
 
   
 
@@ -78,8 +78,7 @@ Yo como mesero/a quiero tomar el pedido de un cliente para no depender de mi mal
 
 - Haces _test_ unitarios y, además, has testeado tu producto manualmente.
 
-- Hiciste _tests_ de usabilidad e incorporaste el _feedb
-- ack_ del usuario.
+- Hiciste _tests_ de usabilidad e incorporaste el _feedback_ del usuario.
 
 - Desplegaste tu aplicación y has etiquetado tu versión (git tag).
 
@@ -236,9 +235,7 @@ Este proyecto fue desarrollado e implementado por:
 
 * [x] Documenta proceso de diseño.
 
-* [ ] Incluye info para developers (deps, instalación, uso, despliegue, testing,
-
-...).
+* [ ] Incluye info para developers (deps, instalación, uso, despliegue, testing,...).
 
   
 
@@ -275,11 +272,6 @@ Este proyecto fue desarrollado e implementado por:
   
 
 * [x] Se _ve_ bien y _funciona_ bien en los dispositivos acordados.
-
-* [ ] Se puede _agregar a la pantalla de inicio_ como web app (tiene manifest,
-
-íconos, ...) en iOS y Android.
-
+* [ ] Se puede _agregar a la pantalla de inicio_ como web app (tiene manifest, íconos, ...) en iOS y Android.
 * [x] Uso fácil en pantallas táctiles (touch screens).
-
 * [ ] Estado actual del pedido siempre visible mientras tomamos un pedido.
