@@ -308,6 +308,7 @@ p{/*No borrar*/
 }
 .menu-draws{/*No borrar*/
   height: 10vh;
+  margin-top: -1.4rem;
 }
 .tag-ham{/*No borrar*/
   height: 15vh;
@@ -317,7 +318,7 @@ p{/*No borrar*/
 .menu-buy{/*No borrar*/
   display: flex;
   flex-wrap: wrap;
-  margin-top: 0.1rem;
+  margin-top: -1rem;
 }
 .input-buy{/*No borrar*/
   width: 2rem;
@@ -332,12 +333,12 @@ p{/*No borrar*/
 }
 
 
-.input-foodbuy, .btn-numbuy, .btn-numbuy-white, .menu{
+.input-foodbuy, .btn-numbuy, .btn-numbuy-white, .menu{/*No borrar*/
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
-.btn-black, .btn-white{
+.btn-black, .btn-white{/*No borrar*/
   width: 2rem;
   height: 2.7vh;
   border-radius: 50px;
@@ -348,18 +349,35 @@ p{/*No borrar*/
   font-size: 1.8rem;
 
 }
-.btn-white{
+.btn-white{/*No borrar*/
   background-color: white;
   color: #0d0d0d;
   border-style: solid;
   border-color: #0d0d0d;
   margin-left: 0.7rem;
 }
-.text-menu{
+.text-menu{/*No borrar*/
   margin-top: 3rem;
   margin-left: 11rem;
   display: flex;
   flex-direction: row;
+}
+.btn-green{/*No borrar*/
+  width: 14rem;
+  height: 4vh;
+  margin-left: 8rem;
+  font-size: 25px;
+  margin-top: 1rem;
+}
+.comment{/*No borrar*/
+  width: 20rem;
+  height: 6vh;
+  background-color: #CDCDCD;
+  margin-left: 5rem;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 }
