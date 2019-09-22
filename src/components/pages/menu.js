@@ -11,41 +11,26 @@ import NumbuyWhite from '../numbuy-white.js'
 class Menu extends Component {
     render() {
       return (
-          <section className="menu">
+        <section className="menu">
           <Navbar />
           <div className="All-menu">
               <div className="menu-draws">
               <Menuimages/>
               </div>
+              <div className="text-menu"><p>INDIVIDUAL</p><p>COMBO</p></div>
               <div className="menu-buy">
-
-              <div className="tag-ham">
-              <TagFood/>
-
+                <div className="tag-ham"><TagFood/></div>
+                <div><NumbuyWhite/></div>
+                <div><Foodbuy/></div>
+                <div><Numbuy/></div>
+                <div><NumbuyWhite/></div>
+                <div><Foodbuy/></div>
+                <div><Numbuy/></div>
               </div>
-              <div>
-              <NumbuyWhite/>
-              </div>
-              <div>
-              <Foodbuy/>
-              </div>
-              <div>
-                  <Numbuy/>
-              </div>
-              <div>
-              <NumbuyWhite/>
-              </div>
-              <div>
-                  <Foodbuy/>
-              </div>
-              <div>
-                  <Numbuy/>
-              </div>
-              </div>
-
           </div>
 
-          </section>
+
+        </section>
 
 
       )
