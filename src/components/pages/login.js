@@ -1,10 +1,45 @@
 import React, { Component } from "react";
+import firebase from '../Firebase';
 import logo from "../ux_resources/Logo2017-02.png";
 import Input from "../input";
 import BtnGreen from "../btn_green";
 import {Link} from "react-router-dom";
 
 class Login extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      noEmpleado,
+      empleado: {},
+      key: ''
+    };
+  }
+
+  componentDidMount() {
+    const ref = firebase.firestore().collection('empleado').doc(this.state.noEmpleado);
+    ref.get().then((doc) => {
+      if (doc.exists) {
+        this.setState({
+          empleado: doc.data(),
+          // key: doc.id,
+          isLoading: false
+        });
+      } else {
+        console.log("No such document!");
+      }
+    });
+  }
+
+  delete(id){
+    firebase.firestore().collection('usuario').doc(id).delete().then(() => {
+      console.log("Document successfully deleted!");
+      this.props.history.push("/")
+    }).catch((error) => {
+      console.error("Error removing document: ", error);
+    });
+  }
+
   render() {
     return (
       <div className="login-screen">
