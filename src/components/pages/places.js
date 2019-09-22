@@ -59,10 +59,10 @@ class Places extends Component {
 
           <GreenRectangle classCSS="rectangle-tabar-selection" place={this.state.number} />
           <FormNameNumber classCSS="people-name-number" />
-          <Link to='/Menu'>
-          <BtnGreen btntext="ABRIR MESA" />
+          <Link to="/Menu">
+          <BtnGreen btntext="ABRIR MESA"/>
           </Link>
-
+          
     
       </div>
 
