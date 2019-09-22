@@ -4,6 +4,8 @@ import GreenRectangle from "../green_rectangle";
 import FormNameNumber from "../number_name_form";
 import Bars from "../bars";
 import Tables from "../tables";
+import BtnGreen from "../btn_green";
+import { Link } from "react-router-dom";
 
 
 class Places extends Component {
@@ -57,7 +59,10 @@ class Places extends Component {
 
           <GreenRectangle classCSS="rectangle-tabar-selection" place={this.state.number} />
           <FormNameNumber classCSS="people-name-number" />
-
+          <Link to="/Menu">
+          <BtnGreen btntext="ABRIR MESA"/>
+          </Link>
+          
     
       </div>
 
