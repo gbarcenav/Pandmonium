@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import Input from "../components/input";
 import InputSpiner from "../components/input-spiner";
-import BtnGreen from "../components/btn_green";
+//import BtnGreen from "../components/btn_green";
 
 class FormNameNumber extends Component {
   render() {
