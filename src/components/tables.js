@@ -25,7 +25,6 @@ class Tables extends Component {
     this.changeColor()
     this.props.changeTitle(title,this.state.background);
   }
-
   render() {
     return <button className="table-btn"
     onClick={this.handleChange} 

@@ -7,7 +7,6 @@ import Numbuy from '../numbuy.js'
 import NumbuyWhite from '../numbuy-white.js'
 
 
-
 class Menu extends Component {
     render() {
       return (

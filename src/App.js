@@ -17,6 +17,7 @@ class App extends Component {
           <Route path="/Places" component={Places} />
           <Route path="/Menu" component={Menu}/>
           <Route path="/DetailPlace" component={DetailPlace} />
+          <Route path="/Menu" component={Menu} />
           <Route path="/AccountList" component={AccountList} />
         </Switch>
       </BrowserRouter>
