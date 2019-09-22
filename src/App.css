@@ -24,6 +24,7 @@ h2 {
 
 p {
   font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* FONDO Y ESTILOS DE PANTALLA LOGIN */
@@ -238,6 +239,134 @@ p {
   text-align: center;
   font-size: 30px;
   font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) { /*No borrar*/
+  .navbar {/*No borrar*/
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    display: flex;
+    justify-items: center;
+    flex-direction: row;
+  }
+
+.logo-nav {/*No borrar*/
+  height: 7vh;
+  width: 7rem;
+  margin-left: 10rem;
+
+}
+.menu-ham {/*No borrar*/
+  height: 5vh;
+  display:flex;
+  width: 3rem;
+  margin-top: 0.3rem;
+}
+.imagenes-menu{/*No borrar*/
+  height: 10vh;
+  width: 30rem;
+  /* background-color: green; */
+  border-color: black;
+  align-items: center;
+  display: flex;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 2.5rem; 
+  flex-wrap: wrap;
+  
+}
+.food{/*No borrar*/
+  height: 4.8vh;
+  margin-left: 3rem;
+  margin-top: 0.6rem;
+
+
+}
+.tag-food{/*No borrar*/
+  width: 11rem;
+  height: 2.7vh;
+  background-color: white;
+  border-radius: 5px;
+  border-color: #CDCDCD;
+  border-style: solid;
+  margin-top: 2rem;
+  color: #0d0d0d;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+  margin:0.5rem 0.5rem 0.5rem 0.5rem;
+  
+}
+p{/*No borrar*/
+  font-size: 0.9rem;
+  margin:0rem 0.2rem 0.5rem 2.8rem;
+}
+.All-menu{/*No borrar*/
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-items: center;
+  width: 40rem;
+  height: 80vh;
+  
+  
+}
+.menu-draws{/*No borrar*/
+  height: 10vh;
+}
+.tag-ham{/*No borrar*/
+  height: 15vh;
+  margin-left: 1rem;
+ 
+}
+.menu-buy{/*No borrar*/
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.1rem;
+}
+.input-buy{/*No borrar*/
+  width: 2rem;
+  height: 2.7vh;
+  border-radius: 5px;
+  border-color: #CDCDCD;
+  border-style: solid;
+  margin-top: 0.5rem;
+  margin-left: 0rem;
+  color: #0d0d0d;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.input-foodbuy, .btn-numbuy, .btn-numbuy-white, .menu{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.btn-black, .btn-white{
+  width: 2rem;
+  height: 2.7vh;
+  border-radius: 50px;
+  background-color: #0d0d0d;
+  margin-top: 0.5rem;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+
+}
+.btn-white{
+  background-color: white;
+  color: #0d0d0d;
+  border-style: solid;
+  border-color: #0d0d0d;
+  margin-left: 0.7rem;
+}
+.text-menu{
+  margin-top: 3rem;
+  margin-left: 11rem;
+  display: flex;
+  flex-direction: row;
+}
+
 }
 
 .people-name-number label {
