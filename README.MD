@@ -1,7 +1,9 @@
 # Burger Queen.
 # PanD'monium.:fork_and_knife:
   
+
 ## Definición del producto.
+
  
 Imaginen que existe un lugar llamado Pan D'monium en donde pueden comer delicioso, sin maltrato, ni sacrificio animal; que también en este lugar pueden encontrar variedad de alimentos saludables y no solo simples ensaladas. Ahora imaginen que existe un SuperSquad que tiene un superpoder llamado React que ayuda a cuidar el planeta, uniendo fuerzas con Pan D'monium ¡Pues no lo imaginen, porque es real!En el SuperSquad creamos un sistema para que el equipo de Pan D'monium pueda dar seguimiento y tener el control de sus órdenes de inicio a fin dando un mejor servicio a sus comensales.
 
@@ -9,6 +11,7 @@ También una de nuestras prioridades es evitar la generación de basura, evitand
 
 ![Alt](https://user-images.githubusercontent.com/110297/42118136-996b4a52-7bc6-11e8-8a03-ada078754715.jpg)
 
+  
 
 ## Historias de Usuario.
 
@@ -25,6 +28,8 @@ Yo como mesero debo de poder entrar a la aplicación con un código personalizad
 
 - Debe de haber recibido un código para ingresar a la aplicación y debe ser redireccionado a su área de trabajo.
 
+  
+
 #### [Historia de usuario 2] Mesero/a debo poder seleccionar o deseleccionar mesa o lugar de la barra donde él se encuentra el comensal.
 
 Yo como mesero debe de seleccionar la mesa o lugar de barra donde se encuentra el comensal para poder tener control de las órdenes y a donde entregarlas.
@@ -32,16 +37,22 @@ Yo como mesero debe de seleccionar la mesa o lugar de barra donde se encuentra e
 ##### Criterios de aceptación:
 
 - Debe de contar con la distribución del área de trabajo y que sea entendible.
+
 - Debe de contar con la distribución de mesas y lugares de barra actualizados.
+
 - Podrá seleccionar el número de mesa o el número de lugar de la barra.
+
 - En caso de que el comensal se cambie de lugar, el mesero podrá volver a seleccionar el lugar a donde el comensal se cambió.
+
 - Podrá ingresar el nombre del comensal al cual se registrará la mesa.
+
 - Podrá ingresar el número de comensales.
 
 ##### Definición de terminado:
 
-- El mesero puede modificar la mesa o el lugar de barra donde el comensal/les se encuentran, puede ingresar el nombre del comensal al cual quedara registrada la cuenta y podra ingresar el número de comesales por orden de alimentos. 
+- 
 
+  
 
 #### [Historia de usuario 3] Mesero/a debe poder tomar pedido de cliente.
 
@@ -49,10 +60,16 @@ Yo como mesero/a quiero tomar el pedido de un cliente para no depender de mi mal
 
 ##### Criterios de aceptación
 
+- Anotar nombre de cliente.
+
 - Agregar productos al pedido.
+
 - Eliminar productos.
+
 - Ver resumen y el total de la compra.
+
 - Enviar pedido a cocina (guardar en alguna base de datos).
+
 - Se ve y funciona bien en una _tablet_
 
 ##### Definición de terminado
@@ -61,7 +78,8 @@ Yo como mesero/a quiero tomar el pedido de un cliente para no depender de mi mal
 
 - Haces _test_ unitarios y, además, has testeado tu producto manualmente.
 
-- Hiciste _tests_ de usabilidad e incorporaste el _feedback_ del usuario.
+- Hiciste _tests_ de usabilidad e incorporaste el _feedb
+- ack_ del usuario.
 
 - Desplegaste tu aplicación y has etiquetado tu versión (git tag).
 
@@ -69,6 +87,7 @@ Yo como mesero/a quiero tomar el pedido de un cliente para no depender de mi mal
 
 ## Sobre el diseño
 
+  
 
 El restaurante Pan D'Monium tiene el objetivo de estandarizar la forma de tomar pedidos y que eso se refleje en el tiempo de entrega tanto en sucursal para posteriormente implementarlo en el resto de la cadena, así también facilitar la cobranza e impactar el trabajo en cocina.
 
@@ -76,29 +95,33 @@ El restaurante Pan D'Monium tiene el objetivo de estandarizar la forma de tomar 
 
 Para más detalles sobre el prototipo se adjunta el link en [Marvel] del proyecto (https://marvelapp.com/cdg1d4a/screen/61098993).
 
-1. El usuario ingresa un código, para acceder a la aplicació.
+1. El usuario ingresa un código, para acceder a la aplicación.
+
+
 ![Proto1](https://github.com/MercedesDavila/Pandmonium/blob/branch-Mercedes/img/proto_1.JPG?raw=true)
 
  
-2. Si el login fue correcto el mesero visualizará la pantalla para elección de barra o mesa, podrá ingresar el número de comensales y el nombre al cual se registrará la mesa o lugar en la barra según sea el caso.
+3. Si el login fue correcto el mesero visualizará la pantalla para elección de barra o mesa, podrá ingresar el número de comensales y el nombre al cual se registrará la mesa o lugar en la barra según sea el caso.
 
 ![Proto2](https://github.com/MercedesDavila/Pandmonium/blob/branch-Mercedes/img/proto_2.JPG?raw=true)
 
 3. En el menú se resaltara el icono que fue seleccionado y aparecerá la lista de alimentos que corresponde a cada icono, se podrán agregar comentarios respecto a la preparación de los alimentos.
 
-![Proto3](https://github.com/MercedesDavila/Pandmonium/blob/branch-Mercedes/img/proto_3.JPG?raw=true)
+![Proto3](https://github.com/MercedesDavila/Pandmonium/blob/master/img/proto_3.JPG?raw=true)
 
 4. Se podrá visualizar la fecha, el concepto y el precio de los productos anteriormente seleccionados, se podrá eliminar y/o editar un producto y se generará el importe a pagar.
 
-![Proto4](https://github.com/MercedesDavila/Pandmonium/blob/branch-Mercedes/img/proto_4.JPG?raw=true)
+![Proto4](https://github.com/MercedesDavila/Pandmonium/blob/master/img/proto_4.JPG?raw=true)
 
  
 5. El mesero podrá visualizar las mesas ocupadas y al dar click en cada sección se visualizará la información de pedidos en cada mesa.
 
-![Proto5]()
+![Proto5](https://github.com/MercedesDavila/Pandmonium/blob/master/img/proto_5.JPG?raw=true)
 
-![Proto6]()
+![Proto6](https://github.com/MercedesDavila/Pandmonium/blob/master/img/proto_6.JPG?raw=true)
 
+  
+  
 
 ## Plan de Acción.:bookmark_tabs:
 
@@ -196,33 +219,67 @@ Este proyecto fue desarrollado e implementado por:
 
 ## Checklist:ballot_box_with_check:
 
+  
+  
+
 ### General
+
+  
 
 * [x] Producto final sigue los lineamientos del diseño.
 
+  
+
 ### `README.md`
 
+  
+
 * [x] Documenta proceso de diseño.
-* [ ] Incluye info para developers (deps, instalación, uso, despliegue, testing,...).
+
+* [ ] Incluye info para developers (deps, instalación, uso, despliegue, testing,
+
+...).
+
+  
 
 ### Lighthouse (opcional)
 
+  
+
 * [x] 80% o más en sección _Performance_.
+
 * [x] 80% o más en sección _Progressive Web App_.
+
 * [x] 80% o más en sección _Accessibility_.
+
 * [x] 80% o más en sección _Best Practices_.
 
+  
 
 ### Tests
 
+  
+
 * [ ] 70% o más en cobertura de _statements_.
+
 * [ ] 70% o más en cobertura de _functions_.
+
 * [ ] 70% o más en cobertura de _lines_.
+
 * [ ] 70% o más en cobertura de _branches_.
+
+  
 
 ### UX
 
+  
+
 * [x] Se _ve_ bien y _funciona_ bien en los dispositivos acordados.
-* [ ] Se puede _agregar a la pantalla de inicio_ como web app (tiene manifest, íconos, ...) en iOS y Android.
+
+* [ ] Se puede _agregar a la pantalla de inicio_ como web app (tiene manifest,
+
+íconos, ...) en iOS y Android.
+
 * [x] Uso fácil en pantallas táctiles (touch screens).
+
 * [ ] Estado actual del pedido siempre visible mientras tomamos un pedido.
