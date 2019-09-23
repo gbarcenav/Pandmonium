@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "burgerqueen-pandmonium"
+    "default": "burgerqueen-pandmonium",
+    "gaby": "burgerqueen-pandmonium"
   }
 }
