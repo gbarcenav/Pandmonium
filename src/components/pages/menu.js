@@ -8,7 +8,6 @@ import NumbuyWhite from '../numbuy-white.js'
 import BtnGreen from '../btn_green.js'
 
 
-
 class Menu extends Component {
     render() {
       return (

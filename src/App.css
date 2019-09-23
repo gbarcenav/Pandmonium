@@ -282,8 +282,10 @@ p {
   margin-top: 0.6rem;
   transition: background-color .5s;
 }
-.food:hover{
+.food:hover{/*No borrar*/
   background-color: #39bf4d;
+  border-radius: 5px;
+
 }
 .tag-food{/*No borrar*/
   width: 11rem;
