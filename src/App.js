@@ -11,7 +11,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter  basename = {process.env.PUBLIC_URL}>
         <Switch>
           <Route exact path="/" component={Login} />
           <Route path="/Places" component={Places} />
