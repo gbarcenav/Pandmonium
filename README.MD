@@ -1,383 +1,277 @@
-# Burger Queen
+# Burger Queen.
+# PanD'monium.:fork_and_knife:
+  
 
-## Índice
+## Definición del producto.
 
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Pistas, tips y lecturas complementarias](#6-pistas-tips-y-lecturas-complementarias)
-* [7. Autoevaluación](#7-autoevaluación)
+ 
+Imaginen que existe un lugar llamado Pan D'monium en donde pueden comer delicioso, sin maltrato, ni sacrificio animal; que también en este lugar pueden encontrar variedad de alimentos saludables y no solo simples ensaladas. Ahora imaginen que existe un SuperSquad que tiene un superpoder llamado React que ayuda a cuidar el planeta, uniendo fuerzas con Pan D'monium ¡Pues no lo imaginen, porque es real!En el SuperSquad creamos un sistema para que el equipo de Pan D'monium pueda dar seguimiento y tener el control de sus órdenes de inicio a fin dando un mejor servicio a sus comensales.
 
-***
+También una de nuestras prioridades es evitar la generación de basura, evitando el uso de papel y así cuidando el planeta. Todo esto de forma rápida y eficiente. Además; por si fuera poco, con esto la/s administradora/s del lugar tendrán toda la data a su alcance para generar nuevas y mejores estrategias de marketing o en lo que ella la quiera la quiera utilizar.
 
-## 1. Preámbulo
+![Alt](https://user-images.githubusercontent.com/110297/42118136-996b4a52-7bc6-11e8-8a03-ada078754715.jpg)
 
-[React](https://reactjs.org/), [Angular](https://angular.io/) y [Vue](https://vuejs.org/) 
-son algunos de los _frameworks_ y _librerías_ de JavaScript más utilizados por
-lxs desarrolladorxs alrededor del mundo, y hay una razón para eso.
-En el contexto del navegador, [_mantener la interfaz sincronizada con el estado
-es difícil_](https://medium.com/dailyjs/the-deepest-reason-why-modern-javascript-frameworks-exist-933b86ebc445).
-Al elegir un _framework_ o _librería_ para nuestra interfaz, nos apoyamos en una
-serie de convenciones e implementaciones _probadas_ y _documentadas_ para
-resolver un problema común a toda interfaz web. Esto nos permite concentrarnos
-mejor (dedicar más tiempo) en las caractrísticas _específicas_ de
-nuestra aplicación.
+  
 
-Cuando elegimos una de estas tecnologías no solo importamos un pedacito de
-código para reusarlo (lo cuál es un gran valor per se), si no que adoptamos una
-**arquitectura**, una serie de **principios de diseño**, un **paradigma**, unas
-**abstracciones**, un **vocabulario**, una **comunidad**, etc...
-
-Como desarrolladora Front-end, estos kits de desarrollo pueden resultarte
-de gran ayuda para implementar rápidamente características de los proyectos en
-los que trabajes.
-
-## 2. Resumen del proyecto
-
-# BurgerQueen
-
-Nos contactó una cadena de comida rápida vegana para que contruyamos una interfaz
-para optimizar toma de pedidos y administración dentro de sus locales establecidos.
-
-Este proyecto supone un reto mayor a los que te has enfrentado ya que abarca la fase
-de producción y las áreas de UX y Front End deben colaborar y trabajar juntas, así
-como coordinar los requerimientos de tu cliente y de tus usuarios.
-
-**Sobre el diseño**
-El restaurante Pan D'Monium tiene el objetivo de estandarizar la forma de tomar pedidos y que eso se refleje en el tiempo de entrega tanto en sucursal para
-posteriormente implementarlo en el resto de la cadena, así también facilitar la
-cobranza e impactar el trabajo en cocina.
-
-Para lograr esto debes de entender el funcionamiento total del negocio, todo el
-flujo, los puntos de interacción y el rol de cada uno de los stakeholders que
-participan en el proceso. Para ello deberás prestar mucha atención a la
-investigación realizada por el equipo de UX design, sus *insights* y *findings*. 
-Así como dar feedback necesario sobre esos puntos. 
-El restaurante se encuentra en Av. Chilpancingo 129, Roma Sur y el nombre de tu
-contacto es Aurora. 
-
-Durante el proceso vas a estar en constante comunicación con tu equipo de UX Designers para resolver dudas y decisiones de diseño así como negociar los alcances del proyecto tanto con tu cliente como con tu equipo. Tu prioridad en este caso debe equilibrar tres puntos: Aprendizaje, Colaboración, Calidad del producto, no dejes de darle el seguimiento y la importancia hasta su implementación y presentación final. 
-
-## 3. Objetivos de aprendizaje
-
-1. El objetivo principal de es aprender a construir una _interfaz web_ usando
-   el _framework_ elegido (React, Vue o Angular). Todos estos frameworks de
-   Front-end atacan el mismo problema: **cómo mantener la interfaz y el estado
-   sincronizados**. Así que esta experiencia espera familiarizarte con el
-   concepto de _estado de pantalla_, y cómo cada cambio sobre el estado se va a
-   ir reflejando en la interfaz (por ejemplo, cada vez que agregamos un
-   _producto_ a un _pedido_, la interfaz debe actualizar la lista del pedido y
-   el total).
-
-2. Como objetivo secundario, deberás seguir las recomendaciones para PWAs
-   (_Progressive Web Apps_), lo cual incluye conceptos como **offline**. Para
-   guiarte con respecto a este tema te recomendamos usar [Lighthouse](https://developers.google.com/web/tools/lighthouse/?hl=es),
-   que es una herramienta de Google que nos ayuda a asegurar que nuestras web
-   apps sigan "buenas prácticas". De hecho, usaremos Lighthouse a la hora de
-   evaluar el proyecto.
-
-3. Finalmente, la interfaz debe estar diseñada específicamente para correr en
-   el/los dispositivo/s que mejor se acomode a las necesidades del cliente.
-   **Nota**: *esto debe ser validado con tu equipo de UX*.
-
-Tópicos: _react_, _angular_, _vue_, _pwa_, _offline-first_, _service-worker_.
+## Historias de Usuario.
 
 
-### Requerimientos
+#### [Historia de usuario 1] Mesero/a debe poder entrar a la aplicación.
 
-- Entender cómo se realizan los pedidos en Pan D'Monium y cuáles son las necesidades del personal de cocina y del personal de atención al público (meser@s y cajer@s).
-  - Ideal si dentro de la investigación toman fotos de las formas en que se toman pedidos actualmente.
-- Diseñar la versión para tablets de esta aplicación, teniendo en cuenta el modo de uso de esta tablet (por ej. El uso de la pantalla táctil) y los distintos tipos de usuarios.
-  - El diseño se debe adaptar a dos tamaños de tablets 9.7 y 7 pulgadas.
-  - Crear un ícono para poder agregar la pantalla al home de la tablet. Puedes usar [appicon](https://appicon.co/#app-icon) y     agregar las especificaciones para   el equipo de desarrollo.
-- El estado actual del pedido siempre visible mientras tomamos un pedido.
-- Necesitamos hacer una web app, así será accesible y funcionará bien en tablets iOS y Android.
-- Testear e iterar los diseños con personal del restaurante.
-- Entregar las especificaciones de diseño al equipo de desarrollo en Figma, Zeplin ó XD.
-- Hacer seguimiento y QA a la implementación realizada por el equipo de desarrollo.
-- Realizar pruebas de usabilidad de la aplicación web al final de cada entrega del equipo de desarrollo.
+Yo como mesero debo de poder entrar a la aplicación con un código personalizado, para poder tomar órdenes.  
 
+##### Criterios de aceptación:
 
-### Momentos Importantes
+- Debe de contar con un código válido para ingresar a la aplicación.
 
-- Kick off del proyecto en el que conocerás a tu squad integrado por UX Designers y FE Developers, tendrás que coordinarte con ellas y establecer flujos de trabajo.
-- [UX] Establecer contacto con el restaurante.
-- [UX] Al final de la primer semana hay un check in con el cliente.
-- [UX] Al final de la segunda semana hay una demo de soluciones y prototipos.
-- Al final de la tercer y cuarta semana hacer check in del alcance técnico con tu squad de FE Developers.
-- Al final de la quinta semana será la de Demo Final de la totalidad del proyecto.
+##### Definición de terminado:
 
-------
+- Debe de haber recibido un código para ingresar a la aplicación y debe ser redireccionado a su área de trabajo.
 
-Un pequeño restaurante de hamburguesas, que está creciendo, necesita una
-interfaz en la que puedan tomar pedidos usando una _tablet_, y enviarlos
-a la cocina para que se preparen ordenada y eficientemente (a través de un
-  _backend_ del que nos darán detalles más adelante).
+  
 
-![burger-queen](https://user-images.githubusercontent.com/110297/42118136-996b4a52-7bc6-11e8-8a03-ada078754715.jpg)
+#### [Historia de usuario 2] Mesero/a debo poder seleccionar o deseleccionar mesa o lugar de la barra donde él se encuentra el comensal.
 
+Yo como mesero debe de seleccionar la mesa o lugar de barra donde se encuentra el comensal para poder tener control de las órdenes y a donde entregarlas.
 
-## 4. Consideraciones generales
+##### Criterios de aceptación:
 
-Este proyecto se debe "resolver" en equipos.
+- Debe de contar con la distribución del área de trabajo y que sea entendible.
 
-Trabaja en una historia hasta terminarla antes de pasar a la siguiente. Trabaja
-hasta la historia que puedas en el tiempo especificado.
+- Debe de contar con la distribución de mesas y lugares de barra actualizados.
 
-La lógica del proyecto debe estar implementada completamente en JavaScript
-(ES6+), HTML y CSS y empaquetada de manera automatizada.
-En este proyecto Sí está permitido usar librerías o frameworks
-(debes elegir entre [React](https://reactjs.org/), [Vue](https://vuejs.org/) o
-[Angular](https://angular.io/)).
+- Podrá seleccionar el número de mesa o el número de lugar de la barra.
 
-La aplicación debe ser un _Single Page App_. Los pedidos los tomaremos desde una
-_tablet_, pero **no queremos una app nativa**, sino una web app que sea
-**responsive** y pueda funcionar **offline**.
+- En caso de que el comensal se cambie de lugar, el mesero podrá volver a seleccionar el lugar a donde el comensal se cambió.
 
-Necesitamos pensar bien en el aspecto UX de de quienes van a tomar los pedidos,
- el tamaño y aspecto de los botones, la visibilidad del estado actual del
- pedido, etc.
+- Podrá ingresar el nombre del comensal al cual se registrará la mesa.
 
-La aplicación desplegada debe tener 80% o más el las puntuaciones de
-Performance, Progressive Web App, Accessibility y Best Practices de Lighthouse.
+- Podrá ingresar el número de comensales.
 
-La aplicación debe hacer uso de `npm-scripts` y contar con scripts `start`,
-`test`, `build` y `deploy`, que se encarguen de arrancar, correr las pruebas,
-empaquetar y desplegar la aplicación respectivamente.
+##### Definición de terminado:
 
-Los tests unitarios deben cubrir un mínimo del 70% de _statements_, _functions_,
-_lines_ y _branches_.
+- El mesero puede modificar la mesa o el lugar de barra donde el comensal/les se encuentran, puede ingresar el nombre del comensal al cual quedara registrada la cuenta y podra ingresar el número de comesales por orden de alimentos.
 
-En este proyecto podrás usar _firebase_ u otros servicios como backend. 
-Deberán acordar cuál será la estructura de los datos y su permanencia.
+  
 
-Por otro lado, la parte de la interfaz no está incluida, por lo que, deberás
-definir la estructura de carpetas y archivos que consideres necesaria. Puedes
-guiarte de las convenciones del _framework_ elegido. Por ende, los _tests_ y el
-_setup_ necesario para ejecutarlos, serán hechos por ti.
+#### [Historia de usuario 3] Mesero/a debe poder tomar pedido de cliente.
 
-Para comenzar este proyecto tendrás que hacer un _fork_ y _clonar_ este
-repositorio.
-
-## 5. Criterios de aceptación mínimos del proyecto
-
-### Definición del productos
-
-Considerando la investigación de UX, deberán crear las historias de usuario que respondan a las necesidades encontradas y soluciones propuestas. 
-
-Cada historia debe estar compuesta por la _definición de la historia_, sus _Criterios de Aceptación_ y sus _Definiciones de terminado_. 
-
-Te dejamos esta Historia de Usuario que te puede servir como ejemplo o guía. **Nota:** _tu producto no necesariamente tiene que implementar esta historia._ 
-
-
-***
-
-#### [Historia de usuario 1] Mesero/a debe poder tomar pedido de cliente
-
-Yo como meserx quiero tomar el pedido de un cliente para no depender de mi mala
-memoria, para saber cuánto cobrar, y enviarlo a la cocina para evitar errores y
-que se puedan ir preparando en orden.
+Yo como mesero/a quiero tomar el pedido de un cliente para no depender de mi mala memoria, para saber cuánto cobrar, y enviarlo a la cocina para evitar errores y que se puedan ir preparando en orden.
 
 ##### Criterios de aceptación
 
-Lo que debe ocurrir para que se satisfagan las necesidades del usuario.
+- Anotar nombre de cliente.
 
-* Anotar nombre de cliente.
-* Agregar productos al pedido.
-* Eliminar productos.
-* Ver resumen y el total de la compra.
-* Enviar pedido a cocina (guardar en alguna base de datos).
-* Se ve y funciona bien en una _tablet_
+- Agregar productos al pedido.
+
+- Eliminar productos.
+
+- Ver resumen y el total de la compra.
+
+- Enviar pedido a cocina (guardar en alguna base de datos).
+
+- Se ve y funciona bien en una _tablet_
 
 ##### Definición de terminado
 
-Lo acordado que debe ocurrir para decir que la historia está terminada.
+- Debes haber recibido _code review_ de al menos una compañera.
 
-* Debes haber recibido _code review_ de al menos una compañera.
-* Haces _test_ unitarios y, además, has testeado tu producto manualmente.
-* Hiciste _tests_ de usabilidad e incorporaste el _feedback_ del usuario.
-* Desplegaste tu aplicación y has etiquetado tu versión (git tag).
+- Haces _test_ unitarios y, además, has testeado tu producto manualmente.
 
-***
+- Hiciste _tests_ de usabilidad e incorporaste el _feedback_ del usuario.
 
-## 6. Pistas, tips y lecturas complementarias
+- Desplegaste tu aplicación y has etiquetado tu versión (git tag).
 
-### Primeros pasos
-
-1. Procede a configurar/instalar el framework que hayan decidido usar.
   
-    Para el caso de **React.js**, **Vue.js** y **Angular**, cada uno tiene
-  su propio proceso de instalación, y ahora también cada uno tiene una 
-  herramienta de líneas de comando (CLI) que tiene automatizada las instalación
-  y configuración inicial de un proyecto nuevo y hará que este proceso
-  sea más sencillo. 
+
+## Sobre el diseño
+
   
-    - [Create React APP](https://create-react-app.dev/docs/getting-started)
-    - [Vue.js CLI](https://es-vuejs.github.io/vuejs.org/v2/guide/installation.html#CLI)
-    - [Angular CLI](https://angular.io/cli)
 
-2. Recuerda inicializar tu proyecto con para subirlo a GitHub
-    ```sh
-    git init
-    ```
-    Te recomendamos subir una versión inicial que contenga tu primer README.md y 
-    los archivos generados por el CLI de tu framework.
+El restaurante Pan D'Monium tiene el objetivo de estandarizar la forma de tomar pedidos y que eso se refleje en el tiempo de entrega tanto en sucursal para posteriormente implementarlo en el resto de la cadena, así también facilitar la cobranza e impactar el trabajo en cocina.
 
-    Luego crea una rama a partir de `master` para empezar a trabajar. Por ejemplo:`
+## Prototipado.
 
-   ```sh
-   git checkout -b develop
-   ```
+Para más detalles sobre el prototipo se adjunta el link en [Marvel] del proyecto (https://marvelapp.com/cdg1d4a/screen/61098993).
 
-3. Crear proyecto en [Firebase](https://firebase.google.com/)
-
-4. Habilitar Firestore (_comenzar en modo bloqueado_) en sección de "Bases de
-   Datos" de [Firebase console](https://console.firebase.google.com/).
-
-5. Instalar utilidad de línea de comando de Firebase:
-
-   ```sh
-   npm i -g firebase-tools
-   ```
-
-7. Agregamos entorno de producción para desplegar:
-
-   ```sh
-   firebase use --add
-   ```
-
-8. Desplegar: `firebase deploy`
-
-9. Llegado a este punto ya puedes comenzar con el _front-end_ :wink:
-
-***
+1. El usuario ingresa un código, para acceder a la aplicación.
 
 
+![Proto1](https://github.com/MercedesDavila/Pandmonium/blob/branch-Mercedes/img/proto_1.JPG?raw=true)
 
-### Otros recursos
+ 
+3. Si el login fue correcto el mesero visualizará la pantalla para elección de barra o mesa, podrá ingresar el número de comensales y el nombre al cual se registrará la mesa o lugar en la barra según sea el caso.
 
-#### Frameworks / libraries
+![Proto2](https://github.com/MercedesDavila/Pandmonium/blob/branch-Mercedes/img/proto_2.JPG?raw=true)
 
-* Documentación de [React](https://reactjs.org/), también se encuentra la versión de [React en español](https://es.reactjs.org).
-* Documentación de [Vue](https://vuejs.org/)
-* Documentación de [Angular](https://angular.io/)
+3. En el menú se resaltara el icono que fue seleccionado y aparecerá la lista de alimentos que corresponde a cada icono, se podrán agregar comentarios respecto a la preparación de los alimentos.
 
-#### Herramientas
+![Proto3](https://github.com/MercedesDavila/Pandmonium/blob/master/img/proto_3.JPG?raw=true)
 
-* [npm-scripts](https://docs.npmjs.com/misc/scripts)
-* [Babel](https://babeljs.io/)
-* [webpack](https://webpack.js.org/)
+4. Se podrá visualizar la fecha, el concepto y el precio de los productos anteriormente seleccionados, se podrá eliminar y/o editar un producto y se generará el importe a pagar.
 
-#### PWA
+![Proto4](https://github.com/MercedesDavila/Pandmonium/blob/master/img/proto_4.JPG?raw=true)
 
-* [Tu primera Progressive Web App - Google developers](https://developers.google.com/web/fundamentals/codelabs/your-first-pwapp/?hl=es)
-* [Progressive Web Apps - codigofacilito.com](https://codigofacilito.com/articulos/progressive-apps)
-* [offlinefirst.org](http://offlinefirst.org/)
-* [Usando Service Workers - MDN](https://developer.mozilla.org/es/docs/Web/API/Service_Worker_API/Using_Service_Workers)
-* [Cómo habilitar datos sin conexión - Firebase Docs](https://firebase.google.com/docs/firestore/manage-data/enable-offline?hl=es-419)
+ 
+5. El mesero podrá visualizar las mesas ocupadas y al dar click en cada sección se visualizará la información de pedidos en cada mesa.
 
-#### Serverless
+![Proto5](https://github.com/MercedesDavila/Pandmonium/blob/master/img/proto_5.JPG?raw=true)
 
-* [Qué es eso de serverless? - @PamRucinque en Medium](https://medium.com/@PamRucinque/qu%C3%A9-es-eso-de-serverless-f4f6c8949b87)
-* [Qué es Serverless? | FooBar - YouTube](https://www.youtube.com/watch?v=_SYHUpLi-2U)
-* [Firebase](https://firebase.google.com/)
-* [Serverless Architectures - Martin Fowler](https://www.martinfowler.com/articles/serverless.html)
+![Proto6](https://github.com/MercedesDavila/Pandmonium/blob/master/img/proto_6.JPG?raw=true)
 
-#### Cloud functions
+  
+  
 
-* [Cloud functions - Firebase Docs](https://firebase.google.com/docs/functions/?hl=es-419)
+## Plan de Acción.:bookmark_tabs:
 
+Para este proyecto se siguió el siguiente plan de acción:
 
-## 7. Autoevaluación
+### Inicializar el proyecto.:computer:
 
-NOTA: Esta sección incluye una lista de habilidades que se podrán tener en
-cuenta a la hora de evaluar el proyecto. Los niveles esperados son _sugerencias_
-así como _guías_ en el diseño curricular, pero no reglas absolutas.
+- [x] Forkear y clonar repositorio de [Proyecto-Padmonium](https://github.com/MercedesDavila/Pandmonium).
+- [x] Instalar el framework que se utilizara (React).
+- [x] Crear proyecto en Firebase.
+- [x] Dar permisos a los integrantes del equipo en la consola de Firebase.
+- [x] Habilitar Firestore(Base de Datos).
+- [x] Instalar línea de comando de Firebase.
+- [x] Desplegar: `firebase deploy`
 
-Te aconsejamos revisar [nuestra rúbrica](https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vRktPN4ilZtkRN5tUb3DVhgeihwlzk63_-JI3moA-bXpKDbHDioAK2H3qbrwWNb0Ql4wX22Tgv7-PDv/pubhtml)
-para ver la descripción detallada de cada _habilidad_ y cada _nivel_. Te
-recomendamos también que trates de aplicarte la rúbrica a tí misma y/o a los
-proyectos de tus compañeras a lo largo del Bootcamp para ir viendo tu evolución.
+### Diseño de la Aplicación.
 
-### Habilidades Blandas (Soft Skills)
+- [x] Entender el prototipo elaborado por las compañeras de UX.
+- [x] Entender el flujo del proyecto.
+- [x] Crear las historias de usuario que respondan a las necesidades encontradas y soluciones propuestas.
 
-| Habilidad                                       |
-|-------------------------------------------------|
-| Planificación, organización y manejo del tiempo |
-| Autoaprendizaje                                 |
-| Presentaciones                                  |
-| Adaptabilidad                                   |
-| Solución de problemas                           |
-| Trabajo en equipo                               |
-| Responsabilidad                                 |
-| Dar y recibir feedback                          |
-| Comunicación eficaz                             |
+### Primeros Pasos.
 
-### Habilidades Técnicas (Front-end)
+- [x] Organización del proyecto.
+- [x] Leer documentación de React.
+- [x] Instalar React.
+- [x] Instalar Firebase y crear Base de Datos.
+- [x] Instalar react-router-dom.
+- [x] Entender Boilerplate del proyecto.
+- [x] Crear primer "Hola Mundo".
 
-| Habilidad                               |
-|-----------------------------------------|
-| **Computer Science (CS)**               |
-| Lógica / Algoritmia                     |
-| Arquitectura                            |
-| **Source Code Management (SCM)**        |
-| Git                                     |
-| GitHub                                  |
-| **JavaScript**                          |
-| Estilo (linter js)                      |
-| Nomenclatura / semántica                |
-| Uso de funciones / modularidad          |
-| Estructuras de datos                    |
-| Tests                                   |
-| **HTML/CSS**                            |
-| Correctitud / Validación                |
-| Estilo (linter html)                    |
-| Semántica / Arquitectura de información |
-| DRY (CSS)                               |
-| Responsive Web Design                   |
+### Comenzar a programar.
 
-### Habilidades Técnicas (UX)
+- [x] Dividir tareas.
+- [x] Entender componentes/estados.
+- [x] SPA.
+- [x] Verificar que `Firebase deploy`funciona.
+- [x] Tenemos todo listo para empezar a Programar.
 
-| Habilidad       |
-|-----------------|
-| User Centricity |
-| Visual Design   |
+# Desarrollo. :computer:
 
-***
+Herramientas utilizadas para el desarrollo de este proyecto:
+- JavaScript.
+- React.
+- CSS.
+- App Icon.
 
-## Checklist
+Construido con:
+
+- Visual Studio Code, editor de código fuente.
+
+## Otros recursos.:file_folder:
+
+#### Frameworks / libraries.
+
+- Documentación de [React](https://reactjs.org/), también se encuentra la versión de [React en español]
+- [App Icon](https://appicon.co/#app-icon) Crear un ícono para poder agregar la pantalla al home de la tablet.
+
+#### Herramientas.
+
+- [npm-scripts](https://docs.npmjs.com/misc/scripts)
+- [Babel](https://babeljs.io/)
+- [webpack](https://webpack.js.org/)
+
+#### PWA.
+
+- [Tu primera Progressive Web App - Google developers](https://developers.google.com/web/fundamentals/codelabs/your-first-pwapp/?hl=es)
+- [Progressive Web Apps - codigofacilito.com](https://codigofacilito.com/articulos/progressive-apps)
+- [offlinefirst.org](http://offlinefirst.org/)
+- [Usando Service Workers - MDN](https://developer.mozilla.org/es/docs/Web/API/Service_Worker_API/Using_Service_Workers)
+- [Cómo habilitar datos sin conexión - Firebase Docs](https://firebase.google.com/docs/firestore/manage-data/enable-offline?hl=es-419)
+  
+#### Serverless.
+
+- [Qué es eso de serverless? - @PamRucinque en Medium](https://medium.com/@PamRucinque/qu%C3%A9-es-eso-de-serverless-f4f6c8949b87)
+- [Qué es Serverless? | FooBar - YouTube](https://www.youtube.com/watch?v=_SYHUpLi-2U)
+- [Firebase](https://firebase.google.com/)
+- [Serverless Architectures - Martin Fowler](https://www.martinfowler.com/articles/serverless.html)
+
+#### Cloud functions.
+
+- [Cloud functions - Firebase Docs](https://firebase.google.com/docs/functions/?hl=es-419)
+  
+
+## Autores. :pencil2:
+
+Este proyecto fue desarrollado e implementado por:
+
+- **Mercedes Dávila Vázquez** [Github](https://github.com/MercedesDavila)
+- **Gabriela Bárcena Villanueva**[Github](https://github.com/gbarcenav)
+- **Berenice Ramos** [Github](https://github.com/Bere333)
+- **Ivon Garduño Crespo** [Github](https://github.com/BLANK-TECH)
+- **Tania Juarez** [Github](https://github.com/TaniaEJuarez)
+  
+
+## Checklist:ballot_box_with_check:
+
+  
+  
 
 ### General
 
-* [ ] Producto final sigue los lineamientos del diseño.
+  
+
+* [x] Producto final sigue los lineamientos del diseño.
+
+  
 
 ### `README.md`
 
-* [ ] Documenta proceso de diseño.
-* [ ] Incluye info para developers (deps, instalación, uso, despliegue, testing,
-  ...).
+  
+
+* [x] Documenta proceso de diseño.
+
+* [ ] Incluye info para developers (deps, instalación, uso, despliegue, testing,...).
+
+  
 
 ### Lighthouse (opcional)
 
-* [ ] 80% o más en sección _Performance_.
-* [ ] 80% o más en sección _Progressive Web App_.
-* [ ] 80% o más en sección _Accessibility_.
-* [ ] 80% o más en sección _Best Practices_.
+  
+
+* [x] 80% o más en sección _Performance_.
+
+* [x] 80% o más en sección _Progressive Web App_.
+
+* [x] 80% o más en sección _Accessibility_.
+
+* [x] 80% o más en sección _Best Practices_.
+
+  
 
 ### Tests
 
+  
+
 * [ ] 70% o más en cobertura de _statements_.
+
 * [ ] 70% o más en cobertura de _functions_.
+
 * [ ] 70% o más en cobertura de _lines_.
+
 * [ ] 70% o más en cobertura de _branches_.
+
+  
 
 ### UX
 
-* [ ] Se _ve_ bien y _funciona_ bien en los dispositivos acordados.
-* [ ] Se puede _agregar a la pantalla de inicio_ como web app (tiene manifest,
-  íconos, ...) en iOS y Android.
-* [ ] Uso fácil en pantallas táctiles (touch screens).
-* [ ] Estado actual del pedido siempre visible mientras tomamos un pedido.
+  
 
+* [x] Se _ve_ bien y _funciona_ bien en los dispositivos acordados.
+* [ ] Se puede _agregar a la pantalla de inicio_ como web app (tiene manifest, íconos, ...) en iOS y Android.
+* [x] Uso fácil en pantallas táctiles (touch screens).
+* [ ] Estado actual del pedido siempre visible mientras tomamos un pedido.
