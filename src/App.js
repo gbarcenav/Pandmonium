@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./index.css";
 import "./App.css";
 import Login from "./components/pages/login";
 import Places from "./components/pages/places";
