@@ -2,12 +2,12 @@
 import React, { Component } from "react";
 import burger from './ux_resources/ICONOS MENU/ICONO_HAMBURGUESA_MENU.png';
 import pizza from './ux_resources/ICONOS MENU/PIZZA_ICONO.png';
-import papatoes from './ux_resources/ICONOS MENU/ICONO_OTROS_PAPAS.png';
-import hotdog from './ux_resources/ICONOS MENU/HOT_DOG_MENU.png';
-import cake from './ux_resources/ICONOS MENU/ICONO_POSTREMENU.png';
-import salad from './ux_resources/ICONOS MENU/ICONO_ENSALADA_MENU.png';
-import icecream from './ux_resources/ICONOS MENU/ICONO_POSTRE_MENU.png';
-import frape from './ux_resources/ICONOS MENU/ICONO_MALTEADA_MENU.png';
+import papatoes from './ux_resources/ICONOS MENU/ICONOS_PAPAS.png';
+import hotdog from './ux_resources/ICONOS MENU/ICONO_HOT_DOG.png';
+import cake from './ux_resources/ICONOS MENU/ICONO_CAKE.png';
+import salad from './ux_resources/ICONOS MENU/ICONO_SALAD.png';
+import icecream from './ux_resources/ICONOS MENU/ICON_ICECREAM.png';
+import frape from './ux_resources/ICONOS MENU/ICON_MILKSHAKE.png';
 
 
 class Foodimages extends Component {
