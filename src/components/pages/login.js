@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import firebase from '../Firebase';
+import firebase from '../../Firebase';
 import logo from "../ux_resources/Logo2017-02.png";
 import Input from "../input";
 import BtnGreen from "../btn_green";
@@ -10,7 +10,6 @@ class Login extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      noEmpleado,
       empleado: {},
       key: ''
     };
