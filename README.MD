@@ -1,6 +1,9 @@
 # Burger Queen.
 # PanD'monium.:fork_and_knife:
   
+## Link de Presentación
+
+[Segundo Sprint - Super Squad](https://docs.google.com/presentation/d/16P9f-oEIehRiQct_e6OcknuabbNu9bI1EbAjycLLmLM/edit#slide=id.g6395215ffb_0_25)
 
 ## Definición del producto.
 
