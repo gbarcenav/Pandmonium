@@ -5,6 +5,7 @@ import TagFood from '../tagfood'
 import Foodbuy from '../foodbuy.js'
 import Numbuy from '../numbuy.js'
 import NumbuyWhite from '../numbuy-white.js'
+import BtnGreen from '../btn_green.js'
 
 
 class Menu extends Component {
@@ -26,6 +27,8 @@ class Menu extends Component {
                 <div><Foodbuy/></div>
                 <div><Numbuy/></div>
               </div>
+              <div><textarea className="comment" placeholder="Comentarios"></textarea></div>
+              <div><BtnGreen btntext="ENVIAR"/></div>
           </div>
 
 
