@@ -1,58 +1,72 @@
 import React, { Component } from "react";
-import PlaceSelection from "../Placeselectionbar";
-import Input from "../input";
+import Navbar from "../navbar";
+import GreenRectangle from "../green_rectangle";
+import FormNameNumber from "../number_name_form";
 import BtnGreen from "../btn_green";
-
 import Bars from "../bars";
 import Tables from "../tables";
-import Navbar from "../navbar";
+import { Link } from "react-router-dom";
+
 
 class Places extends Component {
+  state = {
+    number: null
+  }
+  
+  changeTitle = (title,background) =>{
+    if(background == null){
+      this.setState({
+        number: title
+      }) 
+    }else{
+      this.setState({
+        number: null
+      }) 
+      }
+    }   
+  
+  
   render() {
     return (
       <div className="places-screen">
         <Navbar />
         <div className="tables-bars">
           <div className="bar">
-            <Bars number="1" />
-            <Bars number="2" />
-            <Bars number="3" />
+            <Bars number="1" changeTitle={this.changeTitle}/>
+            <Bars number="2" changeTitle={this.changeTitle}/>
+            <Bars number="3" changeTitle={this.changeTitle}/>
           </div>
 
           <div className="tables">
-            <Tables number="MESA 1" />
-            <Tables number="MESA 2" />
-            <Tables number="MESA 3" />
+            <Tables number="MESA 1" changeTitle={this.changeTitle}/>
+            <Tables number="MESA 2" changeTitle={this.changeTitle}/>
+            <Tables number="MESA 3" changeTitle={this.changeTitle}/>
           </div>
 
           <div className="bar">
-            <Bars number="4" />
-            <Bars number="5" />
-            <Bars number="6" />
-            <Bars number="7" />
-            <Bars number="8" />
+            <Bars number="4" changeTitle={this.changeTitle}/>
+            <Bars number="5" changeTitle={this.changeTitle}/>
+            <Bars number="6" changeTitle={this.changeTitle}/>
+            <Bars number="7" changeTitle={this.changeTitle}/>
+            <Bars number="8" changeTitle={this.changeTitle}/>
           </div>
 
           <div className="tables">
-            <Tables number="MESA 4" />
-            <Tables number="MESA 5" />
+            <Tables number="MESA 4" changeTitle={this.changeTitle}/>
+            <Tables number="MESA 5" changeTitle={this.changeTitle}/>
           </div>
         </div>
 
-        <div className="rectangle-tabar-selection">
-          {/* Debería de cambiar texto según la selección */}
-          <PlaceSelection place="MESA 2" />
-        </div>
-        <form className="people-name-number">
-          <p>Personas</p>
-          <Input classCSS="people-number" typeInput="number" />
-          <br></br>
-          <p>Nombre del cliente</p>
-          <Input classCSS="input-name" typeInput="text" />
-          <BtnGreen btntext="ABRIR MESA" />
-        </form>
+          <GreenRectangle classCSS="rectangle-tabar-selection" place={this.state.number} />
+          <FormNameNumber classCSS="people-name-number" />
+          <Link to="/Menu">
+          <BtnGreen btntext="ABRIR MESA"/>
+          </Link>
+          
+    
       </div>
-    );
+
+    )
   }
 }
 

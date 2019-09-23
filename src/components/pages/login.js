@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import firebase from '../../Firebase';
+
+import RectanglesLogin from "../rectangles_login";
 import logo from "../ux_resources/Logo2017-02.png";
-import Input from "../input";
-import BtnGreen from "../btn_green";
-import {Link} from "react-router-dom";
+import CodeForm from "../code_form";
 
 class Login extends Component {
 
@@ -42,24 +41,13 @@ class Login extends Component {
   render() {
     return (
       <div className="login-screen">
-        <div className="rectangles">
-          <div className="black-rectangle">
-            <div className="green-rectangle"></div>
-          </div>
-        </div>
-
+        <RectanglesLogin />
         <div className="backg-img">
           <img src={logo} className="logo-app" alt="logo" />
 
           <h1 className="greeting-login">¡HOLA!</h1>
-          <form className="input-btn-form">
-            <Input placeholder="INGRESA TU CÓDIGO" classCSS="input-login" />
-            <br></br>
-            <Link to="/Places">
-              <BtnGreen btntext="ENTRAR" />
-            </Link>
-            
-          </form>
+
+          <CodeForm />
         </div>
       </div>
     );

@@ -1,26 +1,29 @@
-
-import React, {Component} from 'react';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
 import Login from "./components/pages/login";
 import Places from "./components/pages/places";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import DetailPlace from "./components/pages/detail_place";
+import AccountList from "./components/pages/account_list";
+import Menu from "./components/pages/menu";
 
-class App extends Component{
-  
-  render(){
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+class App extends Component {
+  render() {
     return (
-      <BrowserRouter>
-          <Switch>
+      <Router basename={window.location.pathname || ''} >
+      
+        <Switch>
           <Route exact path="/" component={Login} />
           <Route path="/Places" component={Places} />
-        {/* Aqui llamo a la pantalla de inicio: <Inicio/> */}
-        {/* Aqui llamo a la pantalla de orden: <PantallaOrden /> */}
+          <Route path="/Menu" component={Menu}/>
+          <Route path="/DetailPlace" component={DetailPlace} />
+          <Route path="/Menu" component={Menu} />
+          <Route path="/AccountList" component={AccountList} />
         </Switch>
-        {/* </div> */}
-      </BrowserRouter>
-    )
+      </Router>
+    );
   }
-
 }
 
 export default App;

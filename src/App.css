@@ -8,6 +8,7 @@
 body {
   font-family: "Playfair Display", serif;
   color: #0d0d0d;
+  background-color: white;
 }
 
 h1 {
@@ -23,6 +24,7 @@ h2 {
 
 p {
   font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* FONDO Y ESTILOS DE PANTALLA LOGIN */
@@ -120,25 +122,25 @@ p {
 /* ESTILOS DE PANTALLAS PLACES */
 .places-screen {
   height: 100vh;
+  text-align: center;
 }
 
 .navbar {
   width: 100%;
   height: auto;
-  background: #39bf4d;
   padding: 20px;
   text-align: center;
 }
 
 .menu-ham {
-  width: 100px;
+  width: 65px;
   left: 5vw;
   margin-top: 22px;
   position: absolute;
 }
 
 .logo-nav {
-  width: 250px;
+  width: 200px;
   position: relative;
 }
 
@@ -187,14 +189,17 @@ p {
 
 .rectangle-tabar-selection {
   width: 100%;
-  height: 5vh;
+  height: auto;
   background: #39bf4dad;
   margin-top: 100px;
-}
-
-.rectangle-tabar-selection h2 {
-  padding-top: 10px;
-  padding-left: 30px;
+  padding: 16px 40px;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 20px;
+  border: transparent;
+  outline: 0px;
+  text-align: left;
 }
 
 /* Sección de registro de lugar y numero de personas */
@@ -223,8 +228,9 @@ p {
   font-weight: 700;
 }
 
-.people-number {
-  width: 20vw;
+/* Input Spiner */
+.input-spiner {
+  width: 10vw;
   height: 50px;
   border: solid gray 8px;
   border-radius: 20px;
@@ -234,3 +240,289 @@ p {
   font-size: 30px;
   font-weight: 700;
 }
+
+/* @media (min-width: 768px) { No borrar */
+  .navbar {/*No borrar*/
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    display: flex;
+    justify-items: center;
+    flex-direction: row;
+  }
+
+.logo-nav {/*No borrar*/
+  height: 7vh;
+  width: 7rem;
+  margin-left: 10rem;
+
+}
+.menu-ham {/*No borrar*/
+  height: 5vh;
+  display:flex;
+  width: 3rem;
+  margin-top: 0.3rem;
+}
+.imagenes-menu{/*No borrar*/
+  height: 10vh;
+  width: 30rem;
+  /* background-color: green; */
+  border-color: black;
+  align-items: center;
+  display: flex;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 2.5rem; 
+  flex-wrap: wrap;
+  
+}
+.food{/*No borrar*/
+  height: 4.8vh;
+  margin-left: 3rem;
+  margin-top: 0.6rem;
+  transition: background-color .5s;
+}
+.food:hover{/*No borrar*/
+  background-color: #39bf4d;
+  border-radius: 5px;
+
+}
+.tag-food{/*No borrar*/
+  width: 11rem;
+  height: 2.7vh;
+  background-color: white;
+  border-radius: 5px;
+  border-color: #CDCDCD;
+  border-style: solid;
+  margin-top: 2rem;
+  color: #0d0d0d;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+  margin:0.5rem 0.5rem 0.5rem 0.5rem;
+  
+}
+p{/*No borrar*/
+  font-size: 0.9rem;
+  margin:0rem 0.2rem 0.5rem 2.8rem;
+}
+.All-menu{/*No borrar*/
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-items: center;
+  width: 40rem;
+  height: 80vh;
+  
+  
+}
+.menu-draws{/*No borrar*/
+  height: 10vh;
+  margin-top: -1.4rem;
+}
+.tag-ham{/*No borrar*/
+  height: 15vh;
+  margin-left: 1rem;
+ 
+}
+.menu-buy{/*No borrar*/
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -1rem;
+}
+.input-buy{/*No borrar*/
+  width: 2rem;
+  height: 2.7vh;
+  border-radius: 5px;
+  border-color: #CDCDCD;
+  border-style: solid;
+  margin-top: 0.5rem;
+  margin-left: 0rem;
+  color: #0d0d0d;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.input-foodbuy, .btn-numbuy, .btn-numbuy-white, .menu{/*No borrar*/
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.btn-black, .btn-white{/*No borrar*/
+  width: 2rem;
+  height: 2.7vh;
+  border-radius: 50px;
+  background-color: #0d0d0d;
+  margin-top: 0.5rem;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+
+}
+.btn-white{/*No borrar*/
+  background-color: white;
+  color: #0d0d0d;
+  border-style: solid;
+  border-color: #0d0d0d;
+  margin-left: 0.7rem;
+}
+.text-menu{/*No borrar*/
+  margin-top: 3rem;
+  margin-left: 11rem;
+  display: flex;
+  flex-direction: row;
+}
+.btn-green{/*No borrar*/
+  width: 14rem;
+  height: 4vh;
+  margin-left: 8rem;
+  font-size: 25px;
+  margin-top: 1rem;
+}
+.comment{/*No borrar*/
+  width: 20rem;
+  height: 6vh;
+  background-color: #CDCDCD;
+  margin-left: 5rem;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.menu{
+  width: 768px;
+  height: 1024px;
+}
+/* } */
+/* ----------------------------------------------------------------------------------- */
+.people-name-number label {
+  margin-right: 20px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/* ESTILOS PANTALLA DE DETALLE */
+.rectangle-tabar-detail {
+  width: 100%;
+  height: auto;
+  background: #39bf4dad;
+  padding: 10px;
+  padding: 16px 40px;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 20px;
+  border: transparent;
+  outline: 0px;
+  text-align: left;
+}
+
+.people-number-detail {
+  width: 100%;
+  height: auto;
+  text-align: end;
+  padding-right: 80px;
+  padding-top: 30px;
+}
+
+/* Tabla de detalle de consumo de comensal */
+
+.people-number-detail label {
+  margin-right: 20px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.table-detail-guest {
+  width: 90vw;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  color: gray;
+}
+
+th,
+td {
+  border: rgb(182, 181, 181) solid 6px;
+  padding: 10px;
+}
+
+td img {
+  width: 30px;
+}
+
+.options_detail {
+  position: relative;
+  margin-right: -75px;
+  margin-left: 20px;
+}
+
+.cost {
+  text-align: right;
+}
+
+.comment {
+  text-align: center;
+}
+
+/* Sección de total */
+.total {
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: gray;
+  padding: 30px;
+  text-align: center;
+}
+
+.total button {
+  width: 280px;
+  margin-top: 0px;
+}
+
+.total-input {
+  width: 200px;
+  height: 70px;
+  border: solid gray 8px;
+  border-radius: 20px;
+  margin-right: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: gray;
+  padding: 30px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.total label {
+  margin-right: 20px;
+}
+
+/* SECCIÓN LISTA DE CUENTAS */
+.rectangle-account {
+  width: 100%;
+  height: auto;
+  background: #39bf4dad;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 16px;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 20px;
+  border: transparent;
+  outline: 0px;
+}
+
+
