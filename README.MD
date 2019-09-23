@@ -1,6 +1,7 @@
 # Burger Queen.
 # PanD'monium.:fork_and_knife:
   
+  ### [Link de Presentación] (https://docs.google.com/presentation/d/16P9f-oEIehRiQct_e6OcknuabbNu9bI1EbAjycLLmLM/edit?usp=sharing)
 
 ## Definición del producto.
 

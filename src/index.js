@@ -1,13 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './index.css';
 import './App.css';
-
-// import './App.css';
-// import App from './App';
-import Menu from './components/pages/menu.js'
+import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<Menu />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
 
 
 // If you want your app to work offline and load faster, you can change
