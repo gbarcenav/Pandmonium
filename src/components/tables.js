@@ -19,7 +19,7 @@ class Tables extends Component {
 
   handleChange = e => {
     const title = this.props.number;
-
+    // console.log(title);
     this.changeColor();
     this.props.changeTitle(title, this.state.background);
   };
