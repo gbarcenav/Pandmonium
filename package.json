@@ -2,7 +2,7 @@
   "name": "pandmonium",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://blank-tech.github.io/Pandmonium/",
+  "homepage": ".",
   "dependencies": {
     "react": "^16.9.0",
     "react-burger-menu": "^2.6.11",

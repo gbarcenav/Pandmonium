@@ -12,12 +12,10 @@ class Bars extends Component {
       this.setState({
         background: '#39bf4d',
       })
-    }
-    else{
+    } else {
       this.setState({
         background: null,
       })
-      
     }   
   }
   
