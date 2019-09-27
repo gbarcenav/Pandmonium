@@ -55,10 +55,21 @@ class Places extends Component {
           </div>
         </div>
 
+<<<<<<< HEAD
         <GreenRectangle
           classCSS="rectangle-tabar-selection"
           place={this.state.number}
         />
+=======
+          <GreenRectangle classCSS="rectangle-tabar-selection" place={this.state.number} />
+          <FormNameNumber classCSS="people-name-number" />
+          <Link to="/Menu">
+          <BtnGreen type="submit" btntext="ABRIR MESA"/>
+          </Link>
+          
+    
+      </div>
+>>>>>>> upstream/master
 
         <FormNameNumber classCSS="people-name-number" />
         <Link to="/Menu">
