@@ -10,7 +10,7 @@ import icecream from './ux_resources/ICONOS MENU/ICON_ICECREAM.png';
 import frape from './ux_resources/ICONOS MENU/ICON_MILKSHAKE.png';
 
 
-class Foodimages extends Component {
+class MenuImages extends Component {
   render() {
     return(
       
@@ -41,6 +41,6 @@ class Foodimages extends Component {
 // // // const element = <Input placeholder="Ingresa tu código" />;
 
 
-export default Foodimages ;
+export default MenuImages ;
 
   
