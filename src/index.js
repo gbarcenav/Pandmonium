@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './index.css';
 import './App.css';
+import App from './App';
+// import firebaseApp from './firebase'; 
 
-// import './App.css';
-// import App from './App';
-import Menu from './components/pages/menu.js'
 import * as serviceWorker from './serviceWorker';
 import App from './App';
 

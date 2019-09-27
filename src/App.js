@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./index.css";
 import "./App.css";
 import Login from "./components/pages/login";
 import Places from "./components/pages/places";
@@ -11,7 +12,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 class App extends Component {
   render() {
     return (
-      <Router  basename = {window.location.pathname || ''}>
+      <Router basename={window.location.pathname || ''} >
+      
         <Switch>
           <Route exact path="/" component={Login} />
           <Route path="/Places" component={Places} />

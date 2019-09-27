@@ -1,6 +1,9 @@
 # Burger Queen.
 # PanD'monium.:fork_and_knife:
   
+## Link de Presentación
+
+[Segundo Sprint - Super Squad](https://docs.google.com/presentation/d/16P9f-oEIehRiQct_e6OcknuabbNu9bI1EbAjycLLmLM/edit#slide=id.g6395215ffb_0_25)
 
 ## Definición del producto.
 
@@ -214,62 +217,43 @@ Este proyecto fue desarrollado e implementado por:
 - **Berenice Ramos** [Github](https://github.com/Bere333)
 - **Ivon Garduño Crespo** [Github](https://github.com/BLANK-TECH)
 - **Tania Juarez** [Github](https://github.com/TaniaEJuarez)
+
   
+##  ¿Cómo ejecutar este proyecto?
+
+Solo necesitas un navegador y dar click en el siguiente link:
+
+[Pan D'monium](https://mercedesdavila.github.io/Pandmonium/).
+
+
 
 ## Checklist:ballot_box_with_check:
 
-  
-  
-
 ### General
-
-  
 
 * [x] Producto final sigue los lineamientos del diseño.
 
-  
-
 ### `README.md`
 
-  
-
 * [x] Documenta proceso de diseño.
-
 * [ ] Incluye info para developers (deps, instalación, uso, despliegue, testing,...).
 
-  
 
 ### Lighthouse (opcional)
-
   
-
 * [x] 80% o más en sección _Performance_.
-
 * [x] 80% o más en sección _Progressive Web App_.
-
 * [x] 80% o más en sección _Accessibility_.
-
 * [x] 80% o más en sección _Best Practices_.
-
   
-
 ### Tests
-
-  
-
+ 
 * [ ] 70% o más en cobertura de _statements_.
-
 * [ ] 70% o más en cobertura de _functions_.
-
 * [ ] 70% o más en cobertura de _lines_.
-
 * [ ] 70% o más en cobertura de _branches_.
-
   
-
 ### UX
-
-  
 
 * [x] Se _ve_ bien y _funciona_ bien en los dispositivos acordados.
 * [ ] Se puede _agregar a la pantalla de inicio_ como web app (tiene manifest, íconos, ...) en iOS y Android.
