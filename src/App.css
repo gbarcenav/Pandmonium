@@ -130,14 +130,10 @@ p {
   height: auto;
   padding: 20px;
   text-align: center;
+  overflow: auto;
 }
 
-.menu-ham {
-  width: 65px;
-  left: 5vw;
-  margin-top: 22px;
-  position: absolute;
-}
+
 
 .logo-nav {
   width: 200px;
@@ -189,7 +185,7 @@ p {
 
 .rectangle-tabar-selection {
   width: 100%;
-  height: auto;
+  height: 8%;
   background: #39bf4dad;
   margin-top: 100px;
   padding: 16px 40px;
@@ -200,6 +196,11 @@ p {
   border: transparent;
   outline: 0px;
   text-align: left;
+}
+
+.rectangle-tabar-selection h2 {
+  padding-top: 10px;
+  padding-left: 30px;
 }
 
 /* Sección de registro de lugar y numero de personas */
@@ -254,7 +255,7 @@ p {
 .logo-nav {/*No borrar*/
   height: 7vh;
   width: 7rem;
-  margin-left: 10rem;
+  margin-left: 29rem;
 
 }
 .menu-ham {/*No borrar*/
@@ -311,8 +312,7 @@ p{/*No borrar*/
   flex-direction: column;
   justify-items: center;
   width: 40rem;
-  height: 80vh;
-  
+  height: 80vh;  
   
 }
 .menu-draws{/*No borrar*/
@@ -525,4 +525,172 @@ td img {
   outline: 0px;
 }
 
+/* Individual item */
+.bm-item {
+  display: inline-block;
+
+  /* Our sidebar item styling */
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #39BF4D;
+  transition: color 0.2s;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Change color on hover */
+.bm-item:hover {
+  color: #39BF4D;
+}
+
+/* The rest copied directly from react-burger-menu docs */
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 56px;
+  height: 50px;
+  left: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #e2e4eb;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #030303;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* SECCIÓN MENÚ */
+.menu-draws {
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+​
+.menu-draws button {
+  width: 160px;
+  height: 160px;
+  padding: 30px;
+  margin: 6px 35px;
+  border: transparent;
+  border-radius: 25px;
+  background: transparent;
+  outline: 0px;
+}
+​
+.menu-draws button:hover {
+  background-color: #39bf4d;
+}
+​
+.menu-draws img {
+  width: 100%;
+  height: auto;
+}
+​
+.menu-buy {
+  width: 90vw;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3px;
+  text-align: center;
+}
+​
+.menu-buy div {
+  width: inherit;
+  height: auto;
+}
+​
+.tag-menu-product {
+  width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #0d0d0d;
+  margin-bottom: 20px;
+}
+​
+.tag-menu-product th,
+td {
+  border-color: transparent;
+}
+​
+.tag-menu-product thead tr th {
+  font-size: 30px;
+  text-align: center;
+}
+​
+.tag-menu-product tbody tr th {
+  width: 236px;
+  font-size: 30px;
+}
+​
+.btn-inc-dec {
+  border: solid black 2px;
+  background-color: black;
+  width: 45px;
+  height: 45px;
+  font-size: 40px;
+  border-radius: 50px;
+  font-weight: 900;
+  color: aliceblue;
+  line-height: 40px;
+  outline: 0px;
+}
+​
+.increase {
+  background-color: white;
+  color: black;
+}
+​
+.pizza-input {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  border: solid 5px gray;
+  text-align: center;
+  margin-left: 13px;
+  margin-right: 13px;
+  font-size: 30px;
+  font-weight: 700;
+}
+​
+.comments {
+  width: 800px;
+  height: 200px;
+  border-radius: 25px;
+  background-color: rgb(209, 207, 207);
+  border: transparent;
+  color: gray;
+  text-align: center;
+  padding: 20px;
+  font-size: 40px;
+}
 
