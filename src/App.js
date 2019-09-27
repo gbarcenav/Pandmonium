@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./App.css";
+// import App from "./App.css";
 import Login from "./components/pages/login";
 import Places from "./components/pages/places";
 import DetailPlace from "./components/pages/detail_place";
@@ -15,7 +15,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={Login} />
           <Route path="/Places" component={Places} />
-          <Route path="/Menu" component={Menu}/>
+          <Route path="/Menu" component={Menu} />
           <Route path="/DetailPlace" component={DetailPlace} />
           <Route path="/Menu" component={Menu} />
           <Route path="/AccountList" component={AccountList} />
