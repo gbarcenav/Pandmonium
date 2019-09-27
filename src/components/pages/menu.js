@@ -1,11 +1,12 @@
 import React, { Component } from "react";
-import Menuimages from '../menuimages.js';
+import MenuImages from '../menuimages.js';
 import Navbar from '../navbar';
-import TagFood from '../tagfood'
-import Foodbuy from '../foodbuy.js'
-import Numbuy from '../numbuy.js'
-import NumbuyWhite from '../numbuy-white.js'
-import BtnGreen from '../btn_green.js'
+import TagFood from '../tagfood';
+import Foodbuy from '../foodbuy.js';
+import Numbuy from '../numbuy.js';
+import NumbuyWhite from '../numbuy-white.js';
+import BtnGreen from '../btn_green.js';
+import { Link } from "react-router-dom";
 
 
 class Menu extends Component {
@@ -15,7 +16,7 @@ class Menu extends Component {
           <Navbar />
           <div className="All-menu">
               <div className="menu-draws">
-              <Menuimages/>
+              <MenuImages/>
               </div>
               <div className="text-menu"><p>INDIVIDUAL</p><p>COMBO</p></div>
               <div className="menu-buy">
@@ -28,7 +29,7 @@ class Menu extends Component {
                 <div><Numbuy/></div>
               </div>
               <div><textarea className="comment" placeholder="Comentarios"></textarea></div>
-              <div><BtnGreen btntext="ENVIAR"/></div>
+              <div><Link to ='/DetailPlace'> <BtnGreen btntext="ENVIAR"/></Link></div>
           </div>
 
 
