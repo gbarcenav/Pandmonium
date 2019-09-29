@@ -8,6 +8,9 @@ export default props => {
     <Menu {...props}>
       <Link className="menu-item" to="/Menu">
         Menú
+        <br />
+        <br />
+        <hr></hr>
       </Link>
       <Link className="menu-item" to="/DetailPlace">
         Asignación de lugar
@@ -17,7 +20,6 @@ export default props => {
         Cuentas Abiertas
       </Link>  */}
       {/* </a> */}
-      
     </Menu>
   );
 };
