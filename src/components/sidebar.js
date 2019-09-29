@@ -14,6 +14,9 @@ export default props => {
       </Link>
       <Link className="menu-item" to="/DetailPlace">
         Asignación de lugar
+        <br />
+        <br />
+        <hr></hr>
       </Link>
       {/* <a className="menu-item" href="/AccountList"> */}
       {/* <Link className="menu-item" to="/AccountList">
