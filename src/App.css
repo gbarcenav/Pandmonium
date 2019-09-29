@@ -88,22 +88,35 @@ p {
   margin-top: 150px;
 }
 
-/* Formulario login */
-.input-btn-form {
+.unregistrer-msn  {
+  background-color: rgba(247,  40,  40,  0.644);
+  width: 450px;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 35px;
+  font-weight: 600;
+  font-family: Arial,  Helvetica,  sans-serif;
+  color: white;
+  padding: 10px;
+}
+
+/* Formulario login */
+.input-btn-form  {
   margin-top: 150px;
 }
 
-/* Input login */
-.input-login {
-  background-color: rgba(105, 105, 105, 0.315);
+/* Input login */
+.input-login  {
+  background-color: rgba(105,  105,  105,  0.315);
   width: 60vw;
   height: 90px;
   font-size: 50px;
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display",  serif;
   font-weight: 700;
   border: transparent;
   text-align: center;
-  margin-top: 80px;
+  margin-top: 30px;
   outline: 0px;
 }
 
