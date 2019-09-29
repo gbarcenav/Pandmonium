@@ -18,6 +18,12 @@ export default props => {
         <br />
         <hr></hr>
       </Link>
+      <Link className="menu-item" to="/">
+        Cerrar sesión
+        <br />
+        <br />
+        <hr></hr>
+      </Link>
       {/* <a className="menu-item" href="/AccountList"> */}
       {/* <Link className="menu-item" to="/AccountList">
         Cuentas Abiertas
