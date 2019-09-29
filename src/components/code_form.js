@@ -1,8 +1,9 @@
 import React, { Component } from "react";
+import { Redirect } from "react-router-dom";
 
-import BtnGreen from "../components/btn_green";
+// import BtnGreen from "../components/btn_green";
 import firebaseApp from '../firebase';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 // import { Redirect } from 'react-router';
 
 class CodeForm extends Component {
@@ -27,6 +28,7 @@ class CodeForm extends Component {
 	
 	//Esta funcion la vinculamos con el boton validar.
 	onClick = (e) => {
+	
 		//Guardamos en una constante el nombre que vamos a buscar, y lo obtenemos del state.
 		const nameToSearch = this.state.noEmpleado;
 		//Para poder llamar al state dentro de la query, declaramos una variable global con la referencia al objeto this.
@@ -55,9 +57,12 @@ class CodeForm extends Component {
 						noEmpleado: usuario.noEmpleado,
 						nombre: usuario.nombre,
 						valid:true//Actualizamos valid a true, porque ahora si puede pasar.
+
 					});
+					
 				} 
 			});
+
 			//Ponemos un catch por si ocurre un error
 		}).catch(function(error) {
 			//Si ocurre un error lo escribimos en la consola
@@ -65,18 +70,17 @@ class CodeForm extends Component {
 		});
 		
 		
-	}
+}
+
 	render() {
-		const { noEmpleado ,valid} = this.state;
+		const { noEmpleado } = this.state;
 		return (
 		  <form className="input-btn-form">
 			  <input placeholder="INGRESA TU CÓDIGO" value={noEmpleado} name= 'noEmpleado' className="input-login" type="password"  onChange={this.onChange}/>
 			<br></br>
 			<button type="button"  className="btn-green" onClick={this.onClick}>Validar
 			</button>
-			{valid?<Link to="/Places">
-				  <BtnGreen onClick={this.onClick} btntext="ENTRAR"  />
-					</Link>:''}
+			{this.state.valid ? <Redirect to = '/places' /> : console.log('error')}
 		  </form>
 		);
 	}
