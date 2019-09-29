@@ -10,7 +10,7 @@ class Places extends Component {
   state = {
     number: null
   };
-
+  
   changeTitle = (title, background) => {
     if (background == null) {
       this.setState({
