@@ -31,7 +31,9 @@ p {
 
 .login-screen {
   text-align: center;
+  width: 100vw;
   height: 100vh;
+  overflow: hidden;
 }
 
 .backg-img {
@@ -86,6 +88,7 @@ p {
 /* Estilos saludo login */
 .greeting-login {
   margin-top: 150px;
+  font-weight: 700;
 }
 
 .unregistrer-msn  {
@@ -102,21 +105,21 @@ p {
 }
 
 /* Formulario login */
-.input-btn-form  {
+.input-btn-form {
   margin-top: 150px;
 }
 
 /* Input login */
-.input-login  {
-  background-color: rgba(105,  105,  105,  0.315);
+.input-login {
+  background-color: rgba(105, 105, 105, 0.315);
   width: 60vw;
   height: 90px;
   font-size: 50px;
-  font-family: "Playfair Display",  serif;
+  font-family: "Playfair Display", serif;
   font-weight: 700;
   border: transparent;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 80px;
   outline: 0px;
 }
 
@@ -134,8 +137,10 @@ p {
 
 /* ESTILOS DE PANTALLAS PLACES */
 .places-screen {
+  width: 100vw;
   height: 100vh;
   text-align: center;
+  overflow: hidden;
 }
 
 .navbar {
@@ -203,7 +208,7 @@ p {
 
 .rectangle-tabar-selection {
   width: 100%;
-  height: auto;
+  height: 77px;
   background: #39bf4dad;
   margin-top: 100px;
   padding: 16px 40px;
@@ -217,6 +222,16 @@ p {
 }
 
 /* Sección de registro de lugar y numero de personas */
+.label-detail {
+  font-size: 35px;
+  font-weight: 800;
+  color: #373a47;
+}
+.data-detail {
+  font-size: 35px;
+  font-weight: 400;
+  color: #0d0d0d;
+}
 .people-name-number {
   width: 100%;
   height: auto;
@@ -254,9 +269,6 @@ p {
   font-size: 30px;
   font-weight: 700;
 }
-/* Bere MENÚ ---------------------------------------------------------*/
-
-/* ----------------------------------------------------------------------------------- */
 .people-name-number label {
   margin-right: 20px;
   font-size: 30px;
@@ -264,9 +276,14 @@ p {
 }
 
 /* ESTILOS PANTALLA DE DETALLE */
+.detail_screen {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
 .rectangle-tabar-detail {
   width: 100%;
-  height: auto;
+  height: 77px;
   background: #39bf4dad;
   padding: 10px;
   padding: 16px 40px;
@@ -280,11 +297,14 @@ p {
 }
 
 .people-number-detail {
-  width: 100%;
-  height: auto;
+  width: 90vw;
+  height: 150px;
   text-align: end;
-  padding-right: 80px;
+  /* padding-right: 80px; */
   padding-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: scroll;
 }
 
 /* Tabla de detalle de consumo de comensal */
@@ -295,6 +315,13 @@ p {
   font-weight: 700;
 }
 
+.table-detail-container {
+  width: 90vw;
+  height: 65vh;
+  overflow: scroll;
+  margin-left: auto;
+  margin-right: auto;
+}
 .table-detail-guest {
   width: 90vw;
   height: auto;
@@ -389,6 +416,11 @@ td img {
 }
 
 /* SECCIÓN MENÚ */
+.menu {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
 .menu-draws {
   width: 90vw;
   margin-left: auto;
@@ -417,11 +449,12 @@ td img {
 
 .menu-buy {
   width: 90vw;
-  height: auto;
+  height: 800px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 3px;
   text-align: center;
+  overflow: scroll;
 }
 
 .menu-buy div {

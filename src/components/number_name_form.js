@@ -7,10 +7,10 @@ class FormNameNumber extends Component {
   render() {
     return (
       <form className={this.props.classCSS}>
-        <label>Personas</label>
+        <label>No. Personas</label>
         <InputSpiner />
         <br></br>
-        <label>Nombre del cliente</label>
+        <label>Nombre</label>
         <Input classCSS="input-name" typeInput="text" />
       </form>
     );
