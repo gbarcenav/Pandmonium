@@ -5,7 +5,6 @@ import FormNameNumber from "../number_name_form";
 import Bars from "../bars";
 import Tables from "../tables";
 
-
 class Places extends Component {
   state = {
     number: null
@@ -60,7 +59,6 @@ class Places extends Component {
         />
 
         <FormNameNumber classCSS="people-name-number" />
-        
       </div>
     );
   }
