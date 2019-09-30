@@ -1,32 +1,51 @@
 import React, { Component } from "react";
-import Input from "../components/input";
-import InputSpiner from "../components/input-spiner";
-import BtnGreen from "../components/btn_green";
 
 class FormNameNumber extends Component {
-  state = {
-    name: ""
-  };
+  constructor() {
+    super();
+    this.state = {
+      quantity: "",
+      diner: ""
+    };
+    this.handleInput = this.handleInput.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
 
-  onChange = e => {
+  handleInput(e) {
+    const { name, value } = e.target;
     this.setState({
-      name: e.target.value
+      [name]: value
     });
-  };
+    // console.log(e.target.value, e.target.name);
+    console.log(this.state);
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+    // this.props.onAddDinerQuantity(this.state);
+    console.log("Enviando...");
+  }
 
   render() {
     return (
-      <form className={this.props.classCSS}>
-        <label>No. Personas</label>
-        <InputSpiner />
+      <form className={this.props.classCSS} onSubmit={this.handleSubmit}>
+        <label htmlFor="quantity">No. Personas</label>
+        <input
+          type="number"
+          name="quantity"
+          min="1"
+          className="input-spiner"
+          onChange={this.handleInput}
+        ></input>
         <br></br>
-        <label>Nombre del cliente</label>
-        <Input
-          classCSS="input-name"
-          typeInput="text"
-          onChange={this.onChange}
-        />
-        <BtnGreen btntext="ABRIR MESA" name={this.state.name} />
+        <label htmlFor="diner">Nombre del cliente</label>
+        <input
+          name="diner"
+          className="input-name"
+          type="text"
+          onChange={this.handleInput}
+        ></input>
+        <button className="btn-green">ABRIR MESA</button>
       </form>
     );
   }
