@@ -16,7 +16,7 @@ class DetailPlace extends Component {
           <span className="label-detail">No. Personas </span>
           <span className="data-detail"></span>
           <br></br>
-          <span className="label-detail">Nombre </span>
+          <span className="label-detail" >Nombre {inputValue} </span>
           <span className="data-detail"></span>
         </div>
         <div className="table-detail-container">
