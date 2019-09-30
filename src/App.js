@@ -12,14 +12,12 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 class App extends Component {
   render() {
     return (
-      <Router basename={window.location.pathname || ''} >
-      
+      <Router basename={window.location.pathname || ""}>
         <Switch>
           <Route exact path="/" component={Login} />
           <Route path="/Places" component={Places} />
-          <Route path="/Menu" component={Menu}/>
-          <Route path="/DetailPlace" component={DetailPlace} />
           <Route path="/Menu" component={Menu} />
+          <Route path="/DetailPlace" component={DetailPlace} />
           <Route path="/AccountList" component={AccountList} />
         </Switch>
       </Router>
