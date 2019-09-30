@@ -1,10 +1,7 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
 
-// import BtnGreen from "../components/btn_green";
 import firebaseApp from "../firebase";
-// import { Link } from "react-router-dom";
-// import { Redirect } from 'react-router';
 
 class CodeForm extends Component {
   constructor(props) {
@@ -13,7 +10,8 @@ class CodeForm extends Component {
       noEmpleado: "", //Esta vinculada con el input
       nombre: "", //No se muestra, no hay un input para mostrarlo
       valid: null, //En esta propiedad vamos a guardar true si encuentra el noEmpleado y false si no lo encuentra en firebase.
-      message: ""
+      message: "",
+      background: null
     };
     console.log(this.state.valid);
   } //Esta funcion actualiza las propiedades de state dependiendo del input que lo llame, //por eso el input debe tener el mismo nombre que la propiedad state que se quiere modificar. //en este formulario solo tenemos un input que tiene name='noEmpleado', por eso solo esa variable se actualiza.
@@ -39,7 +37,8 @@ class CodeForm extends Component {
           noEmpleado: "",
           nombre: "",
           valid: false,
-          message: "Usuario no registrado"
+          message: "Usuario no registrado",
+          background: "#FF1646"
         }); //Recorremos con un foreach el objeto querySnapshot, el cual contiene el resultado de la busqueda.
         querySnapshot.forEach(function(doc) {
           //Solo para debug, agregamos un console.log que escribe en la consola los datos encontrados
@@ -52,7 +51,8 @@ class CodeForm extends Component {
               noEmpleado: usuario.noEmpleado,
               nombre: usuario.nombre,
               valid: true, //Actualizamos valid a true, porque ahora si puede pasar.
-              message: ""
+              message: "",
+              background: null
             });
           }
         }); //Ponemos un catch por si ocurre un error
@@ -67,7 +67,12 @@ class CodeForm extends Component {
     const { noEmpleado } = this.state;
     return (
       <form className="input-btn-form">
-        <p className="unregistrer-msn">{this.state.message}</p>
+        <p
+          className="unregistrer-msn"
+          style={{ backgroundColor: this.state.background }}
+        >
+          {this.state.message}
+        </p>
         <input
           placeholder="INGRESA TU CÓDIGO"
           value={noEmpleado}

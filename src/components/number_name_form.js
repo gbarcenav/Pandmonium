@@ -4,6 +4,7 @@ class FormNameNumber extends Component {
   constructor() {
     super();
     this.state = {
+      number: "",
       quantity: "",
       diner: ""
     };
