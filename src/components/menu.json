@@ -1,0 +1,97 @@
+[{
+    "id":"1",
+    "platillo":"hamburguesa",
+    "tipo":[
+        {"name":"malicia",
+         "price":["50","65"]},
+        {"name":"soberbia",
+         "price":["50","65"]},
+        {"name":"gula",
+         "price":["50","65"]},
+        {"name":"alma en pena",
+        "price":["65","80"]},
+        {"name":"encarnación",
+        "price":["65","80"]},
+        {"name":"banana limbo",
+        "price":["65","80"]}   
+    ]
+},
+{
+    "id":"2",
+    "platillo":"pizza",
+    "tipo":[
+        {"name":"chaneque",
+         "price":["150","180","210"]},
+        {"name":"sodoma",
+         "price":["130","160","190"]},
+        {"name":"lujuria",
+         "price":["150","180","210"]},
+        {"name":"ángel caído",
+        "price":["130","160","190"]},
+        {"name":"purgatoria",
+        "price":["150","180","210"]},
+        {"name":"tiki,hawaiana",
+        "price":["140","170","200"]},
+        {"name":"margarita",
+            "price":["110","140","170"]}   
+    ]
+},
+{
+    "id":"3",
+    "platillo":"jochos",
+    "tipo":[
+        {"name":"jochoslaw",
+         "price":["50","65"]},
+        {"name":"Xoloescuintle",
+         "price":["65","80"]},
+        {"name":"pitbull",
+         "price":["65","80"]},
+        {"name":"hachiko",
+        "price":["70","85"]},
+        {"name":"pastor alemán",
+        "price":["80","95"]}   
+    ]
+},
+{
+    "id":"4",
+    "platillo":"ensaladas",
+    "tipo":[
+        {"name":"delírium",
+         "price":["50"]},
+        {"name":"paraíso perdido",
+         "price":["70"]}  
+    ]
+},
+{
+    "id":"5",
+    "platillo":"malteadas",
+    "tipo":[
+        {"name":"fresa",
+         "price":["50"]},
+        {"name":"chocomenta",
+         "price":["50"]},
+        {"name":"mazapán",
+         "price":["50"]},
+        {"name":"temporada",
+        "price":["50"]}   
+    ]
+},
+{
+    "id":"6",
+    "platillo":"sodas",
+    "tipo":[
+        {"name":"piña & coco",
+         "price":["45"]},
+        {"name":"limón & jícama",
+         "price":["45"]},
+        {"name":"maracuyá",
+         "price":["45"]},
+        {"name":"fresa & albahaca",
+        "price":["45"]},
+        {"name":"mango",
+        "price":["45"]},
+        {"name":"manzana verde",
+        "price":["45"]}  
+    ]
+}
+]
