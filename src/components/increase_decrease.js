@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
 class InputIncreaseDecrease extends Component {
-
   state = {
     counter: 0
   }
@@ -24,10 +23,14 @@ class InputIncreaseDecrease extends Component {
         <button 
         type="button" 
         className="btn-inc-dec"
-        onClick={this.Decrease}>          -
+        onClick={this.Decrease}>
+          -
         </button>
-        <input type="number" className="pizza-input"></input>
-        <button type="button" className="btn-inc-dec increase">
+        <input type="number" className="pizza-input" value={this.state.counter}></input>
+        <button 
+          type="button" 
+          className="btn-inc-dec increase"
+          onClick={this.Increase}>
           +
         </button>
       </div>
