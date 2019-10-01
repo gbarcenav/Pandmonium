@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import InputIncreaseDecrease from "../increase_decrease";
 
-import DataMenu from "../../menu.json";
+import DataMenu from "../menu.json";
 
 class PizzaMenu extends Component {
   render() {
@@ -18,7 +18,11 @@ class PizzaMenu extends Component {
           <tr>
             <th>
               <select className="options-menu">
-                <option>Elige una opción</option>
+                {DataMenu.map((tipo, index) => {
+                  return (
+                    <option value={tipo.tipo.name}>{tipo.tipo.name}</option>
+                  );
+                })}
               </select>
             </th>
 
