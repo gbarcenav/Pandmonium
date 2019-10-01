@@ -19,9 +19,7 @@ class PizzaMenu extends Component {
             <th>
               <select className="options-menu">
                 {DataMenu.map((tipo, index) => {
-                  return (
-                    <option value={tipo.tipo.name}>{tipo.tipo.name}</option>
-                  );
+                  return <option value={tipo.platillo}>{tipo.platillo}</option>;
                 })}
               </select>
             </th>
