@@ -18,8 +18,11 @@ class PizzaMenu extends Component {
           <tr>
             <th>
               <select className="options-menu">
-                {DataMenu.map((tipo, index) => {
+                {/* {DataMenu.map((tipo, index) => {
                   return <option value={tipo.platillo}>{tipo.platillo}</option>;
+                })} */}
+                {DataMenu.forEach(element => {
+                  return <option value={element.name}>{element.name}</option>;
                 })}
               </select>
             </th>
