@@ -1,131 +1,36 @@
 import React, { Component } from "react";
 import InputIncreaseDecrease from "../increase_decrease";
 
+import DataMenu from "../../menu.json";
+
 class PizzaMenu extends Component {
   render() {
     return (
       <table className="tag-menu-product">
         <thead>
           <tr>
-            <th scope="row"></th>
-            <th className="text-menu">M</th>
-
-            <th className="text-menu">G</th>
-
-            <th className="text-menu">F</th>
+            <th>Opciones</th>
+            <th>Cantidad</th>
+            <th>Detalle</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th>CHANEQUE</th>
+            <th>
+              <select className="options-menu">
+                <option>Elige una opción</option>
+              </select>
+            </th>
 
             <td>
               <InputIncreaseDecrease />
             </td>
 
-            <td>
-              <InputIncreaseDecrease />
-            </td>
-
-            <td>
-              <InputIncreaseDecrease />
-            </td>
-          </tr>
-
-          <tr>
-            <th>SODOMA</th>
-
-            <td>
-              <InputIncreaseDecrease />
-            </td>
-
-            <td>
-              <InputIncreaseDecrease />
-            </td>
-
-            <td>
-              <InputIncreaseDecrease />
-            </td>
-          </tr>
-
-          <tr>
-            <th>LUJURIA</th>
-
-            <td>
-              <InputIncreaseDecrease />
-            </td>
-
-            <td>
-              <InputIncreaseDecrease />
-            </td>
-
-            <td>
-              <InputIncreaseDecrease />
-            </td>
-          </tr>
-
-          <tr>
-            <th>ÁNGEL CAÍDO</th>
-
-            <td>
-              <InputIncreaseDecrease />
-            </td>
-
-            <td>
-              <InputIncreaseDecrease />
-            </td>
-
-            <td>
-              <InputIncreaseDecrease />
-            </td>
-          </tr>
-
-          <tr>
-            <th>PURGATORIO</th>
-
-            <td>
-              <InputIncreaseDecrease />
-            </td>
-
-            <td>
-              <InputIncreaseDecrease />
-            </td>
-
-            <td>
-              <InputIncreaseDecrease />
-            </td>
-          </tr>
-
-          <tr>
-            <th>TIKI HAWAIANA</th>
-
-            <td>
-              <InputIncreaseDecrease />
-            </td>
-
-            <td>
-              <InputIncreaseDecrease />
-            </td>
-
-            <td>
-              <InputIncreaseDecrease />
-            </td>
-          </tr>
-
-          <tr>
-            <th>MARGARITA</th>
-
-            <td>
-              <InputIncreaseDecrease />
-            </td>
-
-            <td>
-              <InputIncreaseDecrease />
-            </td>
-
-            <td>
-              <InputIncreaseDecrease />
-            </td>
+            <th>
+              <select className="options-menu">
+                <option>Elige un tamaño</option>
+              </select>
+            </th>
           </tr>
         </tbody>
       </table>
