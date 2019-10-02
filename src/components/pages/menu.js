@@ -41,7 +41,7 @@ class Menu extends Component {
           </div>
           <textarea className="comments" placeholder="Comentarios"></textarea>
           <br></br>
-          <Link to='/order_summary'>
+          <Link to='/OrderSummary'>
           <BtnGreen btntext="ENVIAR" onClick={this.onClick}/>
           </Link>
         </form>
