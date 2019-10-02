@@ -1,9 +1,15 @@
 import React, { Component } from "react";
 import InputIncreaseDecrease from "../increase_decrease";
 
-import DataMenu from "../menu.json";
+import DataMenu from "../../menu.json";
 
 class PizzaMenu extends Component {
+  constructor() {
+    super();
+    this.state = {
+      DataMenu
+    };
+  }
   render() {
     return (
       <table className="tag-menu-product">
@@ -18,11 +24,8 @@ class PizzaMenu extends Component {
           <tr>
             <th>
               <select className="options-menu">
-                {/* {DataMenu.map((tipo, index) => {
+                {DataMenu.map((tipo, index) => {
                   return <option value={tipo.platillo}>{tipo.platillo}</option>;
-                })} */}
-                {DataMenu.forEach(element => {
-                  return <option value={element.name}>{element.name}</option>;
                 })}
               </select>
             </th>
