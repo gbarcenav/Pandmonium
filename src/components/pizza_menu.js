@@ -1,11 +1,16 @@
 import React, { Component } from "react";
-import InputIncreaseDecrease from "../increase_decrease";
+import InputIncreaseDecrease from "./increase_decrease";
 
-import DataMenu from "../menu.json";
+import DataMenu from "./menu.json";
 
 class PizzaMenu extends Component {
+  
   render() {
+
+    let nuevo = DataMenu[this.props.indice].tipo;
+    
     return (
+      
       <table className="tag-menu-product">
         <thead>
           <tr>
@@ -18,11 +23,11 @@ class PizzaMenu extends Component {
           <tr>
             <th>
               <select className="options-menu">
-                {DataMenu.map((tipo, index) => {
-                  return (
-                    <option value={tipo.tipo.name}>{tipo.tipo.name}</option>
-                  );
-                })}
+                {
+                nuevo.map((x,index)=>{
+                  return <option key={index} value={x.name}>{x.name}</option>;
+                })
+              }
               </select>
             </th>
 
