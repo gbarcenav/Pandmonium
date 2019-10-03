@@ -5,17 +5,12 @@ import FormNameNumber from "../number_name_form";
 import TableBar from "../tables";
 
 class Places extends Component {
-  constructor() {
-    super();
-    this.state = {
-      number: null
-    };
-    this.handleInput = this.handleInput.bind(this);
-    this.handleAddOrder = this.handleAddOrder.bind(this);
-  }
+  state = {
+    number: null
+  };
 
   changeTitle = (title, background) => {
-    if (background === null) {
+    if (background == null) {
       this.setState({
         number: title
       });
@@ -25,19 +20,6 @@ class Places extends Component {
       });
     }
   };
-
-  handleInput(e) {
-    const { place, number } = e.target;
-    this.setState({
-      [number]: place
-    });
-  }
-
-  handleAddOrder(order) {
-    this.setState({
-      dataOrder: [...this.state.dataOrder, order]
-    });
-  }
 
   render() {
     return (
