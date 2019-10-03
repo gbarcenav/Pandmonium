@@ -1,16 +1,23 @@
 import React, { Component } from "react";
 import Input from "../components/input";
-import InputSpiner from "../components/input-spiner";
+// import InputSpiner from "../components/input-spiner";
 import BtnGreen from "../components/btn_green";
 
 class FormNameNumber extends Component {
   state = {
+    num: 0,
     name: ""
+  };
+
+  onChangeName = e => {
+    this.setState({
+      name: e.target.value
+    });
   };
 
   onChange = e => {
     this.setState({
-      name: e.target.value
+      num: e.target.value
     });
   };
 
@@ -18,15 +25,18 @@ class FormNameNumber extends Component {
     return (
       <form className={this.props.classCSS}>
         <label>No. Personas</label>
-        <InputSpiner />
+        <Input
+          classCSS="input-spiner"
+          typeInput="number"
+          onChange={this.onChange}/>
         <br></br>
         <label>Nombre del cliente</label>
         <Input
           classCSS="input-name"
           typeInput="text"
-          onChange={this.onChange}
+          onChange={this.onChangeName}
         />
-        <BtnGreen btntext="ABRIR MESA" name={this.state.name} />
+        <BtnGreen btntext="ABRIR MESA" name={this.state.name} num={this.state.num}/>
       </form>
     );
   }
