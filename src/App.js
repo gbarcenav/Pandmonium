@@ -5,7 +5,7 @@ import Login from "./components/pages/login";
 import Places from "./components/pages/places";
 // import DetailPlace from "./components/pages/detail_place";
 import AccountList from "./components/pages/account_list";
-import OrderSummary from "./components/pages/order_summary";
+// import OrderSummary from "./components/pages/order_summary";
 import Menu from "./components/pages/menu";
 import Summary from "./components/pages/summary";
 
