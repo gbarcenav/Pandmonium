@@ -5,17 +5,12 @@ import FormNameNumber from "../number_name_form";
 import TableBar from "../tables";
 
 class Places extends Component {
-  constructor() {
-    super();
-    this.state = {
-      number: null
-    };
-    this.handleInput = this.handleInput.bind(this);
-    this.handleAddOrder = this.handleAddOrder.bind(this);
-  }
+  state = {
+    number: null
+  };
 
   changeTitle = (title, background) => {
-    if (background === null) {
+    if (background == null) {
       this.setState({
         number: title
       });
@@ -25,19 +20,6 @@ class Places extends Component {
       });
     }
   };
-
-  handleInput(e) {
-    const { place, number } = e.target;
-    this.setState({
-      [number]: place
-    });
-  }
-
-  handleAddOrder(order) {
-    this.setState({
-      dataOrder: [...this.state.dataOrder, order]
-    });
-  }
 
   render() {
     return (
@@ -49,17 +31,17 @@ class Places extends Component {
             <TableBar
               number="1"
               CSSclass="bars-btn"
-              changeTitle={this.changeTitle.bind(this)}
+              changeTitle={this.changeTitle}
             />
             <TableBar
               number="2"
               CSSclass="bars-btn"
-              changeTitle={this.changeTitle.bind(this)}
+              changeTitle={this.changeTitle}
             />
             <TableBar
               number="3"
               CSSclass="bars-btn"
-              changeTitle={this.changeTitle.bind(this)}
+              changeTitle={this.changeTitle}
             />
           </div>
 
@@ -67,17 +49,17 @@ class Places extends Component {
             <TableBar
               number="MESA 1"
               CSSclass="table-btn"
-              changeTitle={this.changeTitle.bind(this)}
+              changeTitle={this.changeTitle}
             />
             <TableBar
               number="MESA 2"
               CSSclass="table-btn"
-              changeTitle={this.changeTitle.bind(this)}
+              changeTitle={this.changeTitle}
             />
             <TableBar
               number="MESA 3"
               CSSclass="table-btn"
-              changeTitle={this.changeTitle.bind(this)}
+              changeTitle={this.changeTitle}
             />
           </div>
 
@@ -85,27 +67,27 @@ class Places extends Component {
             <TableBar
               number="4"
               CSSclass="bars-btn"
-              changeTitle={this.changeTitle.bind(this)}
+              changeTitle={this.changeTitle}
             />
             <TableBar
               number="5"
               CSSclass="bars-btn"
-              changeTitle={this.changeTitle.bind(this)}
+              changeTitle={this.changeTitle}
             />
             <TableBar
               number="6"
               CSSclass="bars-btn"
-              changeTitle={this.changeTitle.bind(this)}
+              changeTitle={this.changeTitle}
             />
             <TableBar
               number="7"
               CSSclass="bars-btn"
-              changeTitle={this.changeTitle.bind(this)}
+              changeTitle={this.changeTitle}
             />
             <TableBar
               number="8"
               CSSclass="bars-btn"
-              changeTitle={this.changeTitle.bind(this)}
+              changeTitle={this.changeTitle}
             />
           </div>
 
@@ -113,25 +95,20 @@ class Places extends Component {
             <TableBar
               number="MESA 4"
               CSSclass="table-btn"
-              changeTitle={this.changeTitle.bind(this)}
+              changeTitle={this.changeTitle}
             />
             <TableBar
               number="MESA 5"
               CSSclass="table-btn"
-              changeTitle={this.changeTitle.bind(this)}
+              changeTitle={this.changeTitle}
             />
           </div>
         </div>
         <GreenRectangle
           classCSS="rectangle-tabar-selection"
           place={this.state.number}
-          onChange={this.handleInput}
-          onAddOrder={this.handleAddOrder}
         />
-        <FormNameNumber
-          classCSS="people-name-number"
-          onAddOrder={this.handleAddOrder}
-        />
+        <FormNameNumber classCSS="people-name-number" />
       </div>
     );
   }

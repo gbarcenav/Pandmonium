@@ -6,24 +6,23 @@ import InputIncreaseDecrease from "../increase_decrease";
 import BtnGreen from "../btn_green";
 
 class OrderSummary extends Component {
-    render() {
-        return (
-            <div className="resume-screen">
-                <Navbar/>
-                <img src={logo} className="logo-app" alt="logo" />
-                <h1 className="resume-title">Resumen de Pedido</h1>
-                <Input/>
-                <InputIncreaseDecrease/>
-                
-           
-            <textarea className="comments" placeholder="Observaciones"></textarea>
-            <br></br>
+  render() {
+    return (
+      <div className="resume-screen">
+        <Navbar />
 
-            <BtnGreen btntext="ENVIAR" onClick='/kitchen'/>
-             </div>
-        );
-    }
+        <img src={logo} className="logo-app" alt="logo" />
+        <h1 className="resume-title">Resumen de Pedido</h1>
+        <Input />
+        <InputIncreaseDecrease />
 
+        <textarea className="comments" placeholder="Observaciones"></textarea>
+        <br></br>
+
+        <BtnGreen btntext="ENVIAR" onClick="/kitchen" />
+      </div>
+    );
+  }
 }
 
 export default OrderSummary;
