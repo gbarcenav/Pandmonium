@@ -1,6 +1,6 @@
 [
   {
-    "id": "1",
+    "id": "0",
     "platillo": "hamburguesa",
     "tipo": [
       { "name": "malicia", "price": ["50", "65"] },
@@ -12,7 +12,7 @@
     ]
   },
   {
-    "id": "2",
+    "id": "1",
     "platillo": "pizza",
     "tipo": [
       { "name": "chaneque", "price": ["150", "180", "210"] },
@@ -20,12 +20,12 @@
       { "name": "lujuria", "price": ["150", "180", "210"] },
       { "name": "ángel caído", "price": ["130", "160", "190"] },
       { "name": "purgatoria", "price": ["150", "180", "210"] },
-      { "name": "tiki,hawaiana", "price": ["140", "170", "200"] },
+      { "name": "tiki-hawaiana", "price": ["140", "170", "200"] },
       { "name": "margarita", "price": ["110", "140", "170"] }
     ]
   },
   {
-    "id": "3",
+    "id": "2",
     "platillo": "jochos",
     "tipo": [
       { "name": "jochoslaw", "price": ["50", "65"] },
@@ -36,7 +36,7 @@
     ]
   },
   {
-    "id": "4",
+    "id": "3",
     "platillo": "ensaladas",
     "tipo": [
       { "name": "delírium", "price": ["50"] },
@@ -44,7 +44,7 @@
     ]
   },
   {
-    "id": "5",
+    "id": "4",
     "platillo": "malteadas",
     "tipo": [
       { "name": "fresa", "price": ["50"] },
@@ -54,7 +54,7 @@
     ]
   },
   {
-    "id": "6",
+    "id": "5",
     "platillo": "sodas",
     "tipo": [
       { "name": "piña & coco", "price": ["45"] },

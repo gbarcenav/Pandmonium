@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./index.css";
 import "./App.css";
-import Login from "./components/pages/login";
+// import Login from "./components/pages/login";
 import Places from "./components/pages/places";
 import DetailPlace from "./components/pages/detail_place";
 import AccountList from "./components/pages/account_list";
@@ -14,7 +14,7 @@ class App extends Component {
     return (
       <Router basename={window.location.pathname || ""}>
         <Switch>
-          <Route exact path="/" component={Login} />
+          <Route exact path="/" component={Places} />
           <Route path="/Places" component={Places} />
           <Route path="/Menu" component={Menu} />
           <Route path="/DetailPlace" component={DetailPlace} />

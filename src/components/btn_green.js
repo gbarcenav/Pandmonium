@@ -8,6 +8,7 @@ class BtnGreen extends Component {
     e.preventDefault();
     const {history} = this.props
       localStorage.setItem('name', JSON.stringify(this.props.name));
+      localStorage.setItem('num', JSON.stringify(this.props.num));
       history.push('/Menu')
     }
 
