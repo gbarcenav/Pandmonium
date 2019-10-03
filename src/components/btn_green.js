@@ -9,7 +9,7 @@ class BtnGreen extends Component {
     const {history} = this.props
       localStorage.setItem('name', JSON.stringify(this.props.name));
       localStorage.setItem('num', JSON.stringify(this.props.num));
-      history.push('/Menu')
+      history.push(this.props.ruta)
     }
 
   render() {
