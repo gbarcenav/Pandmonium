@@ -27,7 +27,7 @@ class Menu extends Component {
         <div className="menu-draws">
           <FoodBtn image={Burger} alt="Hamburguesas" />
           <FoodBtn image={Pizza} alt="Pizzas" />
-          <FoodBtn image={Papatoes} alt="Papas" />
+          <FoodBtn image={Papatoes} alt="Papas"  />
           <FoodBtn image={HotDog} alt="Hot Dogs" styleCSS="btn-hd" />
           <FoodBtn image={Cake} alt="Pan" />
           <FoodBtn image={Salad} alt="Ensaladas" />

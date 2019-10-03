@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 class InputSpiner extends Component {
+  
   render() {
     return (
       <input

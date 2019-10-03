@@ -10,7 +10,6 @@ class OrderSummary extends Component {
         return (
             <div className="resume-screen">
                 <Navbar/>
-
                 <img src={logo} className="logo-app" alt="logo" />
                 <h1 className="resume-title">Resumen de Pedido</h1>
                 <Input/>
