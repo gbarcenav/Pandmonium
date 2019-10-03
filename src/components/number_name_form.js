@@ -36,7 +36,7 @@ class FormNameNumber extends Component {
           typeInput="text"
           onChange={this.onChangeName}
         />
-        <BtnGreen btntext="ABRIR MESA" name={this.state.name} num={this.state.num}/>
+        <BtnGreen btntext="ABRIR MESA" name={this.state.name} num={this.state.num} ruta={'/Menu'}/>
       </form>
     );
   }
