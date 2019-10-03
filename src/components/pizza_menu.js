@@ -4,6 +4,19 @@ import InputIncreaseDecrease from "./increase_decrease";
 import DataMenu from "../menu.json";
 
 class PizzaMenu extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      valueType: '',
+      valueoption: ''
+    };
+  }
+
+  handleChange = (e) =>{
+    var newText = e.target.value;
+    console.log(newText);
+  }
+
   render() {
     let nuevo = DataMenu[this.props.indice].tipo;
 
@@ -19,7 +32,7 @@ class PizzaMenu extends Component {
         <tbody>
           <tr>
             <th>
-              <select className="options-menu">
+              <select className="options-menu" onChange={this.handleChange}>
                 {nuevo.map((x, index) => {
                   return (
                     <option key={index} value={x.name}>
