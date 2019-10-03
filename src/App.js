@@ -16,7 +16,7 @@ class App extends Component {
     return (
       <Router basename={window.location.pathname || ""}>
         <Switch>
-          <Route exact path="/Login" component={Login} />
+          <Route exact path="/" component={Login} />
           <Route path="/Places" component={Places} />
           <Route path="/Menu" component={Menu} />
           <Route path="/DetailPlace" component={DetailPlace} />

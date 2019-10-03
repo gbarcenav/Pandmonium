@@ -18,7 +18,6 @@ class OrderSummary extends Component {
 
         <textarea className="comments" placeholder="Observaciones"></textarea>
         <br></br>
-
         <BtnGreen btntext="ENVIAR" onClick="/kitchen" />
       </div>
     );
