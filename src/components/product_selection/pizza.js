@@ -4,12 +4,6 @@ import InputIncreaseDecrease from "../increase_decrease";
 import DataMenu from "../../menu.json";
 
 class PizzaMenu extends Component {
-  constructor() {
-    super();
-    this.state = {
-      DataMenu
-    };
-  }
   render() {
     return (
       <table className="tag-menu-product">
