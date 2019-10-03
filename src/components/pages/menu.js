@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Navbar from "../navbar";
-import {Link} from "react-router-dom";
+// import {Link} from "react-router-dom";
+import { Redirect} from "react-router-dom";
 
 
 import Burger from "../ux_resources/ICONOS MENU/ICONO_HAMBURGUESA_MENU.png";
@@ -35,15 +36,26 @@ class Menu extends Component {
           <FoodBtn image={Frappe} alt="Bebidas" />
         </div>
 
-        <form className="menu-buy">
+        <form className="menu-buy" onSubmit={this.onSubmit}>
           <div>
             <PizzaMenu />
           </div>
           <textarea className="comments" placeholder="Comentarios"></textarea>
           <br></br>
-          <Link to='/order_summary'>
+
+          {/* <Link to='./order_summary'>
           <BtnGreen btntext="ENVIAR" onClick={this.onClick}/>
-          </Link>
+          </Link> */}
+
+          {/* <Link to='./resume'>
+          <BtnGreen btntext="ENVIAR" type="submit"/>
+          </Link> */}
+
+          <button type="button" className="btn-green" onClick={this.onClick}>
+          ENVIAR
+        </button>
+        {this.state.valid ? <Redirect to="/resume" /> : ""}
+
         </form>
       </div>
     );
