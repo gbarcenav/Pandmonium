@@ -37,32 +37,32 @@ class Menu extends Component {
         <div className="menu-draws">
           <FoodBtn image={Burger} 
                     alt="Hamburguesas" 
-                    getIndex ={this.getIndex}
-                    indice= {DataMenu[0].id}
+                    getIndex={this.getIndex}
+                    indice={DataMenu[0].id}
                     />
           <FoodBtn image={Pizza} alt="Pizzas"
-                    getIndex ={this.getIndex}
-                    indice= {DataMenu[1].id}
+                    getIndex={this.getIndex}
+                    indice={DataMenu[1].id}
                     />
           <FoodBtn image={Papatoes} alt="Papas" 
-                    getIndex ={this.getIndex}
-                    indice= {DataMenu[2].id}/>
+                    getIndex={this.getIndex}
+                    indice={DataMenu[2].id}/>
           <FoodBtn image={HotDog} alt="Hot Dogs" styleCSS="btn-hd"
-                    getIndex ={this.getIndex}
-                    indice= {DataMenu[3].id} />
+                    getIndex={this.getIndex}
+                    indice={DataMenu[3].id} />
           <FoodBtn image={Cake} alt="Pan" 
-                    getIndex ={this.getIndex}
-                    indice= {DataMenu[4].id}/>
+                    getIndex={this.getIndex}
+                    indice={DataMenu[4].id}/>
           <FoodBtn image={Salad} alt="Ensaladas" 
-                    getIndex ={this.getIndex}
-                    indice= {DataMenu[5].id}
+                    getIndex={this.getIndex}
+                    indice={DataMenu[5].id}
                     />
           <FoodBtn image={IceCream} alt="Postres" 
-                    getIndex ={this.getIndex}
+                    getIndex={this.getIndex}
                     //
                     />
           <FoodBtn image={Frappe} alt="Bebidas"
-                    getIndex ={this.getIndex}
+                    getIndex={this.getIndex}
                     
                      />
         </div>
@@ -73,7 +73,7 @@ class Menu extends Component {
           </div>
           <textarea className="comments" placeholder="Comentarios"></textarea>
           <br></br>
-          <Link to='/order_summary'>
+          <Link to='/summary'>
           <BtnGreen btntext="ENVIAR" onClick={this.onClick}/>
           </Link>
         </form>
