@@ -13,8 +13,9 @@ class PizzaMenu extends Component {
   }
 
   handleChange = (e) =>{
-    var newText = e.target.value;
-    console.log(newText);
+    this.setState({
+      valueType: e.target.value
+    })
   }
 
   render() {
