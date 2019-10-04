@@ -13,13 +13,7 @@ export default props => {
         <hr></hr>
       </Link>
       <Link className="menu-item" to="/Places">
-        Asignación de lugar
-        <br />
-        <br />
-        <hr></hr>
-      </Link>
-      <Link className="menu-item" to="/OrderSummary">
-        Resumen de pedidos
+        Abrir Orden
         <br />
         <br />
         <hr></hr>
@@ -30,6 +24,12 @@ export default props => {
         <br />
         <hr></hr>
       </Link> 
+      <Link>
+      Ventas del diá
+        <br />
+        <br />
+        <hr></hr>
+      </Link>
       <Link className="menu-item" to="/">
         Cerrar sesión
         <br />
