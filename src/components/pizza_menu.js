@@ -13,13 +13,31 @@ class PizzaMenu extends Component {
   }
 
   handleChange = (e) =>{
+<<<<<<< HEAD
     this.setState({
       valueType: e.target.value
     })
+=======
+    if (e.target.name === 'select-type') {
+      this.setState({
+        valueType: e.target.value
+      })
+      
+    }else if (e.target.name === 'select-option') {
+      this.setState({
+        valueoption: e.target.value
+        
+        
+      });
+      console.log(this.state.valueoption);
+      
+    } 
+>>>>>>> upstream/master
   }
 
   render() {
     let nuevo = DataMenu[this.props.indice].tipo;
+    let detalle = DataMenu[this.props.indice].opcion;
 
     return (
       <table className="tag-menu-product">
@@ -33,7 +51,7 @@ class PizzaMenu extends Component {
         <tbody>
           <tr>
             <th>
-              <select className="options-menu" onChange={this.handleChange}>
+              <select className="options-menu" onChange={this.handleChange} name="select-type">
                 {nuevo.map((x, index) => {
                   return (
                     <option key={index} value={x.name}>
@@ -49,8 +67,14 @@ class PizzaMenu extends Component {
             </td>
 
             <th>
-              <select className="options-menu">
-                <option>Elige un tamaño</option>
+              <select className="options-menu" onChange={this.handleChange} name='select-option'>
+                {detalle.map((x, index)=>{
+                  return(
+                    <option key={index} value={x.name}>{x}</option>
+                  )
+                }
+                )}
+                
               </select>
             </th>
           </tr>
