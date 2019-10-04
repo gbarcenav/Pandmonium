@@ -9,6 +9,7 @@ import Menu from "./components/pages/menu";
 import Summary from "./components/pages/summary";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import DetailPlace from "./components/pages/detail_place";
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
           <Route path="/Menu" component={Menu} />
           <Route path="/AccountList" component={AccountList} />
           <Route path="/Summary" component={Summary} />
+          <Route path="/DetailPlace" component={DetailPlace}/>
         </Switch>
       </Router>
     );
