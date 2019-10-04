@@ -31,6 +31,7 @@ class Menu extends Component {
     this.setState({ indice: i });
   };
 
+
   render() {
     return (
       <div className="menu">
@@ -91,6 +92,7 @@ class Menu extends Component {
           </form>
           <div>
             <table className="table_products">
+              <tbody>
               <tr>
                 <th>Producto/s</th>
                 <th>Eliminar</th>
@@ -104,6 +106,7 @@ class Menu extends Component {
                   </button>
                 </td>
               </tr>
+              </tbody>
             </table>
             <div>
               <p>

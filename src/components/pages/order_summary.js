@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import Navbar from "../navbar";
 import logo from "../ux_resources/Logo2017-02.png";
-import Input from "../components/input";
-import InputIncreaseDecrease from "../components/increase_decrease";
+import Input from "../input";
+import InputIncreaseDecrease from "../increase_decrease";
+import BtnGreen from "../btn_green";
 
-class Resume extends Component {
+class OrderSummary extends Component {
   render() {
     return (
       <div className="resume-screen">
@@ -17,7 +18,6 @@ class Resume extends Component {
 
         <textarea className="comments" placeholder="Observaciones"></textarea>
         <br></br>
-
         <BtnGreen btntext="ENVIAR" onClick="/kitchen" />
       </div>
     );
