@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Navbar from "../navbar";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 import Burger from "../ux_resources/ICONOS MENU/ICONO_HAMBURGUESA_MENU.png";
 import Pizza from "../ux_resources/ICONOS MENU/PIZZA_ICONO.png";
@@ -10,11 +10,14 @@ import Cake from "../ux_resources/ICONOS MENU/ICONO_CAKE.png";
 import Salad from "../ux_resources/ICONOS MENU/ICONO_SALAD.png";
 import IceCream from "../ux_resources/ICONOS MENU/ICON_ICECREAM.png";
 import Frappe from "../ux_resources/ICONOS MENU/ICON_MILKSHAKE.png";
+import Delete from "../ux_resources/delete.png";
 
 import BtnGreen from "../btn_green";
 import PizzaMenu from "../pizza_menu";
 import FoodBtn from "../food_btn";
 import DataMenu from "../../menu.json";
+import ItemList from "../item-list";
+import BtnAdd from "../btn_add";
 
 
 
@@ -31,6 +34,7 @@ class Menu extends Component {
   getIndex = i => {
     this.setState({ indice: i });
   };
+
 
   render() {
     return (
@@ -84,17 +88,43 @@ class Menu extends Component {
           />
           <FoodBtn image={Frappe} alt="Bebidas" getIndex={this.getIndex} />
         </div>
-
-        <form className="menu-buy">
-          <div>
+        <div className="menu-w-summary">
+          <form className="menu-buy">
             <PizzaMenu indice={this.state.indice} />
+            <textarea className="comments" placeholder="Comentarios"></textarea>
+            <BtnAdd className="btn-green btn-green-add" btntext="AÑADIR" />
+          </form>
+          <div>
+            <table className="table_products">
+              <tbody>
+              <tr>
+                <th>Producto/s</th>
+                <th>Eliminar</th>
+              </tr>
+              <tr>
+                <ItemList itemName="MALICIA" />
+                {/* itemName cambia según el nombre del producto que se añada */}
+                <td>
+                  <button>
+                    <img src={Delete} alt="Eliminar"></img>
+                  </button>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+            <div>
+              <p>
+                {/* Aquí se añaden los comenatrios en caso de que se ingrese algo */}
+              </p>
+            </div>
           </div>
-          <textarea className="comments" placeholder="Comentarios"></textarea>
-          <br></br>
-          <Link to="/Summary">
-            <BtnGreen btntext="ENVIAR" onClick={this.onClick} ruta={'/Summary'} />
-          </Link>
-        </form>
+
+          <BtnGreen
+            btntext="ENVIAR A COCINA"
+            onClick={this.onClick}
+            // ruta={"/Summary"}
+          />
+        </div>
       </div>
     );
   }

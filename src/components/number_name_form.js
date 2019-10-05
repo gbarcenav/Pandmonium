@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Input from "../components/input";
-// import InputSpiner from "../components/input-spiner";
+//import InputSpiner from "../components/input-spiner";
 import BtnGreen from "../components/btn_green";
 
 class FormNameNumber extends Component {
@@ -11,7 +11,8 @@ class FormNameNumber extends Component {
 
   onChangeName = e => {
     this.setState({
-      name: e.target.value
+      name: e.target.value,
+      number: e.target.value
     });
   };
 

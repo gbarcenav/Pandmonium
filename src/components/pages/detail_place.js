@@ -10,22 +10,18 @@ class DetailPlace extends Component {
       <div className="detail_screen">
         <Navbar />
 
-        <GreenRectangle classCSS="rectangle-tabar-detail" />
+        <GreenRectangle classCSS="rectangle-tabar-detail"></GreenRectangle>
 
         <div className="people-number-detail">
-          <span className="label-detail">No. Personas </span>
+          <span className="label-detail">No. Personas 1 </span>
           <span className="data-detail"></span>
           <br></br>
-          <span className="label-detail">Nombre </span>
+          <span className="label-detail" >Nombre Tania  </span>
           <span className="data-detail"></span>
         </div>
         <div className="table-detail-container">
           <AccountPerGuest />
-          <AccountPerGuest />
-          <AccountPerGuest />
-          <AccountPerGuest />
-          <AccountPerGuest />
-          <AccountPerGuest />
+          
         </div>
       </div>
     );

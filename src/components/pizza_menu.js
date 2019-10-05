@@ -82,7 +82,7 @@ class PizzaMenu extends Component {
         <tbody>
           <tr>
             <th>
-              <select className="options-menu" onChange={this.handleChange} name="select-type">
+              <select className="options-menu" onChange={this.handleChange}  name="select-type">
                 {nuevo.map((x, index) => {
                   return (
                     <option key={index} value={x.name}>
