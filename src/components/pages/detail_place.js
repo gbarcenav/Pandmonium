@@ -21,11 +21,6 @@ class DetailPlace extends Component {
         </div>
         <div className="table-detail-container">
           <AccountPerGuest />
-          <AccountPerGuest />
-          <AccountPerGuest />
-          <AccountPerGuest />
-          <AccountPerGuest />
-          <AccountPerGuest />
         </div>
       </div>
     );

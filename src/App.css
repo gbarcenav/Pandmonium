@@ -35,6 +35,7 @@ button {
   font-weight: 700;
   outline: none;
   background-color: transparent;
+  border: transparent;
 }
 
 input {
@@ -43,6 +44,10 @@ input {
 
 textarea {
   outline: none;
+}
+
+table {
+  font-family: "Dosis", sans-serif;
 }
 
 /* FONDO Y ESTILOS DE PANTALLA LOGIN */
