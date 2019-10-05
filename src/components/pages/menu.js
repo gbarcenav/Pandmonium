@@ -16,11 +16,15 @@ import PizzaMenu from "../pizza_menu";
 import FoodBtn from "../food_btn";
 import DataMenu from "../../menu.json";
 
+
+
+
 class Menu extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      indice: 0
+      indice: 0,
+      numburger:''
     };
   }
 
