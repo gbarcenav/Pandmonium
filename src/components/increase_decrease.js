@@ -8,13 +8,23 @@ class InputIncreaseDecrease extends Component {
   Increase = () => {
     if(this.state.counter >= 0){
       this.setState({counter:this.state.counter + 1 })
+      this.props.ChangeQuantity(this.state.counter + 1);
     }
+    else{
+      this.setState({counter:0})
+    }
+    
   }
 
   Decrease = () => {
     if(this.state.counter > 0){
       this.setState({counter:this.state.counter - 1 })
+      this.props.ChangeQuantity(this.state.counter - 1);
     }
+    else{
+      this.setState({counter:0})
+    }
+    
   }
 
   render() {
