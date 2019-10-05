@@ -28,6 +28,18 @@
   },
   {
     "id": "2",
+    "platillo":"papas",
+    "tipo":[
+      {"name": "gajo", "price":["50"]},
+      {"name":"alitas diablo", "price":["60"]},
+      {"name":"vuelvela hawaiana", "price":["20"]},
+      {"name": "queso tipo americano", "price":["15"]},
+      {"name":"queso de papa", "price":["10"]}
+    ],
+    "opcion":["NA"]
+  },
+  {
+    "id": "3",
     "platillo": "jochos",
     "tipo": [
       { "name": "jochoslaw", "price": ["50", "65"] },
@@ -39,7 +51,18 @@
     "opcion":["Sencillo","Combo"]
   },
   {
-    "id": "3",
+    "id":"4",
+    "platillo":"postres",
+    "tipo":[
+      {"name":"mousse", "price":["30"]},
+      {"name":"vegatina de sabores", "price":["25"]},
+      {"name":"hell girl", "price":["50"]},
+      {"name":"pan dulce", "price":["15"]}
+    ],
+    "opcion":["NA"]
+  },
+  {
+    "id": "5",
     "platillo": "ensaladas",
     "tipo": [
       { "name": "delírium", "price": ["50"] },
@@ -48,7 +71,7 @@
     "opcion":["NA"]
   },
   {
-    "id": "4",
+    "id": "6",
     "platillo": "malteadas",
     "tipo": [
       { "name": "fresa", "price": ["50"] },
@@ -59,7 +82,7 @@
     "opcion":["NA"]
   },
   {
-    "id": "5",
+    "id": "7",
     "platillo": "sodas",
     "tipo": [
       { "name": "piña & coco", "price": ["45"] },

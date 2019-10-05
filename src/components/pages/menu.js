@@ -84,9 +84,14 @@ class Menu extends Component {
             image={IceCream}
             alt="Postres"
             getIndex={this.getIndex}
+            indice={DataMenu[6].id}
             //
           />
-          <FoodBtn image={Frappe} alt="Bebidas" getIndex={this.getIndex} />
+          <FoodBtn image={Frappe} 
+          alt="Bebidas" 
+          getIndex={this.getIndex}
+          indice={DataMenu[7].id}
+           />
         </div>
         <div className="menu-w-summary">
           <form className="menu-buy">
