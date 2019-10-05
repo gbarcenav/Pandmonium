@@ -23,7 +23,11 @@ class Menu extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      indice: 0
+      indice: 0,
+      coment: '',
+      valueType: '',
+      valueOption: '',
+      quantity: 0
     };
   }
 
@@ -31,6 +35,29 @@ class Menu extends Component {
     this.setState({ indice: i });
   };
 
+  ChangeValueSelect = (e) =>{
+    if (e.target.name === 'select-type') {
+      this.setState({
+        valueType: e.target.value
+      })  
+    }else if (e.target.name === 'select-option') {
+      this.setState({
+        valueOption: e.target.value    
+      });      
+    } 
+  }
+
+  ChangeQuantity = (counter) =>{
+    this.setState({
+      quantity: counter 
+    });
+  }
+
+  AddComent = (e)=>{
+    this.setState({
+      coment: e.target.value
+    })
+  }
 
   render() {
     return (
@@ -82,13 +109,23 @@ class Menu extends Component {
             getIndex={this.getIndex}
             //
           />
-          <FoodBtn image={Frappe} alt="Bebidas" getIndex={this.getIndex} />
+          <FoodBtn image={Frappe} 
+            alt="Bebidas" 
+            getIndex={this.getIndex} />
         </div>
         <div className="menu-w-summary">
           <form className="menu-buy">
-            <PizzaMenu indice={this.state.indice} />
-            <textarea className="comments" placeholder="Comentarios"></textarea>
-            <BtnAdd className="btn-green btn-green-add" btntext="AÑADIR" />
+            <PizzaMenu indice={this.state.indice} 
+              ChangeValueSelect={this.ChangeValueSelect} 
+              ChangeQuantity={this.ChangeQuantity}/>
+            <textarea className="comments" placeholder="Comentarios" 
+              onChange={this.AddComent}>
+            </textarea>
+            <BtnAdd className="btn-green btn-green-add" btntext="AÑADIR" 
+              coment={this.state.coment}
+              valueType={this.state.valueType}
+              valueOption={this.state.valueOption}
+              quantity={this.state.quantity}/>
           </form>
           <div>
             <table className="table_products">
@@ -118,7 +155,7 @@ class Menu extends Component {
           <BtnGreen
             btntext="ENVIAR A COCINA"
             onClick={this.onClick}
-            // ruta={"/Summary"}
+            ruta={"/Places"}
           />
         </div>
       </div>

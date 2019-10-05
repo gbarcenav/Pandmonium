@@ -3,6 +3,7 @@
     "id": "0",
     "platillo": "hamburguesa",
     "tipo": [
+      { "name": "", "price": ["", ""] },
       { "name": "malicia", "price": ["50", "65"] },
       { "name": "soberbia", "price": ["50", "65"] },
       { "name": "gula", "price": ["50", "65"] },
@@ -10,12 +11,13 @@
       { "name": "encarnación", "price": ["65", "80"] },
       { "name": "banana limbo", "price": ["65", "80"] }
     ],
-    "opcion":["Sencillo","Combo"]
+    "opcion":[" ","Sencillo","Combo"]
   },
   {
     "id": "1",
     "platillo": "pizza",
     "tipo": [
+      { "name": "", "price": ["", ""] },
       { "name": "chaneque", "price": ["150", "180", "210"] },
       { "name": "sodoma", "price": ["130", "160", "190"] },
       { "name": "lujuria", "price": ["150", "180", "210"] },
@@ -24,24 +26,26 @@
       { "name": "tiki-hawaiana", "price": ["140", "170", "200"] },
       { "name": "margarita", "price": ["110", "140", "170"] }
     ],
-    "opcion":["Mediana","Grande","Familiar"]
+    "opcion":[" ","Mediana","Grande","Familiar"]
   },
   {
     "id": "2",
     "platillo": "jochos",
     "tipo": [
+      { "name": "", "price": ["", ""] },
       { "name": "jochoslaw", "price": ["50", "65"] },
       { "name": "Xoloescuintle", "price": ["65", "80"] },
       { "name": "pitbull", "price": ["65", "80"] },
       { "name": "hachiko", "price": ["70", "85"] },
       { "name": "pastor alemán", "price": ["80", "95"] }
     ],
-    "opcion":["Sencillo","Combo"]
+    "opcion":["","Sencillo","Combo"]
   },
   {
     "id": "3",
     "platillo": "ensaladas",
     "tipo": [
+      { "name": "", "price": ["", ""] },
       { "name": "delírium", "price": ["50"] },
       { "name": "paraíso perdido", "price": ["70"] }
     ],
@@ -51,6 +55,7 @@
     "id": "4",
     "platillo": "malteadas",
     "tipo": [
+      { "name": "", "price": ["", ""] },
       { "name": "fresa", "price": ["50"] },
       { "name": "chocomenta", "price": ["50"] },
       { "name": "mazapán", "price": ["50"] },
@@ -62,6 +67,7 @@
     "id": "5",
     "platillo": "sodas",
     "tipo": [
+      { "name": "", "price": ["", ""] },
       { "name": "piña & coco", "price": ["45"] },
       { "name": "limón & jícama", "price": ["45"] },
       { "name": "maracuyá", "price": ["45"] },
