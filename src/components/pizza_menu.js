@@ -4,33 +4,6 @@ import InputIncreaseDecrease from "./increase_decrease";
 import DataMenu from "../menu.json";
 import * as firebase from 'firebase'
 
-const firebaseConfig = {
-  apiKey: "AIzaSyAMeCCFhYbZ47QYMUZAeTR-D7aKvvBqL44",
-  authDomain: "burgerqueen-pandmonium.firebaseapp.com",
-  databaseURL: "https://burgerqueen-pandmonium.firebaseio.com",
-  projectId: "burgerqueen-pandmonium",
-  storageBucket: "burgerqueen-pandmonium.appspot.com",
-  messagingSenderId: "46946006669",
-  appId: "1:46946006669:web:dd61f494242ed57c4c14c4"
-};
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-// const db = firebase.firestore();
-// const strDate = currentDate.getFullYear()-currentDate.getMonth()+1-currentDate.getDate();
-// db.collection('pedidos').add({
-//   pedidos:"Pandemonium",
-//   date: strDate
-  
-  
-// })
-// .then((docRef) => {
-//   console.log("Document written with ID: ", docRef.id);
-  
-// })
-// .catch((error) => {
-//   console.error("Error adding document: ", error);
-// }
-// )
 
 
 class PizzaMenu extends Component {
@@ -38,8 +11,32 @@ class PizzaMenu extends Component {
     super(props);
     this.state = {
       valueType: '',
-      valueoption: ''
+      valueoption: '',
+      
     };
+  }
+  componentDidMount(){
+    const currentDate = new Date();
+  
+  
+    const db = firebase.firestore();
+    const strDate = `${currentDate.getFullYear()}-${currentDate.getMonth()+1}-${currentDate.getDate()}`
+    const strHour=`${currentDate.getHours()}-${currentDate.getMinutes()} hrs`
+    db.collection('pedidos').add({
+  pedidos:"Pandemonium",
+  date: strDate,
+  dateHour: strHour
+})
+.then((docRef) => {
+  console.log("Document written with ID: ", docRef.id);
+  
+})
+.catch((error) => {
+  console.error("Error adding document: ", error);
+}
+)
+      
+    
   }
   
   handleChange = (e) =>{
