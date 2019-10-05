@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import InputIncreaseDecrease from "./increase_decrease";
 
 import DataMenu from "../menu.json";
-import * as firebase from 'firebase'
+// import * as firebase from 'firebase'
 
 
 
@@ -15,29 +15,29 @@ class PizzaMenu extends Component {
       
     };
   }
-  componentDidMount(){
-    const currentDate = new Date();
+//   componentDidMount(){
+//     const currentDate = new Date();
+//     const db = firebase.firestore();
+//     const strDate = `${currentDate.getFullYear()}-${currentDate.getMonth()+1}-${currentDate.getDate()}`
+//     const strHour=`${currentDate.getHours()}-${currentDate.getMinutes()} hrs`
+
+//     db.collection('pedidos').add({
+//   pedidos:"Pandemonium",
+//   date: strDate,
+//   dateHour: strHour
   
+// })
+// .then((docRef) => {
+//   console.log("Document written with ID: ", docRef.id);
   
-    const db = firebase.firestore();
-    const strDate = `${currentDate.getFullYear()}-${currentDate.getMonth()+1}-${currentDate.getDate()}`
-    const strHour=`${currentDate.getHours()}-${currentDate.getMinutes()} hrs`
-    db.collection('pedidos').add({
-  pedidos:"Pandemonium",
-  date: strDate,
-  dateHour: strHour
-})
-.then((docRef) => {
-  console.log("Document written with ID: ", docRef.id);
-  
-})
-.catch((error) => {
-  console.error("Error adding document: ", error);
-}
-)
+// })
+// .catch((error) => {
+//   console.error("Error adding document: ", error);
+// }
+// )
       
     
-  }
+//   }
   
   handleChange = (e) =>{
     if (e.target.name === 'select-type') {
@@ -57,15 +57,11 @@ class PizzaMenu extends Component {
     
   }
   
+  
   render() {
     let nuevo = DataMenu[this.props.indice].tipo;
     let detalle = DataMenu[this.props.indice].opcion;
-    const nameRef = firebase.database().ref().child('object').child('pedido')
-    nameRef.on('value', snapshot => {
-    this.setState({
-      name: snapshot.val()
-    })
-  })
+    
 
     return (
       <table className="tag-menu-product">
