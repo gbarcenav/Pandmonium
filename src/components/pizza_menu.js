@@ -18,7 +18,8 @@ class PizzaMenu extends Component {
   }
 
   
-  handleChange = (e) =>{
+  handleClick = (e) =>{
+    e.preventDefault()
     if (e.target.name === 'select-type') {
       this.setState({
         valueType: e.target.value
@@ -33,34 +34,60 @@ class PizzaMenu extends Component {
       console.log(this.state.valueoption);
       
     } 
-    
-  }
-  componentDidMount(){
     const currentDate = new Date();
-        const db = firebase.firestore();
-        const strDate = `${currentDate.getFullYear()}-${currentDate.getMonth()+1}-${currentDate.getDate()}`
-        const strHour=`${currentDate.getHours()}-${currentDate.getMinutes()} hrs`
+    const db = firebase.firestore();
+    const strDate = `${currentDate.getFullYear()}-${currentDate.getMonth()+1}-${currentDate.getDate()}`
+    const strHour=`${currentDate.getHours()}-${currentDate.getMinutes()} hrs`
+
+    db.collection('pedidos').add({
+  pedidos:"Pandemonium",
+  date: strDate,
+  dateHour: strHour,
+  name:localStorage.getItem('name'),
+  num:localStorage.getItem('num'),
+  option:this.state.valueoption,
+  orden:localStorage.getItem('order'),
+  table:localStorage.getItem('num-mesa')
+  
+  
+})
+.then((docRef) => {
+  console.log("Document written with ID: ", docRef.id);
+  
+})
+.catch((error) => {
+  console.error("Error adding document: ", error);
+}
+)
     
-        db.collection('pedidos').add({
-      pedidos:"Pandemonium",
-      date: strDate,
-      dateHour: strHour,
-      name:localStorage.getItem('name'),
-      num:localStorage.getItem('num'),
-      option:this.state.valueoption,
-      detalle:this.state.valueType
-      
-      
-    })
-    .then((docRef) => {
-      console.log("Document written with ID: ", docRef.id);
-      
-    })
-    .catch((error) => {
-      console.error("Error adding document: ", error);
-    }
-    )
   }
+  // componentDidMount(){
+  //   const currentDate = new Date();
+  //       const db = firebase.firestore();
+  //       const strDate = `${currentDate.getFullYear()}-${currentDate.getMonth()+1}-${currentDate.getDate()}`
+  //       const strHour=`${currentDate.getHours()}-${currentDate.getMinutes()} hrs`
+    
+  //       db.collection('pedidos').add({
+  //     pedidos:"Pandemonium",
+  //     date: strDate,
+  //     dateHour: strHour,
+  //     name:localStorage.getItem('name'),
+  //     num:localStorage.getItem('num'),
+  //     option:this.state.valueoption,
+  //     detalle:this.state.valueType,
+  //     table:localStorage.getItem('num-mesa')
+      
+      
+  //   })
+  //   .then((docRef) => {
+  //     console.log("Document written with ID: ", docRef.id);
+      
+  //   })
+  //   .catch((error) => {
+  //     console.error("Error adding document: ", error);
+  //   }
+  //   )
+  // }
 
   
   
@@ -81,10 +108,10 @@ class PizzaMenu extends Component {
         <tbody>
           <tr>
             <th>
-              <select className="options-menu" onChange={this.props.ChangeValueSelect} name="select-type">
+              <select className="options-menu"  onClick={this.handleClick} name="select-type">
                 {nuevo.map((x, index) => {
                   return (
-                    <option key={index} value={x.name} onClick={this.componentDidMount(x.name)}>
+                    <option key={index} value={x.name}>
                       {x.name}
                     </option>
                   );
@@ -97,7 +124,7 @@ class PizzaMenu extends Component {
             </td>
 
             <th>
-              <select className="options-menu" onChange={this.props.ChangeValueSelect} name='select-option'>
+              <select className="options-menu" onClick={this.handleClick} name='select-option'>
                 {detalle.map((x, index)=>{
                   return(
                     <option key={index} value={x} >{x}</option>

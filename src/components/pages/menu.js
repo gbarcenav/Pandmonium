@@ -27,14 +27,10 @@ class Menu extends Component {
     super(props);
     this.state = {
       indice: 0,
-<<<<<<< HEAD
-      optionFood: ''
-=======
       coment: '',
       valueType: '',
       valueOption: '',
       quantity: 0
->>>>>>> upstream/master
     };
   }
 
@@ -123,7 +119,6 @@ class Menu extends Component {
             //
           />
           <FoodBtn image={Frappe} 
-<<<<<<< HEAD
           alt="Bebidas" 
           getIndex={this.getIndex}
           indice={DataMenu[7].id}
@@ -134,24 +129,6 @@ class Menu extends Component {
             <PizzaMenu indice={this.state.indice} getOptionValue={this.getOptionValue}/>
             <textarea className="comments" placeholder="Comentarios"></textarea>
             <BtnAdd className="btn-green btn-green-add" btntext="AÑADIR" />
-=======
-            alt="Bebidas" 
-            getIndex={this.getIndex} />
-        </div>
-        <div className="menu-w-summary">
-          <form className="menu-buy">
-            <PizzaMenu indice={this.state.indice} 
-              ChangeValueSelect={this.ChangeValueSelect} 
-              ChangeQuantity={this.ChangeQuantity}/>
-            <textarea className="comments" placeholder="Comentarios" 
-              onChange={this.AddComent}>
-            </textarea>
-            <BtnAdd className="btn-green btn-green-add" btntext="AÑADIR" 
-              coment={this.state.coment}
-              valueType={this.state.valueType}
-              valueOption={this.state.valueOption}
-              quantity={this.state.quantity}/>
->>>>>>> upstream/master
           </form>
               <p>
                 {/* Aquí se añaden los comenatrios en caso de que se ingrese algo */}
