@@ -8,18 +8,29 @@ class TableDetail extends Component {
       <table>
         <thead>
           <tr>
-            <th>CONCEPTO</th>
-            <th>PRECIO</th>
-            <th>COMENTARIOS</th>
+            <th>Concepto</th>
+            <th>Detalle</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
           </tr>
         </thead>
         <tbody>
           <AddRow
-            conceptText="MALICIA"
-            costQuantity="$65.00"
-            commentText="Sin verdura"
+            conceptText="Malicia"
+            quantity="x 1"
+            size="Combo"
+            costQuantity="$65"
+            name="a"
+            value="65"
           />
-          <AddRow conceptText="DELIRIUM" costQuantity="$50.00" commentText="" />
+          <AddRow
+            conceptText="Mango"
+            quantity="x 1"
+            size="-"
+            costQuantity="$45"
+            name="b"
+            value="45"
+          />
         </tbody>
       </table>
     );

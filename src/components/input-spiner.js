@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
 class InputSpiner extends Component {
-  
   render() {
     return (
       <input
@@ -9,6 +8,7 @@ class InputSpiner extends Component {
         name="quantity"
         min="1"
         className="input-spiner"
+        required
       ></input>
     );
   }
