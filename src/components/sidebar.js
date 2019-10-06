@@ -12,8 +12,20 @@ export default props => {
         <br />
         <hr></hr>
       </Link>
-      <Link className="menu-item" to="/DetailPlace">
-        Asignación de lugar
+      <Link className="menu-item" to="/Places">
+        Abrir Orden
+        <br />
+        <br />
+        <hr></hr>
+      </Link>
+      <Link className="menu-item" to="/AccountList">
+        Cuentas Abiertas
+        <br />
+        <br />
+        <hr></hr>
+      </Link> 
+      <Link>
+      Ventas del día
         <br />
         <br />
         <hr></hr>
@@ -24,11 +36,8 @@ export default props => {
         <br />
         <hr></hr>
       </Link>
-      {/* <a className="menu-item" href="/AccountList"> */}
-      {/* <Link className="menu-item" to="/AccountList">
-        Cuentas Abiertas
-      </Link>  */}
-      {/* </a> */}
+      
+      
     </Menu>
   );
 };

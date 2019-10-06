@@ -23,12 +23,40 @@ class Menu extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      indice: 0
+      indice: 0,
+      coment: "",
+      valueType: "",
+      valueOption: "",
+      quantity: 0
     };
   }
 
   getIndex = i => {
     this.setState({ indice: i });
+  };
+
+  ChangeValueSelect = e => {
+    if (e.target.name === "select-type") {
+      this.setState({
+        valueType: e.target.value
+      });
+    } else if (e.target.name === "select-option") {
+      this.setState({
+        valueOption: e.target.value
+      });
+    }
+  };
+
+  ChangeQuantity = counter => {
+    this.setState({
+      quantity: counter
+    });
+  };
+
+  AddComent = e => {
+    this.setState({
+      coment: e.target.value
+    });
   };
 
   render() {
@@ -85,25 +113,46 @@ class Menu extends Component {
         </div>
         <div className="menu-w-summary">
           <form className="menu-buy">
-            <PizzaMenu indice={this.state.indice} />
-            <textarea className="comments" placeholder="Comentarios"></textarea>
-            <BtnAdd className="btn-green btn-green-add" btntext="AÑADIR" />
+            <PizzaMenu
+              indice={this.state.indice}
+              ChangeValueSelect={this.ChangeValueSelect}
+              ChangeQuantity={this.ChangeQuantity}
+            />
+            <textarea
+              className="comments"
+              placeholder="Comentarios"
+              onChange={this.AddComent}
+            ></textarea>
+            <BtnAdd
+              className="btn-green btn-green-add"
+              btntext="AÑADIR"
+              coment={this.state.coment}
+              valueType={this.state.valueType}
+              valueOption={this.state.valueOption}
+              quantity={this.state.quantity}
+            />
           </form>
           <div>
             <table className="table_products">
-              <tr>
-                <th>Producto/s</th>
-                <th>Eliminar</th>
-              </tr>
-              <tr>
-                <ItemList itemName="MALICIA" />
-                {/* itemName cambia según el nombre del producto que se añada */}
-                <td>
-                  <button>
-                    <img src={Delete} alt="Eliminar"></img>
-                  </button>
-                </td>
-              </tr>
+              <thead>
+                <tr>
+                  <th>Producto/s</th>
+                  <th>Cantidad</th>
+                  <th>Eliminar</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <ItemList itemName="MALICIA" />
+                  {/* itemName cambia según el nombre del producto que se añada */}
+                  <td>x 2</td>
+                  <td>
+                    <button>
+                      <img src={Delete} alt="Eliminar"></img>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
             </table>
             <div>
               <p>
@@ -115,7 +164,7 @@ class Menu extends Component {
           <BtnGreen
             btntext="ENVIAR A COCINA"
             onClick={this.onClick}
-            // ruta={"/Summary"}
+            ruta={"/Places"}
           />
         </div>
       </div>

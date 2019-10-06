@@ -36,6 +36,7 @@ button {
   outline: none;
   background-color: transparent;
   border: transparent;
+  font-family: "Dosis", sans-serif;
 }
 
 input {
@@ -122,7 +123,7 @@ table {
   font-size: 35px;
   font-weight: 600;
   font-family: Arial, Helvetica, sans-serif;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 0, 0);
   padding: 10px;
 }
 
