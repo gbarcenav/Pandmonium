@@ -5,9 +5,12 @@ import FormNameNumber from "../number_name_form";
 import TableBar from "../tables";
 
 class Places extends Component {
-  state = {
-    number: null
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      number: null
+    };
+  }
 
   changeTitle = (title, background) => {
     if (background == null) {

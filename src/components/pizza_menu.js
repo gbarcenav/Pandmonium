@@ -81,7 +81,7 @@ class PizzaMenu extends Component {
         <tbody>
           <tr>
             <th>
-              <select className="options-menu" onChange={this.handleChange}  name="select-type">
+              <select className="options-menu" onChange={this.props.ChangeValueSelect} name="select-type">
                 {nuevo.map((x, index) => {
                   return (
                     <option key={index} value={x.name} onClick={this.componentDidMount(x.name)}>
@@ -93,11 +93,11 @@ class PizzaMenu extends Component {
             </th>
 
             <td>
-              <InputIncreaseDecrease />
+              <InputIncreaseDecrease ChangeQuantity={this.props.ChangeQuantity}/>
             </td>
 
             <th>
-              <select className="options-menu" onChange={this.handleChange} name='select-option'>
+              <select className="options-menu" onChange={this.props.ChangeValueSelect} name='select-option'>
                 {detalle.map((x, index)=>{
                   return(
                     <option key={index} value={x} >{x}</option>

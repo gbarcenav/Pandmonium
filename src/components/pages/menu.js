@@ -10,13 +10,13 @@ import Cake from "../ux_resources/ICONOS MENU/ICONO_CAKE.png";
 import Salad from "../ux_resources/ICONOS MENU/ICONO_SALAD.png";
 import IceCream from "../ux_resources/ICONOS MENU/ICON_ICECREAM.png";
 import Frappe from "../ux_resources/ICONOS MENU/ICON_MILKSHAKE.png";
-import Delete from "../ux_resources/delete.png";
+
 
 import BtnGreen from "../btn_green";
 import PizzaMenu from "../pizza_menu";
 import FoodBtn from "../food_btn";
 import DataMenu from "../../menu.json";
-import ItemList from "../item-list";
+
 import BtnAdd from "../btn_add";
 
 
@@ -27,7 +27,14 @@ class Menu extends Component {
     super(props);
     this.state = {
       indice: 0,
+<<<<<<< HEAD
       optionFood: ''
+=======
+      coment: '',
+      valueType: '',
+      valueOption: '',
+      quantity: 0
+>>>>>>> upstream/master
     };
   }
 
@@ -38,6 +45,29 @@ class Menu extends Component {
     this.setState({optionFood:i})
   }
 
+  ChangeValueSelect = (e) =>{
+    if (e.target.name === 'select-type') {
+      this.setState({
+        valueType: e.target.value
+      })  
+    }else if (e.target.name === 'select-option') {
+      this.setState({
+        valueOption: e.target.value    
+      });      
+    } 
+  }
+
+  ChangeQuantity = (counter) =>{
+    this.setState({
+      quantity: counter 
+    });
+  }
+
+  AddComent = (e)=>{
+    this.setState({
+      coment: e.target.value
+    })
+  }
 
   render() {
     return (
@@ -93,6 +123,7 @@ class Menu extends Component {
             //
           />
           <FoodBtn image={Frappe} 
+<<<<<<< HEAD
           alt="Bebidas" 
           getIndex={this.getIndex}
           indice={DataMenu[7].id}
@@ -103,38 +134,35 @@ class Menu extends Component {
             <PizzaMenu indice={this.state.indice} getOptionValue={this.getOptionValue}/>
             <textarea className="comments" placeholder="Comentarios"></textarea>
             <BtnAdd className="btn-green btn-green-add" btntext="AÑADIR" />
+=======
+            alt="Bebidas" 
+            getIndex={this.getIndex} />
+        </div>
+        <div className="menu-w-summary">
+          <form className="menu-buy">
+            <PizzaMenu indice={this.state.indice} 
+              ChangeValueSelect={this.ChangeValueSelect} 
+              ChangeQuantity={this.ChangeQuantity}/>
+            <textarea className="comments" placeholder="Comentarios" 
+              onChange={this.AddComent}>
+            </textarea>
+            <BtnAdd className="btn-green btn-green-add" btntext="AÑADIR" 
+              coment={this.state.coment}
+              valueType={this.state.valueType}
+              valueOption={this.state.valueOption}
+              quantity={this.state.quantity}/>
+>>>>>>> upstream/master
           </form>
-          <div>
-            <table className="table_products">
-              <tbody>
-              <tr>
-                <th>Producto/s</th>
-                <th>Eliminar</th>
-              </tr>
-              <tr>
-                <ItemList itemName="MALICIA" />
-                {/* itemName cambia según el nombre del producto que se añada */}
-                <td>
-                  <button>
-                    <img src={Delete} alt="Eliminar"></img>
-                  </button>
-                </td>
-              </tr>
-              </tbody>
-            </table>
-            <div>
               <p>
                 {/* Aquí se añaden los comenatrios en caso de que se ingrese algo */}
               </p>
             </div>
-          </div>
-
           <BtnGreen
             btntext="ENVIAR A COCINA"
             onClick={this.onClick}
-            // ruta={"/Summary"}
+            ruta={"/Places"}
           />
-        </div>
+      
       </div>
     );
   }

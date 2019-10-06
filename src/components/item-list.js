@@ -1,7 +1,37 @@
 import React, { Component } from "react";
+import Delete from "./ux_resources/delete.png";
+
 class ItemList extends Component {
+  deleteOrden=()=>{
+
+  }
+  
   render() {
-    return <td>{this.props.itemName}</td>;
+    return(
+    <div>
+      <table className="table_products">
+        <tbody>
+        <tr>
+          <th>Producto/s</th>
+          <th>Eliminar</th>
+        </tr>
+        
+      {this.props.itemName.map((producto,i)=>{
+       return (
+        <tr key={i}>
+            <td>{producto.type}  {producto.option}  {producto.quantity}</td>
+            <td>
+            <button onClick={this.deleteOrden}>
+              <img src={Delete} alt="Eliminar"></img>
+            </button>
+            </td>
+            </tr>
+        )
+      })}
+        </tbody>
+      </table>
+    </div>
+    )
   }
 }
 
