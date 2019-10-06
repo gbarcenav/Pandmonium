@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Input from "../components/input";
 import BtnGreen from "../components/btn_green";
 
 class FormTotal extends Component {
@@ -7,7 +6,7 @@ class FormTotal extends Component {
     return (
       <form className={this.props.classCSS}>
         <label>TOTAL </label>
-        <Input classCSS="total-input" typeInput="number" />
+        <span className="total-input">$65</span>
         <BtnGreen btntext="PAGAR" />
       </form>
     );

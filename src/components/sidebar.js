@@ -13,31 +13,28 @@ export default props => {
         <hr></hr>
       </Link>
       <Link className="menu-item" to="/Places">
-        Abrir Orden
+        Abrir orden
         <br />
         <br />
         <hr></hr>
       </Link>
       <Link className="menu-item" to="/AccountList">
-        Cuentas Abiertas
-        <br />
-        <br />
-        <hr></hr>
-      </Link> 
-      <Link>
-      Ventas del día
+        Cuentas abiertas
         <br />
         <br />
         <hr></hr>
       </Link>
-      <Link className="menu-item" to="/">
+      <Link>
+        Ventas del día
+        <br />
+        <br />
+        <hr></hr>
+      </Link>
+      <Link className="menu-item close" to="/">
         Cerrar sesión
         <br />
         <br />
-        <hr></hr>
       </Link>
-      
-      
     </Menu>
   );
 };

@@ -2,15 +2,14 @@ import React, { Component } from "react";
 import Navbar from "../navbar";
 // import { Link } from "react-router-dom";
 
-import Burger from "../ux_resources/ICONOS MENU/ICONO_HAMBURGUESA_MENU.png";
-import Pizza from "../ux_resources/ICONOS MENU/PIZZA_ICONO.png";
-import Papatoes from "../ux_resources/ICONOS MENU/ICONOS_PAPAS.png";
-import HotDog from "../ux_resources/ICONOS MENU/ICONO_HOT_DOG.png";
-import Cake from "../ux_resources/ICONOS MENU/ICONO_CAKE.png";
-import Salad from "../ux_resources/ICONOS MENU/ICONO_SALAD.png";
-import IceCream from "../ux_resources/ICONOS MENU/ICON_ICECREAM.png";
-import Frappe from "../ux_resources/ICONOS MENU/ICON_MILKSHAKE.png";
-
+import Burger from "../ux_resources/iconos_2/burger.png";
+import Pizza from "../ux_resources/iconos_2/pizza-slice.png";
+import Papatoes from "../ux_resources/iconos_2/fries.png";
+import HotDog from "../ux_resources/iconos_2/hotdog.png";
+import Cake from "../ux_resources/iconos_2/cupcake.png";
+import Salad from "../ux_resources/iconos_2/salad.png";
+import IceCream from "../ux_resources/iconos_2/mojito.png";
+import Frappe from "../ux_resources/iconos_2/milkshake.png";
 
 import BtnGreen from "../btn_green";
 import PizzaMenu from "../pizza_menu";
@@ -24,9 +23,9 @@ class Menu extends Component {
     super(props);
     this.state = {
       indice: 0,
-      coment: '',
-      valueType: '',
-      valueOption: '',
+      coment: "",
+      valueType: "",
+      valueOption: "",
       quantity: 0
     };
   }
@@ -35,35 +34,34 @@ class Menu extends Component {
     this.setState({ indice: i });
   };
 
-  ChangeValueSelect = (e) =>{
-    if (e.target.name === 'select-type') {
+  ChangeValueSelect = e => {
+    if (e.target.name === "select-type") {
       this.setState({
         valueType: e.target.value
-      })  
-    }else if (e.target.name === 'select-option') {
+      });
+    } else if (e.target.name === "select-option") {
       this.setState({
-        valueOption: e.target.value    
-      });      
-    } 
-  }
+        valueOption: e.target.value
+      });
+    }
+  };
 
-  ChangeQuantity = (counter) =>{
+  ChangeQuantity = counter => {
     this.setState({
-      quantity: counter 
+      quantity: counter
     });
-  }
+  };
 
-  AddComent = (e)=>{
+  AddComent = e => {
     this.setState({
       coment: e.target.value
-    })
-  }
+    });
+  };
 
   render() {
     return (
       <div className="menu">
         <Navbar />
-        <hr></hr>
 
         <div className="menu-draws">
           <FoodBtn
@@ -80,20 +78,19 @@ class Menu extends Component {
           />
           <FoodBtn
             image={Papatoes}
-            alt="Papas"
+            alt="Extras"
             getIndex={this.getIndex}
             indice={DataMenu[2].id}
           />
           <FoodBtn
             image={HotDog}
             alt="Hot Dogs"
-            styleCSS="btn-hd"
             getIndex={this.getIndex}
             indice={DataMenu[3].id}
           />
           <FoodBtn
             image={Cake}
-            alt="Pan"
+            alt="Postres"
             getIndex={this.getIndex}
             indice={DataMenu[4].id}
           />
@@ -105,38 +102,47 @@ class Menu extends Component {
           />
           <FoodBtn
             image={IceCream}
-            alt="Postres"
+            alt="Soda"
             getIndex={this.getIndex}
-            //
+            indice={DataMenu[7].id}
           />
-          <FoodBtn image={Frappe} 
-            alt="Bebidas" 
-            getIndex={this.getIndex} />
+          <FoodBtn
+            image={Frappe}
+            alt="Malteadas"
+            getIndex={this.getIndex}
+            indice={DataMenu[6].id}
+          />
         </div>
         <div className="menu-w-summary">
           <form className="menu-buy">
-            <PizzaMenu indice={this.state.indice} 
-              ChangeValueSelect={this.ChangeValueSelect} 
-              ChangeQuantity={this.ChangeQuantity}/>
-            <textarea className="comments" placeholder="Comentarios" 
-              onChange={this.AddComent}>
-            </textarea>
-            <BtnAdd className="btn-green btn-green-add" btntext="AÑADIR" 
+            <PizzaMenu
+              indice={this.state.indice}
+              ChangeValueSelect={this.ChangeValueSelect}
+              ChangeQuantity={this.ChangeQuantity}
+            />
+            <textarea
+              className="comments"
+              placeholder="Comentarios"
+              onChange={this.AddComent}
+            ></textarea>
+            <BtnAdd
+              className="btn-green btn-green-add"
+              btntext="AÑADIR"
               coment={this.state.coment}
               valueType={this.state.valueType}
               valueOption={this.state.valueOption}
-              quantity={this.state.quantity}/>
+              quantity={this.state.quantity}
+            />
           </form>
-              <p>
-                {/* Aquí se añaden los comenatrios en caso de que se ingrese algo */}
-              </p>
-            </div>
-          <BtnGreen
-            btntext="ENVIAR A COCINA"
-            onClick={this.onClick}
-            ruta={"/Places"}
-          />
-      
+        </div>
+        <p>
+          {/* Aquí se añaden los comenatrios en caso de que se ingrese algo */}
+        </p>
+        <BtnGreen
+          btntext="ENVIAR A COCINA"
+          onClick={this.onClick}
+          ruta={"/Places"}
+        />
       </div>
     );
   }

@@ -7,12 +7,12 @@
 }
 
 body {
-  color: #0d0d0d;
+  color: #0e6642;
   background-color: white;
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 75px;
   font-weight: 900;
 }
 
@@ -28,21 +28,34 @@ p {
 hr {
   width: 100%;
   height: 4px;
-  background-color: #39bf4d;
+  background-color: #0e6642;
 }
 
 button {
   font-weight: 700;
   outline: none;
   background-color: transparent;
+  border: transparent;
+  font-family: "Dosis", sans-serif;
+  color: #0e6642;
+}
+
+select {
+  color: #0e6642;
 }
 
 input {
   outline: none;
+  color: #0e6642;
 }
 
 textarea {
   outline: none;
+  color: #0e6642;
+}
+
+table {
+  font-family: "Dosis", sans-serif;
 }
 
 /* FONDO Y ESTILOS DE PANTALLA LOGIN */
@@ -52,61 +65,25 @@ textarea {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-}
-
-.backg-img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  /* position: relative; */
-}
-
-.backg-img::after {
-  content: "";
-  background-image: url(./components/ux_resources/green-earth.png);
-  background-size: 80% auto;
-  background-repeat: no-repeat;
-  background-position: center 400px;
-  opacity: 0.1;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-}
-
-/* Estilos barras de color */
-
-.rectangles {
-  width: 100%;
-  position: relative;
-}
-
-.black-rectangle {
-  width: 100%;
-  height: 11vh;
-  background: #0d0d0d;
-  padding-top: 6vh;
-}
-
-.green-rectangle {
-  width: 100%;
-  height: 3vh;
-  background: #39bf4d;
+  background: radial-gradient(
+    circle,
+    rgba(168, 200, 47, 1) 0%,
+    rgba(14, 102, 66, 1) 75%
+  );
 }
 
 /* Estilos logo */
 .logo-app {
-  height: 30vw;
+  height: 37vw;
   pointer-events: none;
-  margin-top: 30px;
+  margin-top: 70px;
 }
 
 /* Estilos saludo login */
 .greeting-login {
-  margin-top: 150px;
+  margin-top: 7vh;
   font-weight: 700;
+  color: white;
 }
 
 .unregistrer-msn {
@@ -114,42 +91,64 @@ textarea {
   height: auto;
   margin-left: auto;
   margin-right: auto;
-  font-size: 35px;
-  font-weight: 600;
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(255, 0, 0);
+  font-size: 41px;
+  font-weight: 700;
+  color: #993a40;
   padding: 10px;
 }
 
 /* Formulario login */
 .input-btn-form {
-  margin-top: 150px;
+  margin-top: 9vh;
 }
 
 /* Input login */
 .input-login {
-  background-color: rgba(105, 105, 105, 0.315);
+  background-color: rgba(227, 230, 230, 0.63);
   width: 60vw;
   height: 90px;
-  font-size: 50px;
-  font-family: "Playfair Display", serif;
+  font-size: 43px;
   font-weight: 700;
   border: transparent;
   text-align: center;
   margin-top: 30px;
   outline: 0px;
+  color: rgb(227, 230, 230);
+  border-radius: 50px;
+}
+::-webkit-input-placeholder {
+  color: ghostwhite;
+}
+
+:-moz-placeholder {
+  color: ghostwhite;
+}
+
+::-moz-placeholder {
+  color: ghostwhite;
+}
+
+:-ms-input-placeholder {
+  color: ghostwhite;
+}
+
+:focus::-webkit-input-placeholder {
+  color: transparent;
 }
 
 /* Botón verde */
 .btn-green {
-  width: 50vw;
+  width: auto;
   height: 80px;
   margin-top: 50px;
-  background-color: #39bf4d;
+  background-color: #f4981a;
+  margin-bottom: 3vh;
   color: white;
   border: transparent;
   font-size: 50px;
   outline: 0px;
+  border-radius: 50px;
+  padding: 0px 30px;
 }
 
 .btn-green-add {
@@ -161,7 +160,7 @@ textarea {
   width: 100vw;
   height: 100vh;
   text-align: center;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .navbar {
@@ -169,6 +168,12 @@ textarea {
   height: auto;
   padding: 20px;
   text-align: center;
+  background: linear-gradient(
+    313deg,
+    rgba(168, 200, 47, 1) 0%,
+    rgba(14, 102, 66, 1) 100%
+  );
+  position: fixed;
 }
 
 .menu-ham {
@@ -180,8 +185,9 @@ textarea {
 }
 
 .logo-nav {
-  width: 200px;
+  width: 11vw;
   position: relative;
+  left: 2vw;
 }
 
 /* Estilos barras y mesas */
@@ -190,74 +196,82 @@ textarea {
   height: auto;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 3vh;
+  margin-top: 17vh;
   text-align: center;
 }
 
 .bars-btn {
   width: 60px;
   height: 60px;
-  background-color: white;
   border-radius: 50%;
-  font-size: 25px;
-  font-weight: 700;
-  border: 2px solid #0d0d0d;
+  font-size: 33px;
+  font-weight: 800;
   margin-right: 10px;
   margin-left: 10px;
   cursor: pointer;
   outline: 0px;
+  box-shadow: 2px 2px 10px #666;
 }
 
 .tables {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
 }
 
 .table-btn {
-  width: 150px;
-  height: 100px;
-  background-color: white;
+  width: 145px;
+  height: 93px;
   border-radius: 15px;
-  font-size: 25px;
-  font-weight: 700;
-  border: 2px solid #0d0d0d;
+  font-size: 33px;
+  font-weight: 800;
   margin-right: 35px;
   margin-left: 35px;
   cursor: pointer;
   outline: 0px;
+  box-shadow: 2px 2px 10px #666;
+}
+.to-go-btn {
+  width: 182px;
+  height: 71px;
+  border-radius: 15px;
+  font-size: 33px;
+  font-weight: 800;
+  margin-bottom: 2vh;
+  cursor: pointer;
+  outline: 0px;
+  box-shadow: rgb(102, 102, 102) 2px 2px 10px;
 }
 
 .rectangle-tabar-selection {
   width: 100%;
   height: 77px;
-  background: #39bf4dad;
-  margin-top: 100px;
-  padding: 16px 40px;
-  font-size: 40px;
-  font-weight: 700;
-  font-family: Arial, Helvetica, sans-serif;
+  background: #a5d8e3;
+  padding: 11px 40px;
+  font-size: 42px;
+  font-weight: 800;
   border-radius: 20px;
   border: transparent;
   outline: 0px;
   text-align: left;
+  color: white;
 }
 
 /* Sección de registro de lugar y numero de personas */
 .label-detail {
   font-size: 35px;
   font-weight: 800;
-  color: #373a47;
 }
 .data-detail {
   font-size: 35px;
   font-weight: 400;
-  color: #0d0d0d;
 }
 .people-name-number {
-  width: 100%;
+  width: 80%;
   height: auto;
-  margin-top: 100px;
+  margin-top: 3vh;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .people-name-number p {
@@ -269,10 +283,9 @@ textarea {
 .input-name {
   width: 40vw;
   height: 50px;
-  border: solid gray 8px;
+  border: solid #a5d8e3 8px;
   border-radius: 20px;
   outline: 0px;
-  margin-bottom: 50px;
   text-align: center;
   font-size: 30px;
   font-weight: 700;
@@ -282,7 +295,7 @@ textarea {
 .input-spiner {
   width: 10vw;
   height: 50px;
-  border: solid gray 8px;
+  border: solid #a5d8e3 8px;
   border-radius: 20px;
   outline: 0px;
   margin-bottom: 30px;
@@ -305,16 +318,15 @@ textarea {
 .rectangle-tabar-detail {
   width: 100%;
   height: 77px;
-  background: #39bf4dad;
+  background: #a5d8e3;
   padding: 10px;
   padding: 16px 40px;
   font-size: 40px;
   font-weight: 700;
-  font-family: Arial, Helvetica, sans-serif;
   border-radius: 20px;
   border: transparent;
   outline: 0px;
-  text-align: left;
+  margin-top: 13vh;
 }
 
 .people-number-detail {
@@ -352,11 +364,9 @@ textarea {
 
 table {
   width: 100%;
-  text-align: left;
+  text-align: center;
   border-collapse: collapse;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 35px;
-  color: gray;
 }
 
 th,
@@ -374,10 +384,6 @@ td img {
   margin-left: 20px;
 }
 
-.cost {
-  text-align: right;
-}
-
 .comment {
   text-align: center;
 }
@@ -387,10 +393,8 @@ td img {
   width: 90vw;
   margin-left: auto;
   margin-right: auto;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 40px;
   font-weight: 700;
-  color: gray;
   padding: 30px;
   text-align: center;
 }
@@ -403,13 +407,11 @@ td img {
 .total-input {
   width: 200px;
   height: 70px;
-  border: solid gray 8px;
+  border: solid #a5d8e3 8px;
   border-radius: 20px;
   margin-right: 40px;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 40px;
   font-weight: 700;
-  color: gray;
   padding: 30px;
   text-align: right;
   padding-right: 10px;
@@ -420,32 +422,36 @@ td img {
 }
 
 /* SECCIÓN LISTA DE CUENTAS */
+.open-account {
+  margin-top: 17vh;
+}
 .rectangle-account {
   width: 100%;
   height: auto;
-  background: #39bf4dad;
+  background: #a5d8e3;
   margin-top: 15px;
   margin-bottom: 15px;
   padding: 16px;
   font-size: 40px;
-  font-weight: 700;
-  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
   border-radius: 20px;
   border: transparent;
   outline: 0px;
+  color: white;
 }
 
 /* SECCIÓN MENÚ */
 .menu {
   width: 100vw;
-  height: 110vh;
-  overflow: hidden;
+  height: 100vh;
+  overflow: scroll;
+  text-align: center;
 }
 .menu-draws {
   width: 90vw;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5vh;
+  margin-top: 17vh;
   margin-bottom: 5vh;
 }
 
@@ -461,7 +467,7 @@ td img {
 }
 
 .menu-draws button:hover {
-  background-color: #39bf4d;
+  background-color: #a8c82f;
 }
 
 .menu-draws img {
@@ -471,10 +477,8 @@ td img {
 
 .menu-w-summary {
   width: 90vw;
-  overflow: scroll;
   margin-left: auto;
   margin-right: auto;
-  height: 50vh;
   text-align: center;
 }
 
@@ -492,10 +496,9 @@ td img {
 }
 
 .tag-menu-product {
-  width: 850px;
+  width: 90vw;
   margin-left: auto;
   margin-right: auto;
-  color: #0d0d0d;
 }
 
 .btn-hd {
@@ -522,32 +525,31 @@ td {
 }
 
 .btn-inc-dec {
-  border: solid black 2px;
-  background-color: black;
+  background-color: white;
   width: 45px;
   height: 45px;
   font-size: 40px;
   border-radius: 50px;
   font-weight: 900;
-  color: aliceblue;
   line-height: 40px;
   outline: 0px;
+  box-shadow: 2px 2px 10px #666;
 }
 
 .increase {
   background-color: white;
-  color: black;
 }
 
 .pizza-input {
   width: 50px;
   height: 50px;
   border-radius: 10px;
-  border: solid 5px gray;
+  /* border: solid 5px gray; */
   text-align: center;
   margin-left: 13px;
   margin-right: 13px;
   font-size: 30px;
+  border: solid #a5d8e3 8px;
   font-weight: 700;
 }
 
@@ -562,19 +564,20 @@ table {
   font-size: 25px;
   padding-left: 10px;
   outline: transparent;
+  border: solid #a5d8e3 8px;
+  border-radius: 50px;
 }
 
 .comments {
-  width: 800px;
-  height: 200px;
+  width: 80vw;
+  height: 15vh;
   border-radius: 25px;
-  background-color: rgb(209, 207, 207);
   border: transparent;
-  color: gray;
   text-align: center;
   padding: 20px;
   font-size: 40px;
   margin: 40px;
+  border: solid #a5d8e3 8px;
 }
 /* ________________________MECHE MENÚ________________________________ */
 /* Individual item */
@@ -585,10 +588,9 @@ table {
   text-decoration: none;
   color: white;
   transition: color 0.2s;
-  font-size: 37px;
+  font-size: 35px;
   font-weight: bold;
   outline: 0px;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Position and sizing of burger button */
@@ -597,12 +599,12 @@ table {
   width: 70px;
   height: 60px;
   left: 60px;
-  top: 60px;
+  top: 4vh;
 }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #39bf4d;
+  background: white;
   border-radius: 20px;
 }
 
@@ -621,15 +623,16 @@ table {
 
 /* General sidebar styles */
 .bm-menu {
-  background: #39bf4d;
+  background: linear-gradient(
+    313deg,
+    rgba(168, 200, 47, 1) 0%,
+    rgba(14, 102, 66, 1) 100%
+  );
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }
 
 /* Wrapper for item list */
-.bm-item-list {
-  color: #030303;
-}
 
 /* Styling of overlay */
 .bm-overlay {
@@ -644,4 +647,8 @@ table {
 
 .input-btn-form span {
   font-size: 40px;
+}
+
+.close {
+  margin-top: 7vh;
 }

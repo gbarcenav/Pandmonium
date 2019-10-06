@@ -28,7 +28,7 @@ class Places extends Component {
     return (
       <div className="places-screen">
         <Navbar />
-        <hr></hr>
+
         <div className="tables-bars">
           <div className="bar">
             <TableBar
@@ -106,7 +106,13 @@ class Places extends Component {
               changeTitle={this.changeTitle}
             />
           </div>
+          <TableBar
+            number="Para llevar"
+            CSSclass="to-go-btn"
+            changeTitle={this.changeTitle}
+          />
         </div>
+
         <GreenRectangle
           classCSS="rectangle-tabar-selection"
           place={this.state.number}

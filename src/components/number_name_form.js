@@ -29,7 +29,8 @@ class FormNameNumber extends Component {
         <Input
           classCSS="input-spiner"
           typeInput="number"
-          onChange={this.onChange}/>
+          onChange={this.onChange}
+        />
         <br></br>
         <label>Nombre del cliente</label>
         <Input
@@ -37,7 +38,13 @@ class FormNameNumber extends Component {
           typeInput="text"
           onChange={this.onChangeName}
         />
-        <BtnGreen btntext="ABRIR MESA" name={this.state.name} num={this.state.num} ruta={'/Menu'}/>
+        <br></br>
+        <BtnGreen
+          btntext="ABRIR MESA"
+          name={this.state.name}
+          num={this.state.num}
+          ruta={"/Menu"}
+        />
       </form>
     );
   }

@@ -13,15 +13,18 @@ class DetailPlace extends Component {
         <GreenRectangle classCSS="rectangle-tabar-detail"></GreenRectangle>
 
         <div className="people-number-detail">
-          <span className="label-detail">No. Personas 1 </span>
-          <span className="data-detail"></span>
+          <span className="label-detail">No. Personas </span>
+          <span className="data-detail">
+            1{/* Aquí tiene que cambiar el número */}
+          </span>
           <br></br>
-          <span className="label-detail" >Nombre Tania  </span>
-          <span className="data-detail"></span>
+          <span className="label-detail">Nombre </span>
+          <span className="data-detail">
+            Tania{/* Aquí tiene que cambiar el nombre */}
+          </span>
         </div>
         <div className="table-detail-container">
           <AccountPerGuest />
-          
         </div>
       </div>
     );
