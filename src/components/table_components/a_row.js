@@ -5,8 +5,11 @@ class AddRow extends Component {
     return (
       <tr>
         <td>{this.props.conceptText}</td>
-        <td className="cost">{this.props.costQuantity}</td>
-        <td className="comment">{this.props.commentText}</td>
+        <td>{this.props.size}</td>
+        <td>{this.props.quantity}</td>
+        <td className="cost" value={this.props.value} name={this.props.name}>
+          {this.props.costQuantity}
+        </td>
       </tr>
     );
   }

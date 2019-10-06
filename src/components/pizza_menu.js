@@ -4,8 +4,6 @@ import InputIncreaseDecrease from "./increase_decrease";
 import DataMenu from "../menu.json";
 
 class PizzaMenu extends Component {
-
-
   render() {
     let nuevo = DataMenu[this.props.indice].tipo;
     let detalle = DataMenu[this.props.indice].opcion;
@@ -22,7 +20,11 @@ class PizzaMenu extends Component {
         <tbody>
           <tr>
             <th>
-              <select className="options-menu" onChange={this.props.ChangeValueSelect} name="select-type">
+              <select
+                className="options-menu"
+                onChange={this.props.ChangeValueSelect}
+                name="select-type"
+              >
                 {nuevo.map((x, index) => {
                   return (
                     <option key={index} value={x.name}>
@@ -34,18 +36,24 @@ class PizzaMenu extends Component {
             </th>
 
             <td>
-              <InputIncreaseDecrease ChangeQuantity={this.props.ChangeQuantity}/>
+              <InputIncreaseDecrease
+                ChangeQuantity={this.props.ChangeQuantity}
+              />
             </td>
 
             <th>
-              <select className="options-menu" onChange={this.props.ChangeValueSelect} name='select-option'>
-                {detalle.map((x, index)=>{
-                  return(
-                    <option key={index} value={x.name}>{x}</option>
-                  )
-                }
-                )}
-                
+              <select
+                className="options-menu"
+                onChange={this.props.ChangeValueSelect}
+                name="select-option"
+              >
+                {detalle.map((x, index) => {
+                  return (
+                    <option key={index} value={x.name}>
+                      {x}
+                    </option>
+                  );
+                })}
               </select>
             </th>
           </tr>

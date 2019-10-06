@@ -124,6 +124,7 @@ class Menu extends Component {
               className="comments"
               placeholder="Comentarios"
               onChange={this.AddComent}
+              name="comments"
             ></textarea>
             <BtnAdd
               className="btn-green btn-green-add"

@@ -116,23 +116,27 @@ table {
   color: rgb(227, 230, 230);
   border-radius: 50px;
 }
-::-webkit-input-placeholder {
-  color: ghostwhite;
+.input-btn-form::-webkit-input-placeholder {
+  color: white;
+  font-weight: 700;
 }
 
-:-moz-placeholder {
-  color: ghostwhite;
+.input-btn-form:-moz-placeholder {
+  color: white;
+  font-weight: 700;
 }
 
-::-moz-placeholder {
-  color: ghostwhite;
+.input-btn-form::-moz-placeholder {
+  color: white;
+  font-weight: 700;
 }
 
-:-ms-input-placeholder {
-  color: ghostwhite;
+.input-btn-form:-ms-input-placeholder {
+  color: white;
+  font-weight: 700;
 }
 
-:focus::-webkit-input-placeholder {
+.input-btn-form:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
@@ -322,18 +326,18 @@ table {
   padding: 10px;
   padding: 16px 40px;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 900;
   border-radius: 20px;
   border: transparent;
   outline: 0px;
   margin-top: 13vh;
+  color: white;
 }
 
 .people-number-detail {
   width: 90vw;
   height: 150px;
   text-align: end;
-  /* padding-right: 80px; */
   padding-top: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -341,7 +345,10 @@ table {
 }
 
 /* Tabla de detalle de consumo de comensal */
-
+.diner-rectangle {
+  color: #0e6642;
+  font-weight: 700;
+}
 .people-number-detail label {
   margin-right: 20px;
   font-size: 30px;
@@ -466,10 +473,6 @@ td img {
   outline: 0px;
 }
 
-.menu-draws button:hover {
-  background-color: #a8c82f;
-}
-
 .menu-draws img {
   width: 100%;
   height: auto;
@@ -556,6 +559,7 @@ td {
 table {
   text-align: center;
 }
+
 .options-menu {
   font-weight: 700;
   width: 27vw;
@@ -578,6 +582,30 @@ table {
   font-size: 40px;
   margin: 40px;
   border: solid #a5d8e3 8px;
+}
+
+.comments::-webkit-input-placeholder {
+  color: #a5d8e3;
+  font-weight: 700;
+}
+
+.comments:-moz-placeholder {
+  color: #a5d8e3;
+  font-weight: 700;
+}
+
+.comments::-moz-placeholder {
+  color: #a5d8e3;
+  font-weight: 700;
+}
+
+.comments:-ms-input-placeholder {
+  color: #a5d8e3;
+  font-weight: 700;
+}
+
+.comments:focus::-webkit-input-placeholder {
+  color: transparent;
 }
 /* ________________________MECHE MENÚ________________________________ */
 /* Individual item */

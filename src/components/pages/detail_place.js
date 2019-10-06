@@ -10,7 +10,10 @@ class DetailPlace extends Component {
       <div className="detail_screen">
         <Navbar />
 
-        <GreenRectangle classCSS="rectangle-tabar-detail"></GreenRectangle>
+        <GreenRectangle
+          classCSS="rectangle-tabar-detail"
+          place="MESA 2"
+        ></GreenRectangle>
 
         <div className="people-number-detail">
           <span className="label-detail">No. Personas </span>
