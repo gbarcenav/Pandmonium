@@ -3,6 +3,7 @@ import InputIncreaseDecrease from "./increase_decrease";
 
 import DataMenu from "../menu.json";
 // import * as firebase from 'firebase'
+import * as firebase from 'firebase'
 
 
 
@@ -15,29 +16,7 @@ class PizzaMenu extends Component {
       
     };
   }
-//   componentDidMount(){
-//     const currentDate = new Date();
-//     const db = firebase.firestore();
-//     const strDate = `${currentDate.getFullYear()}-${currentDate.getMonth()+1}-${currentDate.getDate()}`
-//     const strHour=`${currentDate.getHours()}-${currentDate.getMinutes()} hrs`
 
-//     db.collection('pedidos').add({
-//   pedidos:"Pandemonium",
-//   date: strDate,
-//   dateHour: strHour
-  
-// })
-// .then((docRef) => {
-//   console.log("Document written with ID: ", docRef.id);
-  
-// })
-// .catch((error) => {
-//   console.error("Error adding document: ", error);
-// }
-// )
-      
-    
-//   }
   
   handleChange = (e) =>{
     if (e.target.name === 'select-type') {
@@ -56,6 +35,33 @@ class PizzaMenu extends Component {
     } 
     
   }
+  componentDidMount(){
+    const currentDate = new Date();
+        const db = firebase.firestore();
+        const strDate = `${currentDate.getFullYear()}-${currentDate.getMonth()+1}-${currentDate.getDate()}`
+        const strHour=`${currentDate.getHours()}-${currentDate.getMinutes()} hrs`
+    
+        db.collection('pedidos').add({
+      pedidos:"Pandemonium",
+      date: strDate,
+      dateHour: strHour,
+      name:localStorage.getItem('name'),
+      num:localStorage.getItem('num'),
+      option:this.state.valueoption,
+      detalle:this.state.valueType
+      
+      
+    })
+    .then((docRef) => {
+      console.log("Document written with ID: ", docRef.id);
+      
+    })
+    .catch((error) => {
+      console.error("Error adding document: ", error);
+    }
+    )
+  }
+
   
   
   render() {
@@ -78,7 +84,7 @@ class PizzaMenu extends Component {
               <select className="options-menu" onChange={this.handleChange}  name="select-type">
                 {nuevo.map((x, index) => {
                   return (
-                    <option key={index} value={x.name}>
+                    <option key={index} value={x.name} onClick={this.componentDidMount(x.name)}>
                       {x.name}
                     </option>
                   );
@@ -94,7 +100,7 @@ class PizzaMenu extends Component {
               <select className="options-menu" onChange={this.handleChange} name='select-option'>
                 {detalle.map((x, index)=>{
                   return(
-                    <option key={index} value={x}>{x}</option>
+                    <option key={index} value={x} >{x}</option>
                   )
                 }
                 )}

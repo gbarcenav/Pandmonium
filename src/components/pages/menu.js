@@ -27,13 +27,16 @@ class Menu extends Component {
     super(props);
     this.state = {
       indice: 0,
-      numburger:''
+      optionFood: ''
     };
   }
 
   getIndex = i => {
     this.setState({ indice: i });
   };
+  getOptionValue = i => {
+    this.setState({optionFood:i})
+  }
 
 
   render() {
@@ -48,6 +51,8 @@ class Menu extends Component {
             alt="Hamburguesas"
             getIndex={this.getIndex}
             indice={DataMenu[0].id}
+
+
           />
           <FoodBtn
             image={Pizza}
@@ -95,7 +100,7 @@ class Menu extends Component {
         </div>
         <div className="menu-w-summary">
           <form className="menu-buy">
-            <PizzaMenu indice={this.state.indice} />
+            <PizzaMenu indice={this.state.indice} getOptionValue={this.getOptionValue}/>
             <textarea className="comments" placeholder="Comentarios"></textarea>
             <BtnAdd className="btn-green btn-green-add" btntext="AÑADIR" />
           </form>
