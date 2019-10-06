@@ -1,23 +1,47 @@
 import React, { Component } from "react";
+import ItemList from "./item-list";
+
 
 class BtnAdd extends Component {
-  onClick = e => {
+  constructor(props) {
+    super(props);
+    this.state = {
+    orden:[]
+    };
+  }
+
+  addOrden = (e) => {
     e.preventDefault();
     localStorage.setItem("type", JSON.stringify(this.props.valueType));
     localStorage.setItem("option", JSON.stringify(this.props.valueOption));
     localStorage.setItem("quantity", JSON.stringify(this.props.quantity));
     localStorage.setItem("coment", JSON.stringify(this.props.coment));
+    let {orden} = this.state;
+    orden.push({
+      type:this.props.valueType, option:this.props.valueOption, quantity:this.props.quantity
+    })
+      
+    this.setState({
+      orden: orden
+    })
   };
+
 
   render() {
     return (
+      <div>
       <button
         type="button"
         className={this.props.className}
-        onClick={this.onClick}
+        onClick={this.addOrden}
       >
         {this.props.btntext}
       </button>
+      
+          <ItemList itemName={this.state.orden} />
+          {/* itemName cambia según el nombre del producto que se añada */}
+          
+      </div>
     );
   }
 }

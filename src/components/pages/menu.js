@@ -10,13 +10,13 @@ import Cake from "../ux_resources/ICONOS MENU/ICONO_CAKE.png";
 import Salad from "../ux_resources/ICONOS MENU/ICONO_SALAD.png";
 import IceCream from "../ux_resources/ICONOS MENU/ICON_ICECREAM.png";
 import Frappe from "../ux_resources/ICONOS MENU/ICON_MILKSHAKE.png";
-import Delete from "../ux_resources/delete.png";
+
 
 import BtnGreen from "../btn_green";
 import PizzaMenu from "../pizza_menu";
 import FoodBtn from "../food_btn";
 import DataMenu from "../../menu.json";
-import ItemList from "../item-list";
+
 import BtnAdd from "../btn_add";
 
 class Menu extends Component {
@@ -127,37 +127,16 @@ class Menu extends Component {
               valueOption={this.state.valueOption}
               quantity={this.state.quantity}/>
           </form>
-          <div>
-            <table className="table_products">
-              <tbody>
-              <tr>
-                <th>Producto/s</th>
-                <th>Eliminar</th>
-              </tr>
-              <tr>
-                <ItemList itemName="MALICIA" />
-                {/* itemName cambia según el nombre del producto que se añada */}
-                <td>
-                  <button>
-                    <img src={Delete} alt="Eliminar"></img>
-                  </button>
-                </td>
-              </tr>
-              </tbody>
-            </table>
-            <div>
               <p>
                 {/* Aquí se añaden los comenatrios en caso de que se ingrese algo */}
               </p>
             </div>
-          </div>
-
           <BtnGreen
             btntext="ENVIAR A COCINA"
             onClick={this.onClick}
             ruta={"/Places"}
           />
-        </div>
+      
       </div>
     );
   }
