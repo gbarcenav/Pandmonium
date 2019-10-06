@@ -10,8 +10,8 @@ class ItemList extends Component {
         <table className="table_products">
           <tbody>
             <tr>
-              <th>Producto/s</th>
-              <th>Tamaño</th>
+              <th>Concepto</th>
+              <th>Detalle</th>
               <th>Cantidad</th>
               <th>Eliminar</th>
             </tr>
