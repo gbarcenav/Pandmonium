@@ -438,7 +438,7 @@ td img {
 /* SECCIÓN MENÚ */
 .menu {
   width: 100vw;
-  height: 100vh;
+  height: 110vh;
   overflow: hidden;
 }
 .menu-draws {

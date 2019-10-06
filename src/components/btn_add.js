@@ -12,18 +12,22 @@ class BtnAdd extends Component {
 
   addOrden = (e) => {
     e.preventDefault();
-    localStorage.setItem("type", JSON.stringify(this.props.valueType));
-    localStorage.setItem("option", JSON.stringify(this.props.valueOption));
-    localStorage.setItem("quantity", JSON.stringify(this.props.quantity));
-    localStorage.setItem("coment", JSON.stringify(this.props.coment));
+    // localStorage.setItem("type", JSON.stringify(this.props.valueType));
+    // localStorage.setItem("option", JSON.stringify(this.props.valueOption));
+    // localStorage.setItem("quantity", JSON.stringify(this.props.quantity));
+    // localStorage.setItem("coment", JSON.stringify(this.props.coment));
     let {orden} = this.state;
     orden.push({
-      type:this.props.valueType, option:this.props.valueOption, quantity:this.props.quantity
+      type:this.props.valueType, 
+      option:this.props.valueOption, 
+      quantity:this.props.quantity
     })
       
     this.setState({
       orden: orden
     })
+    //AQUI SE GUARDA EN LOCAL STORAGE UN OBJETO CADA QUE DAS CLICK EN AÑADIR A LA ORDEN
+    localStorage.setItem("orden", JSON.stringify(this.state.orden));
   };
 
 

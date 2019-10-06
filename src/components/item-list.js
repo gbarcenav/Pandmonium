@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import Delete from "./ux_resources/delete.png";
 
 class ItemList extends Component {
+  deleteOrden=()=>{
+
+  }
+  
   render() {
     return(
     <div>
@@ -17,7 +21,7 @@ class ItemList extends Component {
         <tr key={i}>
             <td>{producto.type}  {producto.option}  {producto.quantity}</td>
             <td>
-            <button>
+            <button onClick={this.deleteOrden}>
               <img src={Delete} alt="Eliminar"></img>
             </button>
             </td>
