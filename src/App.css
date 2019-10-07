@@ -257,7 +257,7 @@ table {
   border: transparent;
   outline: 0px;
   text-align: left;
-  color: white;
+  color: #0e6642;
 }
 
 /* Sección de registro de lugar y numero de personas */
@@ -331,7 +331,7 @@ table {
   border: transparent;
   outline: 0px;
   margin-top: 13vh;
-  color: white;
+  color: #0e6642;
 }
 
 .people-number-detail {
@@ -346,8 +346,9 @@ table {
 
 /* Tabla de detalle de consumo de comensal */
 .diner-rectangle {
-  color: #0e6642;
+  color: #0c6573;
   font-weight: 700;
+  border-radius: 25px;
 }
 .people-number-detail label {
   margin-right: 20px;
@@ -430,7 +431,7 @@ td img {
 
 /* SECCIÓN LISTA DE CUENTAS */
 .open-account {
-  margin-top: 17vh;
+  margin-top: 13vh;
 }
 .rectangle-account {
   width: 100%;
@@ -444,7 +445,7 @@ td img {
   border-radius: 20px;
   border: transparent;
   outline: 0px;
-  color: white;
+  color: #0e6642;
 }
 
 /* SECCIÓN MENÚ */
