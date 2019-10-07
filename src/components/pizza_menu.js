@@ -3,10 +3,25 @@ import InputIncreaseDecrease from "./increase_decrease";
 
 import DataMenu from "../menu.json";
 
+
+
+
 class PizzaMenu extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      valueType: '',
+      valueoption: '',
+      
+    };
+  }
+
+  
+  
   render() {
     let nuevo = DataMenu[this.props.indice].tipo;
     let detalle = DataMenu[this.props.indice].opcion;
+    
 
     return (
       <table className="tag-menu-product">
@@ -49,7 +64,7 @@ class PizzaMenu extends Component {
               >
                 {detalle.map((x, index) => {
                   return (
-                    <option key={index} value={x.name}>
+                    <option key={index} value={x}>
                       {x}
                     </option>
                   );
