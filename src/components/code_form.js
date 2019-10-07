@@ -39,7 +39,7 @@ class CodeForm extends Component {
           noEmpleado: "",
           nombre: "",
           valid: false,
-          message: "Usuario no registrado"
+          message: "USUARIO NO REGISTRADO"
         }); //Recorremos con un foreach el objeto querySnapshot, el cual contiene el resultado de la busqueda.
         querySnapshot.forEach(function(doc) {
           //Solo para debug, agregamos un console.log que escribe en la consola los datos encontrados
@@ -69,13 +69,14 @@ class CodeForm extends Component {
       <form className="input-btn-form">
         <p className="unregistrer-msn">{this.state.message}</p>
         <input
-          placeholder="INGRESA TU CÓDIGO"
+          placeholder="Ingresa tu código"
           value={noEmpleado}
           name="noEmpleado"
           className="input-login"
           type="password"
           onChange={this.onChange}
         />
+        <br></br>
         <button type="button" className="btn-green" onClick={this.onClick}>
           ENTRAR
         </button>
