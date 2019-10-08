@@ -11,7 +11,7 @@ import Salad from "../ux_resources/iconos_2/salad.png";
 import IceCream from "../ux_resources/iconos_2/mojito.png";
 import Frappe from "../ux_resources/iconos_2/milkshake.png";
 
-import BtnGreen from "../btn_green";
+import BtnSaveOrder from "../btn_saveorder.js";
 import PizzaMenu from "../pizza_menu";
 import FoodBtn from "../food_btn";
 import DataMenu from "../../menu.json";
@@ -36,9 +36,8 @@ class Menu extends Component {
   getIndex = i => {
     this.setState({ indice: i });
   };
-  getOptionValue = i => {
-    this.setState({optionFood:i})
-  }
+  
+
 
   ChangeValueSelect = e => {
     if (e.target.name === "select-type") {
@@ -64,6 +63,7 @@ class Menu extends Component {
     });
   };
 
+ 
   render() {
     return (
       <div className="menu">
@@ -147,9 +147,8 @@ class Menu extends Component {
         <p>
           {/* Aquí se añaden los comenatrios en caso de que se ingrese algo */}
         </p>
-        <BtnGreen
+        <BtnSaveOrder 
           btntext="ENVIAR A COCINA"
-          onClick={this.onClick}
           ruta={"/Places"}
         />
       </div>
