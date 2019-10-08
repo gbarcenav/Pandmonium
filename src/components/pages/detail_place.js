@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import Navbar from "../navbar";
 import AccountPerGuest from "../account_guest";
 import GreenRectangle from "../green_rectangle";
-import * as firebase from 'firebase';
+
 
 class ShowPedido extends Component {
   render(){
@@ -11,14 +11,14 @@ class ShowPedido extends Component {
       <div>
 
       <div className="people-number-detail">
-      <span className="label-detail">{this.props.num} </span>
+      <span className="label-detail"></span>
       <span className="data-detail">
         {}{/* Aquí tiene que cambiar el número */}
       </span>
       <br></br>
-      <span className="label-detail">{this.props.name}</span>
+      <span className="label-detail">{this.props.value}</span>
       <span className="data-detail">
-        Tania{/* Aquí tiene que cambiar el nombre */}
+      {this.props.value}{/* Aquí tiene que cambiar el nombre */}
        </span>
     </div>
        <div className="table-detail-container">
@@ -31,32 +31,7 @@ class ShowPedido extends Component {
 }
 
 class DetailPlace extends Component {
-  constructor(props){
-  super(props);
-    this.state = {
-      dateHour:null,
-      name:null,
-      table:null,
-      num:null
-    
-  }
-}
-  onClick = (mesa) =>{    
-    const db = firebase.firestore();   
-     const pedidosRef = db.collection('pedidos');   
-     pedidosRef.where('pendiente', '==', true )   
-     .get()    
-    .then((onSnapshot) => {  
-            
-         onSnapshot.forEach((doc) => {    
-        
-        this.setState({dateHour:doc.data().dateHour})
-        this.setState({name:doc.data().name})
-        this.setState({table:doc.data().table})
-        this.setState({num:doc.data().num})                 
-       })
-    })
-  }
+
   render() {
     return (
       <div className="detail_screen">
@@ -64,11 +39,11 @@ class DetailPlace extends Component {
 
         <GreenRectangle
           classCSS="rectangle-tabar-detail"
-          place={this.state.table}
-          onClick={this.onClick(localStorage.getItem('num-mesa'))}
+          place={this.props.value}
         ></GreenRectangle>
-        <ShowPedido name={this.state.name} 
-        table={this.state.table}
+
+        <ShowPedido 
+        value={this.props.value}
         ></ShowPedido>
        
       </div>
