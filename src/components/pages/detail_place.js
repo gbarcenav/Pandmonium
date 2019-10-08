@@ -6,7 +6,11 @@ import GreenRectangle from "../green_rectangle";
 
 
 class ShowPedido extends Component {
+  
   render(){
+    const nametable = localStorage.getItem('nametable');
+    
+
     return(
       <div>
 
@@ -16,9 +20,9 @@ class ShowPedido extends Component {
         {}{/* Aquí tiene que cambiar el número */}
       </span>
       <br></br>
-      <span className="label-detail">{this.props.value}</span>
+      <span className="label-detail">{nametable}</span>
       <span className="data-detail">
-      {this.props.value}{/* Aquí tiene que cambiar el nombre */}
+      {/* Aquí tiene que cambiar el nombre */}
        </span>
     </div>
        <div className="table-detail-container">
