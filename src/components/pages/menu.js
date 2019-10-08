@@ -17,7 +17,6 @@ import FoodBtn from "../food_btn";
 import DataMenu from "../../menu.json";
 
 import BtnAdd from "../btn_add";
-import * as firebase from 'firebase'
 
 
 

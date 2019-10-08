@@ -3,8 +3,31 @@ import React, { Component } from "react";
 import Navbar from "../navbar";
 import AccountPerGuest from "../account_guest";
 import GreenRectangle from "../green_rectangle";
+import * as firebase from 'firebase';
 
 class DetailPlace extends Component {
+  onClick = (mesa) =>{    
+    const db = firebase.firestore();   
+     const pedidosRef = db.collection('pedidos');   
+     pedidosRef.where('table', '==', mesa )   
+     .get()    
+    .then((onSnapshot) => {  
+          const root = document.querySelector("#root");   
+         let strPedido = ' '   
+         onSnapshot.forEach((doc) => {    
+            strPedido =`    
+            <div>     
+           <p>${doc.data().dateHour}</p>    
+            <p>${doc.data().name}</p>
+         <p>${doc.data().table}</p> 
+             </div>`             
+       })  
+            root.innerHTML = strPedido;
+
+
+    })
+    
+  }
   render() {
     return (
       <div className="detail_screen">
@@ -13,6 +36,7 @@ class DetailPlace extends Component {
         <GreenRectangle
           classCSS="rectangle-tabar-detail"
           place="MESA 2"
+          onClick={this.onClick(localStorage.getItem('num-mesa'))}
         ></GreenRectangle>
 
         <div className="people-number-detail">

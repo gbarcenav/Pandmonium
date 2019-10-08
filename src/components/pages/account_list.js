@@ -12,14 +12,9 @@ class AccountList extends Component {
           <Link to="DetailPlace">
             <GreenRectangle classCSS="rectangle-account" place="MESA 2" />
           </Link>
-          <GreenRectangle classCSS="rectangle-account" place="MESA 3" />
-          <GreenRectangle
-            classCSS="rectangle-account"
-            place="PARA LLEVAR"
-            diner="Mariana"
-          />
-          <GreenRectangle classCSS="rectangle-account" place="5" />
-          <GreenRectangle classCSS="rectangle-account" place="MESA 1" />
+         
+            
+          
         </div>
       </div>
     );
