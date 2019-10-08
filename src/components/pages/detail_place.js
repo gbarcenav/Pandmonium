@@ -5,28 +5,57 @@ import AccountPerGuest from "../account_guest";
 import GreenRectangle from "../green_rectangle";
 import * as firebase from 'firebase';
 
+class ShowPedido extends Component {
+  render(){
+    return(
+      <div>
+
+      <div className="people-number-detail">
+      <span className="label-detail">{this.props.num} </span>
+      <span className="data-detail">
+        {}{/* Aquí tiene que cambiar el número */}
+      </span>
+      <br></br>
+      <span className="label-detail">{this.props.name}</span>
+      <span className="data-detail">
+        Tania{/* Aquí tiene que cambiar el nombre */}
+       </span>
+    </div>
+       <div className="table-detail-container">
+         <AccountPerGuest />
+       </div>
+      </div>
+
+    )
+  }
+}
+
 class DetailPlace extends Component {
+  constructor(props){
+  super(props);
+    this.state = {
+      dateHour:null,
+      name:null,
+      table:null,
+      num:null
+    
+  }
+}
   onClick = (mesa) =>{    
     const db = firebase.firestore();   
      const pedidosRef = db.collection('pedidos');   
-     pedidosRef.where('table', '==', mesa )   
+     pedidosRef.where('pendiente', '==', true )   
      .get()    
     .then((onSnapshot) => {  
-          const root = document.querySelector("#root");   
-         let strPedido = ' '   
+            
          onSnapshot.forEach((doc) => {    
-            strPedido =`    
-            <div>     
-           <p>${doc.data().dateHour}</p>    
-            <p>${doc.data().name}</p>
-         <p>${doc.data().table}</p> 
-             </div>`             
-       })  
-            root.innerHTML = strPedido;
-
-
+        
+        this.setState({dateHour:doc.data().dateHour})
+        this.setState({name:doc.data().name})
+        this.setState({table:doc.data().table})
+        this.setState({num:doc.data().num})                 
+       })
     })
-    
   }
   render() {
     return (
@@ -35,24 +64,13 @@ class DetailPlace extends Component {
 
         <GreenRectangle
           classCSS="rectangle-tabar-detail"
-          place="MESA 2"
+          place={this.state.table}
           onClick={this.onClick(localStorage.getItem('num-mesa'))}
         ></GreenRectangle>
-
-        <div className="people-number-detail">
-          <span className="label-detail">No. Personas </span>
-          <span className="data-detail">
-            1{/* Aquí tiene que cambiar el número */}
-          </span>
-          <br></br>
-          <span className="label-detail">Nombre </span>
-          <span className="data-detail">
-            Tania{/* Aquí tiene que cambiar el nombre */}
-          </span>
-        </div>
-        <div className="table-detail-container">
-          <AccountPerGuest />
-        </div>
+        <ShowPedido name={this.state.name} 
+        table={this.state.table}
+        ></ShowPedido>
+       
       </div>
     );
   }
