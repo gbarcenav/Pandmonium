@@ -5,7 +5,7 @@ class GreenRectangle extends Component {
   render() {
     return (
       <button className={this.props.classCSS} type="button">
-        {this.props.nametable}-{this.props.name}
+        {this.props.nametable}
       </button>
     );
   }

@@ -17,7 +17,7 @@ class ShowPedido extends Component {
       <span className="data-detail">Hora: {this.props.dateHour}</span><br></br>
     </div>
        <div className="table-detail-container">
-         <AccountPerGuest />
+         <AccountPerGuest completeArray={this.props.completeArray}/>
        </div>
       </div>
 
@@ -32,7 +32,7 @@ class DetailPlace extends Component {
         nametable: null,
         date:null,
         name:null,
-        completeArray:[]
+        completeArray:null
 
     }
   }
@@ -47,11 +47,12 @@ class DetailPlace extends Component {
      pedidosRef.where('table', '==', nametable )   
      .get()    
     .then((onSnapshot) => {  
-         onSnapshot.forEach((doc) => {  
+         onSnapshot.forEach((doc) => {
+          const order = doc.data().completeArray;
           this.setState({
             date:doc.data().date,
             name:doc.data().name,
-            completeArray:doc.data().completeArray,
+            completeArray:order,
             dateHour:doc.data().dateHour
           })                 
        })
