@@ -1,12 +1,11 @@
 import React, { Component } from "react";
-import DetailPlace from "../components/pages/detail_place"
 
 
 class TablesRectangle extends Component {
   onClick = (e) =>{
     console.log(e.target.name)
-    
-    return <DetailPlace value={e.target.name}/>;
+    let value= e.target.name;
+    localStorage.setItem('nametable', value);
   }
 
   render() {
@@ -19,7 +18,7 @@ class TablesRectangle extends Component {
         key={index} 
         className={this.props.classCSS} 
         type="button"
-        onClick={this.onClick()}>
+        onClick={this.onClick}>
           {mesa}
         </button>
       );
