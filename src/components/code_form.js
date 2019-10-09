@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
 
 // import BtnGreen from "../components/btn_green";
-import firebaseApp from "../Firebase";
+import firebaseApp from "../firebase";
 // import { Link } from "react-router-dom";
 // import { Redirect } from 'react-router';
 
